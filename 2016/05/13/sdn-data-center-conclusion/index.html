@@ -10,13 +10,13 @@
 传统的数据中心网络建立在TCP/IP协议体系上，而随着互联网技术逐渐紧密的与人们的日常生活联系起来，人们对于互联网技术的需求也逐渐增加。近几年来，云计算技术在全球飞速的发展,数据中心随之在全球各地建立起来。在目前广泛兴起的各种云服务需求环境下，数据中心网络面临的流量压力也不断增大。如何将有限的网络资源得以最大化的利用成为互联网技术亟待解决的问题之一，传统网络TCP/IP的体系结构缺陷长">
 <meta property="og:type" content="article">
 <meta property="og:title" content="总结！">
-<meta property="og:url" content="http://seifzhang.jerrychia.com/2016/05/11/my-new-post/index.html">
+<meta property="og:url" content="http://seifzhang.jerrychia.com/2016/05/13/sdn-data-center-conclusion/index.html">
 <meta property="og:site_name" content="SeifZhang's 博客">
 <meta property="og:description" content="目的及意义
 传统的数据中心网络建立在TCP/IP协议体系上，而随着互联网技术逐渐紧密的与人们的日常生活联系起来，人们对于互联网技术的需求也逐渐增加。近几年来，云计算技术在全球飞速的发展,数据中心随之在全球各地建立起来。在目前广泛兴起的各种云服务需求环境下，数据中心网络面临的流量压力也不断增大。如何将有限的网络资源得以最大化的利用成为互联网技术亟待解决的问题之一，传统网络TCP/IP的体系结构缺陷长">
 <meta property="og:image" content="http://seifzhang.jerrychia.com/img/1.png">
 <meta property="og:image" content="http://seifzhang.jerrychia.com/img/2.png">
-<meta property="og:updated_time" content="2016-05-12T08:23:43.688Z">
+<meta property="og:updated_time" content="2016-05-14T02:20:04.764Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="总结！">
 <meta name="twitter:description" content="目的及意义
@@ -26,7 +26,7 @@
     <link rel="alternative" href="/atom.xml" title="SeifZhang&#39;s 博客" type="application/atom+xml">
   
   
-    <link rel="icon" href="img/avatar.png">
+    <link rel="icon" href="http://seifzhang.jerrychia.com/img/avatar.png">
   
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -39,7 +39,7 @@
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
 			
-			<img lazy-src="img/avatar.png" class="js-avatar">
+			<img lazy-src="http://seifzhang.jerrychia.com/img/avatar.png" class="js-avatar">
 			
 		</a>
 
@@ -163,7 +163,7 @@
 		<header id="header" class="inner">
 			<div class="profilepic">
 			
-				<img lazy-src="img/avatar.png" class="js-avatar">
+				<img lazy-src="http://seifzhang.jerrychia.com/img/avatar.png" class="js-avatar">
 			
 			</div>
 			<hgroup>
@@ -201,11 +201,11 @@
 	</div>
 </nav>
 
-      <div class="body-wrap"><article id="post-my-new-post" class="article article-type-post" itemscope itemprop="blogPost">
+      <div class="body-wrap"><article id="post-sdn-data-center-conclusion" class="article article-type-post" itemscope itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2016/05/11/my-new-post/" class="article-date">
-  	<time datetime="2016-05-11T07:34:34.038Z" itemprop="datePublished">2016-05-11</time>
+      <a href="/2016/05/13/sdn-data-center-conclusion/" class="article-date">
+  	<time datetime="2016-05-13T11:54:59.000Z" itemprop="datePublished">2016-05-13</time>
 </a>
     </div>
   
@@ -265,7 +265,7 @@
 <h4 id="提出的原因"><a href="#提出的原因" class="headerlink" title="提出的原因"></a>提出的原因</h4><hr>
 <p>文献【1】中提出一种负载均衡方案即DLB，DLB只考虑目前链路的负载，而最后的交换机和链路被完全忽略了。这种贪婪的路径选择策略不能考虑网络中的整个链路负载并且可能导致局部最优路径。<br>    在DCLB（Dynamic Sub-topology Load Balancing）算法中改进了这种缺陷，DCLB使用一种修改的Dijkstra算法去生成最短路径。这种改进的算法能够更好地存在DLB中存在的问题。<br>文献【2】中，作者提出一种GLB算法。GLB算法有很高的时间复杂度。算法将找出两主机之间的所有链路，并且计算这些链路的所有代价来得到最低负载的链路，然后路径就被控制器输出到交换机。然而这个算法考虑所有的链路负载，控制器不得不存储更多链路的信息。例如，一条全路径中部分路径被重复地存储。这就会花费更多的资源让控制器去存储链路信息。<br>在DCLB算法中能够避免这种问题。它仅仅存储部分拓扑信息代替存储一条路径中的重复链路信息，即子拓扑发现算法。</p>
 <h4 id="DCLB算法介绍"><a href="#DCLB算法介绍" class="headerlink" title="DCLB算法介绍"></a>DCLB算法介绍</h4><hr>
-<p>数据中心网络使用fat-tree拓扑，DCLB是解决fat-tree的负载均衡问题，主要包含三部分：链路代价模块、最短路径模块和子拓扑发现模块。算法能够动态地更新全拓扑的链路负载。在搜索新路径期间，子拓扑发现模块将从全拓扑提取信息构建一个子拓扑，然后使用修改的Dijkstra算法去寻找有最低链路代价的最短路径。<br>1)    链路代价模块<br>链路代价模块能够动态地更新全拓扑的链路负载。在OpenFlow网络开始期间全拓扑能够被获得。链路代价模块设置一个定时器去监控全拓扑的改变，这个模块没4s重新计算链路代价去更新链路负载。<br>2)    子拓扑发现模块<br>子拓扑发现模块被用来存储交换机和相关链路（两主机之间的路径）的子拓扑。当网络开始时，该模块先存储着全拓扑，然后决定每个交换机属于那一层。当这些工作完成后，子拓扑将在搜索主机之间的优化路径期间起作用。这个算法将在从两个终端（源和目的）由底层来搜索上层交换机。子拓扑模块将存储交换机（搜索进程期间发现的）直到两个终端到达同一层。<br> <img src="img/1.png" alt="Alt text" title="控制器"></p>
+<p>数据中心网络使用fat-tree拓扑，DCLB是解决fat-tree的负载均衡问题，主要包含三部分：链路代价模块、最短路径模块和子拓扑发现模块。算法能够动态地更新全拓扑的链路负载。在搜索新路径期间，子拓扑发现模块将从全拓扑提取信息构建一个子拓扑，然后使用修改的Dijkstra算法去寻找有最低链路代价的最短路径。<br>1)    链路代价模块<br>链路代价模块能够动态地更新全拓扑的链路负载。在OpenFlow网络开始期间全拓扑能够被获得。链路代价模块设置一个定时器去监控全拓扑的改变，这个模块没4s重新计算链路代价去更新链路负载。<br>2)    子拓扑发现模块<br>子拓扑发现模块被用来存储交换机和相关链路（两主机之间的路径）的子拓扑。当网络开始时，该模块先存储着全拓扑，然后决定每个交换机属于那一层。当这些工作完成后，子拓扑将在搜索主机之间的优化路径期间起作用。这个算法将在从两个终端（源和目的）由底层来搜索上层交换机。子拓扑模块将存储交换机（搜索进程期间发现的）直到两个终端到达同一层。<br> <img src="http://seifzhang.jerrychia.com/img/1.png" alt="控制器" title="这是一个控制器1"></p>
 <pre><code>例如：输入：源为h1，目的为h2，全拓扑信息
         处理：自拓扑发现算法
        输出：子拓扑，即蓝色方块表示的区域
@@ -278,7 +278,7 @@
       输出：最短路径[switches]
 </code></pre><p>其中W[V]表示4s内一个交换机所有端口接收到的字节数，在搜索路径的下一个交换机时，不仅考虑链路代价，而且考虑交换机状态。</p>
 <h2 id="提出的负载均衡方案"><a href="#提出的负载均衡方案" class="headerlink" title="提出的负载均衡方案"></a>提出的负载均衡方案</h2><hr>
-<p>研究的网络：数据中心网络<br>使用的数据中心网络的拓扑结构：fat-tree拓扑<br>交换机：SDN网络中的交换机，即OpenFlow交换机<br> <img src="img/2.png" alt="Alt text" title="控制器"><br>上图为控制器层次结构图。我们提出的方案在负载均衡模块中实现，基础模块为应用模块提供基础的调用服务。</p>
+<p>研究的网络：数据中心网络<br>使用的数据中心网络的拓扑结构：fat-tree拓扑<br>交换机：SDN网络中的交换机，即OpenFlow交换机<br> <img src="http://seifzhang.jerrychia.com/img/2.png" alt="这是一个控制器" title="这是一个控制器"><br>上图为控制器层次结构图。我们提出的方案在负载均衡模块中实现，基础模块为应用模块提供基础的调用服务。</p>
 <h3 id="算法的提出"><a href="#算法的提出" class="headerlink" title="算法的提出"></a>算法的提出</h3><hr>
 <p>虽然DCLB算法考虑了GLB和DLB算法的不足，但是它仍然有可以改进的部分。</p>
 <ol>
@@ -342,7 +342,7 @@
 <h4 id="提出的原因"><a href="#提出的原因" class="headerlink" title="提出的原因"></a>提出的原因</h4><hr>
 <p>文献【1】中提出一种负载均衡方案即DLB，DLB只考虑目前链路的负载，而最后的交换机和链路被完全忽略了。这种贪婪的路径选择策略不能考虑网络中的整个链路负载并且可能导致局部最优路径。<br>    在DCLB（Dynamic Sub-topology Load Balancing）算法中改进了这种缺陷，DCLB使用一种修改的Dijkstra算法去生成最短路径。这种改进的算法能够更好地存在DLB中存在的问题。<br>文献【2】中，作者提出一种GLB算法。GLB算法有很高的时间复杂度。算法将找出两主机之间的所有链路，并且计算这些链路的所有代价来得到最低负载的链路，然后路径就被控制器输出到交换机。然而这个算法考虑所有的链路负载，控制器不得不存储更多链路的信息。例如，一条全路径中部分路径被重复地存储。这就会花费更多的资源让控制器去存储链路信息。<br>在DCLB算法中能够避免这种问题。它仅仅存储部分拓扑信息代替存储一条路径中的重复链路信息，即子拓扑发现算法。</p>
 <h4 id="DCLB算法介绍"><a href="#DCLB算法介绍" class="headerlink" title="DCLB算法介绍"></a>DCLB算法介绍</h4><hr>
-<p>数据中心网络使用fat-tree拓扑，DCLB是解决fat-tree的负载均衡问题，主要包含三部分：链路代价模块、最短路径模块和子拓扑发现模块。算法能够动态地更新全拓扑的链路负载。在搜索新路径期间，子拓扑发现模块将从全拓扑提取信息构建一个子拓扑，然后使用修改的Dijkstra算法去寻找有最低链路代价的最短路径。<br>1)    链路代价模块<br>链路代价模块能够动态地更新全拓扑的链路负载。在OpenFlow网络开始期间全拓扑能够被获得。链路代价模块设置一个定时器去监控全拓扑的改变，这个模块没4s重新计算链路代价去更新链路负载。<br>2)    子拓扑发现模块<br>子拓扑发现模块被用来存储交换机和相关链路（两主机之间的路径）的子拓扑。当网络开始时，该模块先存储着全拓扑，然后决定每个交换机属于那一层。当这些工作完成后，子拓扑将在搜索主机之间的优化路径期间起作用。这个算法将在从两个终端（源和目的）由底层来搜索上层交换机。子拓扑模块将存储交换机（搜索进程期间发现的）直到两个终端到达同一层。<br> <img src="img/1.png" alt="Alt text" title="控制器"></p>
+<p>数据中心网络使用fat-tree拓扑，DCLB是解决fat-tree的负载均衡问题，主要包含三部分：链路代价模块、最短路径模块和子拓扑发现模块。算法能够动态地更新全拓扑的链路负载。在搜索新路径期间，子拓扑发现模块将从全拓扑提取信息构建一个子拓扑，然后使用修改的Dijkstra算法去寻找有最低链路代价的最短路径。<br>1)    链路代价模块<br>链路代价模块能够动态地更新全拓扑的链路负载。在OpenFlow网络开始期间全拓扑能够被获得。链路代价模块设置一个定时器去监控全拓扑的改变，这个模块没4s重新计算链路代价去更新链路负载。<br>2)    子拓扑发现模块<br>子拓扑发现模块被用来存储交换机和相关链路（两主机之间的路径）的子拓扑。当网络开始时，该模块先存储着全拓扑，然后决定每个交换机属于那一层。当这些工作完成后，子拓扑将在搜索主机之间的优化路径期间起作用。这个算法将在从两个终端（源和目的）由底层来搜索上层交换机。子拓扑模块将存储交换机（搜索进程期间发现的）直到两个终端到达同一层。<br> <img src="http://seifzhang.jerrychia.com/img/1.png" alt="控制器" title="这是一个控制器1"></p>
 <pre><code>例如：输入：源为h1，目的为h2，全拓扑信息
         处理：自拓扑发现算法
        输出：子拓扑，即蓝色方块表示的区域
@@ -355,7 +355,7 @@
       输出：最短路径[switches]
 </code></pre><p>其中W[V]表示4s内一个交换机所有端口接收到的字节数，在搜索路径的下一个交换机时，不仅考虑链路代价，而且考虑交换机状态。</p>
 <h2 id="提出的负载均衡方案"><a href="#提出的负载均衡方案" class="headerlink" title="提出的负载均衡方案"></a>提出的负载均衡方案</h2><hr>
-<p>研究的网络：数据中心网络<br>使用的数据中心网络的拓扑结构：fat-tree拓扑<br>交换机：SDN网络中的交换机，即OpenFlow交换机<br> <img src="img/2.png" alt="Alt text" title="控制器"><br>上图为控制器层次结构图。我们提出的方案在负载均衡模块中实现，基础模块为应用模块提供基础的调用服务。</p>
+<p>研究的网络：数据中心网络<br>使用的数据中心网络的拓扑结构：fat-tree拓扑<br>交换机：SDN网络中的交换机，即OpenFlow交换机<br> <img src="http://seifzhang.jerrychia.com/img/2.png" alt="这是一个控制器" title="这是一个控制器"><br>上图为控制器层次结构图。我们提出的方案在负载均衡模块中实现，基础模块为应用模块提供基础的调用服务。</p>
 <h3 id="算法的提出"><a href="#算法的提出" class="headerlink" title="算法的提出"></a>算法的提出</h3><hr>
 <p>虽然DCLB算法考虑了GLB和DLB算法的不足，但是它仍然有可以改进的部分。</p>
 <ol>
@@ -448,7 +448,7 @@
 
 <div class="duoshuo">
 	<!-- 多说评论框 start -->
-	<div class="ds-thread" data-thread-key="my-new-post" data-title="总结！" data-url="http://seifzhang.jerrychia.com/2016/05/11/my-new-post/"></div>
+	<div class="ds-thread" data-thread-key="sdn-data-center-conclusion" data-title="总结！" data-url="http://seifzhang.jerrychia.com/2016/05/13/sdn-data-center-conclusion/"></div>
 	<!-- 多说评论框 end -->
 	<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
 	<script type="text/javascript">

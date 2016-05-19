@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>SeifZhang&#39;s 博客</title>
+  <title>SeifZhang&#39;s Blog</title>
   <subtitle>My Blog,My Zone!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
@@ -36,10 +36,10 @@
   
   <entry>
     <title>总结！</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/13/1/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/13/1/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/05/13/my-new-post/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/13/my-new-post/</id>
     <published>2016-05-13T11:54:59.000Z</published>
-    <updated>2016-05-15T12:21:39.913Z</updated>
+    <updated>2016-05-15T12:17:53.369Z</updated>
     
     <content type="html"></content>
     
@@ -54,10 +54,10 @@
   
   <entry>
     <title>总结！</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/13/my-new-post/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/13/my-new-post/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/05/13/1/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/13/1/</id>
     <published>2016-05-13T11:54:59.000Z</published>
-    <updated>2016-05-15T12:17:53.369Z</updated>
+    <updated>2016-05-15T12:21:39.913Z</updated>
     
     <content type="html"></content>
     

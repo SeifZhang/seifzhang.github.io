@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-05-12T00:58:04.625Z</updated>
+  <updated>2016-05-23T03:24:13.558Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -14,6 +14,146 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Coding_Two Sum</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%203/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 3/</id>
+    <published>2016-05-23T03:10:34.373Z</published>
+    <updated>2016-05-23T03:24:13.558Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;p&gt;Difficulty: Easy&lt;/p&gt;
+&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
+&lt;p&gt;You may assume that each input would have exactly one solution.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given nums = [2, 7, 11, 15], target = 9,
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;UPDATE (2016/2/13):&lt;/p&gt;
+&lt;h2 id=&quot;The-return-format-had-been-changed-to-zero-based-indices-Please-read-the-above-updated-description-carefully&quot;&gt;&lt;a href=&quot;#The-return-format-had-been-changed-to-zero-based-indices-Please-read-the-above-updated-description-carefully&quot; class=&quot;headerlink&quot; title=&quot;The return format had been changed to zero-based indices. Please read the above updated description carefully.&quot;&gt;&lt;/a&gt;The return format had been changed to zero-based indices. Please read the above updated description carefully.&lt;/h2&gt;&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;ideas&quot;&gt;&lt;a href=&quot;#ideas&quot; class=&quot;headerlink&quot; title=&quot;ideas:&quot;&gt;&lt;/a&gt;ideas:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;p&gt;Difficulty: Easy&lt;/p&gt;
+&lt;p&gt;Given an a
+    
+    </summary>
+    
+    
+      <category term="Algorithm" scheme="http://seifzhang.jerrychia.com/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/tags/LeetCode/"/>
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding_Two Sum</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%204/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 4/</id>
+    <published>2016-05-23T03:10:33.974Z</published>
+    <updated>2016-05-23T03:24:30.908Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;p&gt;Difficulty: Easy&lt;/p&gt;
+&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
+&lt;p&gt;You may assume that each input would have exactly one solution.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given nums = [2, 7, 11, 15], target = 9,
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;UPDATE (2016/2/13):&lt;/p&gt;
+&lt;h2 id=&quot;The-return-format-had-been-changed-to-zero-based-indices-Please-read-the-above-updated-description-carefully&quot;&gt;&lt;a href=&quot;#The-return-format-had-been-changed-to-zero-based-indices-Please-read-the-above-updated-description-carefully&quot; class=&quot;headerlink&quot; title=&quot;The return format had been changed to zero-based indices. Please read the above updated description carefully.&quot;&gt;&lt;/a&gt;The return format had been changed to zero-based indices. Please read the above updated description carefully.&lt;/h2&gt;&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;ideas&quot;&gt;&lt;a href=&quot;#ideas&quot; class=&quot;headerlink&quot; title=&quot;ideas:&quot;&gt;&lt;/a&gt;ideas:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;p&gt;Difficulty: Easy&lt;/p&gt;
+&lt;p&gt;Given an a
+    
+    </summary>
+    
+    
+      <category term="Algorithm" scheme="http://seifzhang.jerrychia.com/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/tags/LeetCode/"/>
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding_Two Sum</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%202/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 2/</id>
+    <published>2016-05-23T03:10:33.506Z</published>
+    <updated>2016-05-23T03:24:05.747Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;p&gt;Difficulty: Easy&lt;/p&gt;
+&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
+&lt;p&gt;You may assume that each input would have exactly one solution.&lt;/p&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given nums = [2, 7, 11, 15], target = 9,
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;UPDATE (2016/2/13):&lt;/p&gt;
+&lt;h2 id=&quot;The-return-format-had-been-changed-to-zero-based-indices-Please-read-the-above-updated-description-carefully&quot;&gt;&lt;a href=&quot;#The-return-format-had-been-changed-to-zero-based-indices-Please-read-the-above-updated-description-carefully&quot; class=&quot;headerlink&quot; title=&quot;The return format had been changed to zero-based indices. Please read the above updated description carefully.&quot;&gt;&lt;/a&gt;The return format had been changed to zero-based indices. Please read the above updated description carefully.&lt;/h2&gt;&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;ideas&quot;&gt;&lt;a href=&quot;#ideas&quot; class=&quot;headerlink&quot; title=&quot;ideas:&quot;&gt;&lt;/a&gt;ideas:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Description&quot;&gt;&lt;a href=&quot;#Description&quot; class=&quot;headerlink&quot; title=&quot;Description&quot;&gt;&lt;/a&gt;Description&lt;/h2&gt;&lt;p&gt;Difficulty: Easy&lt;/p&gt;
+&lt;p&gt;Given an a
+    
+    </summary>
+    
+    
+      <category term="Algorithm" scheme="http://seifzhang.jerrychia.com/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/tags/LeetCode/"/>
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding1_Two Sum</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%201/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 1/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-23T03:39:51.335Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Difficulty&lt;/strong&gt;:&lt;br&gt;Easy&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;:&lt;br&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;br&gt;You may assume that each input would have exactly one solution.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Example&lt;/strong&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given nums = [2, 7, 11, 15], target = 9,
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt; (2016/2/13):  &lt;/p&gt;
+&lt;h2 id=&quot;The-return-format-had-been-changed-to-zero-based-indices-Please-read-the-above-updated-description-carefully&quot;&gt;&lt;a href=&quot;#The-return-format-had-been-changed-to-zero-based-indices-Please-read-the-above-updated-description-carefully&quot; class=&quot;headerlink&quot; title=&quot;The return format had been changed to zero-based indices. Please read the above updated description carefully.&quot;&gt;&lt;/a&gt;The return format had been changed to zero-based indices. Please read the above updated description carefully.&lt;/h2&gt;&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Algorithm" scheme="http://seifzhang.jerrychia.com/tags/Algorithm/"/>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/tags/LeetCode/"/>
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+    
+  </entry>
   
   <entry>
     <title>你好，世界！</title>
@@ -41,6 +181,275 @@
     
     
       <category term="博客，文章" scheme="http://seifzhang.jerrychia.com/tags/%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法笔记</title>
+    <link href="http://seifzhang.jerrychia.com/2015/01/10/hexo-markdown-note/"/>
+    <id>http://seifzhang.jerrychia.com/2015/01/10/hexo-markdown-note/</id>
+    <published>2015-01-10T11:54:59.000Z</published>
+    <updated>2016-05-23T03:31:07.746Z</updated>
+    
+    <content type="html">&lt;p&gt;#如果不想让hexo处理你的文件，可以在文件头中加入layout: false&lt;br&gt;title: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中&lt;br&gt;date: 2014-05-16 15:30:16 #文章生成时间，一般不改，当然也可以任意修改&lt;br&gt;categories: #文章分类目录，可以为空，注意:后面有个空格&lt;br&gt;tags: #文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格&lt;/p&gt;
+&lt;h2 id=&quot;description-你对本页的描述-选加&quot;&gt;&lt;a href=&quot;#description-你对本页的描述-选加&quot; class=&quot;headerlink&quot; title=&quot;description: 你对本页的描述 #选加&quot;&gt;&lt;/a&gt;description: 你对本页的描述 #选加&lt;/h2&gt;&lt;p&gt;摘要的写法&lt;/p&gt;
+&lt;p&gt;以上是摘要&lt;br&gt;&lt;a id=&quot;more&quot;&gt;&lt;/a&gt;以下是余下全文&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;这里开始使用markdown格式输入你的正文.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;标题&lt;br&gt;Setext形式&lt;/p&gt;
+&lt;h1 id=&quot;1，This-is-an-H1&quot;&gt;&lt;a href=&quot;#1，This-is-an-H1&quot; class=&quot;headerlink&quot; title=&quot;1，This is an H1&quot;&gt;&lt;/a&gt;1，This is an H1&lt;/h1&gt;&lt;h2 id=&quot;2，This-is-an-H2&quot;&gt;&lt;a href=&quot;#2，This-is-an-H2&quot; class=&quot;headerlink&quot; title=&quot;2，This is an H2&quot;&gt;&lt;/a&gt;2，This is an H2&lt;/h2&gt;&lt;p&gt;Atx形式&lt;/p&gt;
+&lt;h1 id=&quot;这是h1&quot;&gt;&lt;a href=&quot;#这是h1&quot; class=&quot;headerlink&quot; title=&quot;这是h1&quot;&gt;&lt;/a&gt;这是h1&lt;/h1&gt;&lt;h2 id=&quot;这是h2&quot;&gt;&lt;a href=&quot;#这是h2&quot; class=&quot;headerlink&quot; title=&quot;这是h2&quot;&gt;&lt;/a&gt;这是h2&lt;/h2&gt;&lt;h6 id=&quot;这是h6&quot;&gt;&lt;a href=&quot;#这是h6&quot; class=&quot;headerlink&quot; title=&quot;这是h6&quot;&gt;&lt;/a&gt;这是h6&lt;/h6&gt;&lt;hr&gt;
+&lt;p&gt;区块引用 Blockquotes&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote with two paragraphs. Lorem ipsum dolor sit amet,&lt;br&gt;consectetuer adipiscing elit. Aliquam hendrerit mi posuere lectus.&lt;br&gt;Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.&lt;/p&gt;
+&lt;p&gt;Donec sit amet nisl. Aliquam semper ipsum sit amet velit. Suspendisse&lt;br&gt;id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+&lt;p&gt;This is the first level of quoting.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is nested blockquote.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;这是一个标题。&quot;&gt;&lt;a href=&quot;#这是一个标题。&quot; class=&quot;headerlink&quot; title=&quot;这是一个标题。&quot;&gt;&lt;/a&gt;这是一个标题。&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;这是第一行列表项。&lt;/li&gt;
+&lt;li&gt;这是第二行列表项。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;给出一些例子代码：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;return shell_exec(&amp;quot;echo $input | $markdown_script&amp;quot;);
+&lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;p&gt;#列表&lt;/p&gt;
+&lt;p&gt;无序列表使用星号、加号或是减号作为列表标记：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Red&lt;/li&gt;
+&lt;li&gt;Green&lt;/li&gt;
+&lt;li&gt;Blue&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;有序列表则使用数字接着一个英文句点：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Bird&lt;/li&gt;
+&lt;li&gt;McHale&lt;/li&gt;
+&lt;li&gt;Parish&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;This is a list item with two paragraphs. Lorem ipsum dolor&lt;br&gt;sit amet, consectetuer adipiscing elit. Aliquam hendrerit&lt;br&gt;mi posuere lectus.&lt;/p&gt;
+&lt;p&gt;Vestibulum enim wisi, viverra nec, fringilla in, laoreet &lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Suspendisse id sem consectetuer libero luctus adipiscing.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果要在列表项目内放进引用，那 &amp;gt; 就需要缩进；如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;A list item with a blockquote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;This is a blockquote&lt;br&gt;inside a list item.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;一列表项包含一个列表区块：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;代码写在这&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;行首出现数字-句点-空白，要避免这样的状况，你可以在句点前面加上反斜杠&lt;/p&gt;
+&lt;p&gt;1986. What a great season.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;代码区块&lt;/p&gt;
+&lt;p&gt;要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以&lt;/p&gt;
+&lt;p&gt;这是一个普通段落：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;这是一个代码区块。
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这个每行一阶的缩进（4 个空格或是 1 个制表符），都会被移除，代码区块中不需要处理转义字符，Markdown会帮你处理&lt;/p&gt;
+&lt;p&gt;Here is an example of AppleScript:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;tell application &amp;quot;Foo&amp;quot;
+    beep
+end tell
+&amp;lt;div class=&amp;quot;footer&amp;quot;&amp;gt;
+    &amp;amp;copy; 2004 Foo Corporation
+&amp;lt;/div&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;#分割线&lt;/p&gt;
+&lt;p&gt;你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格&lt;/p&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;区段元素&quot;&gt;&lt;a href=&quot;#区段元素&quot; class=&quot;headerlink&quot; title=&quot;区段元素&quot;&gt;&lt;/a&gt;区段元素&lt;/h1&gt;&lt;h2 id=&quot;链接&quot;&gt;&lt;a href=&quot;#链接&quot; class=&quot;headerlink&quot; title=&quot;链接&quot;&gt;&lt;/a&gt;链接&lt;/h2&gt;&lt;p&gt;行内式链接：只要在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可 &lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&quot;http://example.com/&quot; title=&quot;Title&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;an example&lt;/a&gt; inline link.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://example.net/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;This link&lt;/a&gt; has no title attribute.&lt;/p&gt;
+&lt;p&gt;如果你是要链接到同样主机的资源，你可以使用相对路径：&lt;/p&gt;
+&lt;p&gt;See my &lt;a href=&quot;/about/&quot;&gt;About&lt;/a&gt; page for details.&lt;/p&gt;
+&lt;p&gt;参考式链接，是在链接文字的括号后面再接上另一个方括号，而在第二个方括号里面要填入用以辨识链接的标记&lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&quot;url/to/image&quot; title=&quot;Optional title attribute&quot;&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
+&lt;p&gt;This is &lt;a href=&quot;url/to/image&quot; title=&quot;Optional title attribute&quot;&gt;an example&lt;/a&gt; reference-style link.&lt;/p&gt;
+&lt;p&gt;当然你需要在文件的任意处，定义这个标记的链接内容&lt;/p&gt;
+&lt;p&gt;链接内容定义的形式为：&lt;/p&gt;
+&lt;p&gt;方括号（前面可以选择性地加上至多三个空格来缩进），里面输入链接文字&lt;br&gt;接着一个冒号&lt;br&gt;接着一个以上的空格或制表符&lt;br&gt;接着链接的网址&lt;br&gt;选择性地接着 title 内容，可以用单引号、双引号或是括弧包着&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[id]: &amp;lt;http://example.com/&amp;gt;  &amp;quot;Optional Title Here&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;链接的定义可以放在文件中的任何一个地方，我比较偏好直接放在链接出现段落的后面，你也可以把它放在文件最后面，就像是注解一样。&lt;/p&gt;
+&lt;p&gt;I get 10 times more traffic from &lt;a href=&quot;http://google.com/&quot; title=&quot;Google&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Google&lt;/a&gt; than from&lt;br&gt;&lt;a href=&quot;http://search.yahoo.com/&quot; title=&quot;Yahoo Search&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Yahoo&lt;/a&gt; or &lt;a href=&quot;http://search.msn.com/&quot; title=&quot;MSN Search&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;MSN&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;在新窗口打开的链接&lt;br&gt;&lt;a href=&quot;http://blog.fbzl.org&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;我的博客&lt;/a&gt;{:target=”_blank”}&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;#强调&lt;/p&gt;
+&lt;p&gt;Markdown 使用星号（&lt;em&gt;）和底线（_）作为标记强调字词的符号，被 &lt;/em&gt; 或 &lt;em&gt; 包围的字词会被转成用 &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt; 标签包围，用两个 * 或 &lt;/em&gt; 包起来的话，则会被转成&lt;code&gt;&amp;lt;strong&amp;gt;&lt;/code&gt;，例如：&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;single asterisks&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;single underscores&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double asterisks&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;double underscores&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;强调也可以直接插在文字中间,如果你的 * 和 _ 两边都有空白的话，它们就只会被当成普通的符号.&lt;/p&gt;
+&lt;p&gt;如果要在文字前后直接插入普通的星号或底线，你可以用反斜线：&lt;/p&gt;
+&lt;p&gt;*this text is surrounded by literal asterisks*&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;#删除线&lt;/p&gt;
+&lt;p&gt;&lt;del&gt;Mistaken text.&lt;/del&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;#代码&lt;/p&gt;
+&lt;p&gt;如果要标记一小段行内代码，你可以用反引号把它包起来（`），例如:&lt;br&gt;Use the &lt;code&gt;printf()&lt;/code&gt; function.&lt;/p&gt;
+&lt;p&gt;如果要在代码区段内插入反引号，你可以用多个反引号来开启和结束代码区段：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;There is a literal backtick (`) here.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;在代码区段内，&amp;amp; 和尖括号都会被自动地转成 HTML 实体，这使得插入 HTML 原始码变得很容易，Markdown 会把下面这段：&lt;/p&gt;
+&lt;p&gt;Please don’t use any &lt;code&gt;&amp;lt;blink&amp;gt;&lt;/code&gt; tags.&lt;/p&gt;
+&lt;p&gt;代码块，HTML语言最好加上类型html,这样可以更好的高亮语法，且有行号：&lt;/p&gt;
+&lt;figure class=&quot;highlight html&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;function test() &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;  console.log(&quot;notice the blank line before this function?&quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&lt;span class=&quot;tag&quot;&gt;&amp;lt;&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;attr&quot;&gt;href&lt;/span&gt;=&lt;span class=&quot;string&quot;&gt;&quot;###&quot;&lt;/span&gt;&amp;gt;&lt;/span&gt;2eqweadScz&lt;span class=&quot;tag&quot;&gt;&amp;lt;/&lt;span class=&quot;name&quot;&gt;a&lt;/span&gt;&amp;gt;&lt;/span&gt;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+&lt;hr&gt;
+&lt;p&gt;#图片&lt;/p&gt;
+&lt;p&gt;行内式的图片语法看起来像是：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/path/to/img.jpg&quot; alt=&quot;Alt text&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/path/to/img.jpg&quot; alt=&quot;Alt text&quot; title=&quot;Optional title&quot;&gt;&lt;/p&gt;
+&lt;p&gt;详细叙述如下：&lt;/p&gt;
+&lt;p&gt;一个惊叹号 !&lt;br&gt;接着一个方括号，里面放上图片的替代文字&lt;br&gt;接着一个普通括号，里面放上图片的网址，最后还可以用引号包住并加上 选择性的 ‘title’ 文字。&lt;/p&gt;
+&lt;p&gt;参考式的图片语法则长得像这样：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;url/to/image&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot;&gt;&lt;br&gt;「id」是图片参考的名称，图片参考的定义方式则和连结参考一样：&lt;/p&gt;
+&lt;p&gt;到目前为止， Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 &lt;code&gt;&amp;lt;img&amp;gt;&lt;/code&gt; 标签&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;#自动链接&lt;/p&gt;
+&lt;p&gt;Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用尖括号包起来， Markdown 就会自动把它转成链接&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;反斜杠&lt;/p&gt;
+&lt;p&gt;Markdown 可以利用反斜杠来插入一些在语法中有其它意义的符号，例如：如果你想要用星号加在文字旁边的方式来做出强调效果（但不用 &lt;code&gt;&amp;lt;em&amp;gt;&lt;/code&gt;标签），你可以在星号的前面加上反斜杠：&lt;/p&gt;
+&lt;p&gt;*literal asterisks*&lt;br&gt;Markdown 支持以下这些符号前面加上反斜杠来帮助插入普通的符号：&lt;/p&gt;
+&lt;p&gt;\   反斜线&lt;br&gt;`   反引号&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;星号&lt;br&gt;_   底线&lt;br&gt;{}  花括号&lt;br&gt;[]  方括号&lt;br&gt;()  括弧&lt;br&gt;#   井字号&lt;br&gt;+   加号&lt;br&gt;-   减号&lt;br&gt;.   英文句点&lt;br&gt;!   惊叹号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;如何生成表格&lt;/p&gt;
+&lt;p&gt;You can create tables by assembling a list of words and dividing them with hyphens - (for the first row), and then separating each column with a pipe |:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For aesthetic purposes, you can also add extra pipes on the ends:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;First Header&lt;/th&gt;
+&lt;th&gt;Second Header&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;td&gt;Content Cell&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Note that the dashes at the top don’t need to match the length of the header text exactly:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Help&lt;/td&gt;
+&lt;td&gt;Display the help window.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Close&lt;/td&gt;
+&lt;td&gt;Closes a window&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;You can also include inline Markdown such as links, bold, italics, or strikethrough:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Name&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Help&lt;/td&gt;
+&lt;td&gt;&lt;del&gt;Display the&lt;/del&gt; help window.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Close&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Closes&lt;/em&gt; a window&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Finally, by including colons : within the header row, you can define text to be left-aligned, right-aligned, or center-aligned:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;Left-Aligned&lt;/th&gt;
+&lt;th style=&quot;text-align:center&quot;&gt;Center Aligned&lt;/th&gt;
+&lt;th style=&quot;text-align:right&quot;&gt;Right Aligned&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;col 3 is&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;some wordy text&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$1600&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;col 2 is&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;centered&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$12&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;zebra stripes&lt;/td&gt;
+&lt;td style=&quot;text-align:center&quot;&gt;are neat&lt;/td&gt;
+&lt;td style=&quot;text-align:right&quot;&gt;$1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;这是另一个普通段落&lt;/p&gt;
+&lt;hr&gt;
+</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;#如果不想让hexo处理你的文件，可以在文件头中加入layout: false&lt;br&gt;title: postName #文章页面上的显示名称，可以任意修改，不会出现在URL中&lt;br&gt;date: 2014-05-16 15:30:16 #文章生成时间，一般不改，当然也可以任意修改&lt;br&gt;categories: #文章分类目录，可以为空，注意:后面有个空格&lt;br&gt;tags: #文章标签，可空，多标签请用格式[tag1,tag2,tag3]，注意:后面有个空格&lt;/p&gt;
+&lt;h2 id=&quot;description-你对本页的描述-选加&quot;&gt;&lt;a href=&quot;#description-你对本页的描述-选加&quot; class=&quot;headerlink&quot; title=&quot;description: 你对本页的描述 #选加&quot;&gt;&lt;/a&gt;description: 你对本页的描述 #选加&lt;/h2&gt;&lt;p&gt;摘要的写法&lt;/p&gt;
+&lt;p&gt;以上是摘要&lt;br&gt;
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://seifzhang.jerrychia.com/categories/Hexo/"/>
+    
+    
+      <category term="Hexo" scheme="http://seifzhang.jerrychia.com/tags/Hexo/"/>
     
   </entry>
   

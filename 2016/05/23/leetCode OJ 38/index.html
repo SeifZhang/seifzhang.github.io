@@ -4,15 +4,14 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Coding19_Remove Nth Node From End of List | SeifZhang&#39;s Blog</title>
+    <title>Coding38_Count and Say | SeifZhang&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="SeifZhang">
     
     <meta name="description" content="Algorithm Description
-Given a linked list, remove the nth node from the end of list and return its head.
-For example:
-Given linked list: 1-&amp;gt;2-&amp;gt;3">
+The count-and-say sequence is the sequence of integers beginning as follows:1, 11, 21, 1211, 111221, …
+1 is read off as “one 1” ">
     
     
     
@@ -85,7 +84,7 @@ var _hmt = _hmt || [];
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/05/23/leetCode OJ 38/" title="Coding19_Remove Nth Node From End of List" itemprop="url">Coding19_Remove Nth Node From End of List</a>
+      <a href="/2016/05/23/leetCode OJ 38/" title="Coding38_Count and Say" itemprop="url">Coding38_Count and Say</a>
   </h1>
   <p class="article-author">By
     
@@ -93,7 +92,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-05-23T02:54:59.000Z" itemprop="datePublished">2016-05-23</time>
-    Updated:<time datetime="2016-05-23T11:18:40.956Z" itemprop="dateModified">2016-05-23</time>
+    Updated:<time datetime="2016-05-30T07:46:35.167Z" itemprop="dateModified">2016-05-30</time>
     
   </p>
 </header>
@@ -106,12 +105,9 @@ var _hmt = _hmt || [];
 		</div>
 		
 		<h2 id="Algorithm-Description"><a href="#Algorithm-Description" class="headerlink" title="Algorithm Description"></a>Algorithm Description</h2><blockquote>
-<p>Given a linked list, remove the nth node from the end of list and return its head.</p>
-<p>For example:</p>
-<pre><code>Given linked list: 1-&gt;2-&gt;3-&gt;4-&gt;5, and n = 2.
-
-mAfter removing the second node from the end, the linked list becomes 1-&gt;2-&gt;3-5.
-</code></pre><p><strong>Note:</strong><br>Given n will always be valid.<br>Try to do this in one pass.</p>
+<p>The count-and-say sequence is the sequence of integers beginning as follows:<br>1, 11, 21, 1211, 111221, …</p>
+<p>1 is read off as “one 1” or 11.<br>11 is read off as “two 1s” or 21.<br>21 is read off as “one 2, then one 1” or 1211.<br>Given an integer n, generate the nth sequence.</p>
+<p><strong>Note</strong>: The sequence of integers will be represented as a string.</p>
 </blockquote>
 <hr>
 <h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
@@ -120,7 +116,7 @@ mAfter removing the second node from the end, the linked list becomes 1-&gt;2-&g
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/LinkedList/">LinkedList</a><a href="/tags/Two-Pointers/">Two Pointers</a>
+  <span></span> <a href="/tags/String/">String</a>
   </div>
 
 
@@ -133,7 +129,7 @@ mAfter removing the second node from the end, the linked list becomes 1-&gt;2-&g
 
 <div class="article-share" id="share">
 
-  <div data-url="http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 38/" data-title="Coding19_Remove Nth Node From End of List | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
+  <div data-url="http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 38/" data-title="Coding38_Count and Say | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -142,11 +138,19 @@ mAfter removing the second node from the end, the linked list becomes 1-&gt;2-&g
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2016/05/23/leetCode OJ 28/" title="Coding28_Implement strStr()">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  Coding28_Implement strStr()</span>
+</a>
+</div>
+
 
 <div class="next">
-<a href="/2016/05/23/leetCode OJ 21/"  title="Coding21_Merge Two Sorted Lists">
+<a href="/2016/05/23/leetCode OJ 27/"  title="Coding27_Remove Element">
  <strong>NEXT:</strong><br/> 
- <span>Coding21_Merge Two Sorted Lists
+ <span>Coding27_Remove Element
 </span>
 </a>
 </div>
@@ -155,7 +159,7 @@ mAfter removing the second node from the end, the linked list becomes 1-&gt;2-&g
 
 	
 <section class="comment">
-	<div class="ds-thread" data-thread-key="2016/05/23/leetCode OJ 38/" data-title="Coding19_Remove Nth Node From End of List" data-url="http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 38/"></div>
+	<div class="ds-thread" data-thread-key="2016/05/23/leetCode OJ 38/" data-title="Coding38_Count and Say" data-url="http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 38/"></div>
 	<!-- Duoshuo Comment START -->  
 	<script type="text/javascript">
 	var duoshuoQuery = {short_name:"jerrychia"};
@@ -203,19 +207,23 @@ mAfter removing the second node from the end, the linked list becomes 1-&gt;2-&g
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Array/" title="Array">Array<sup>1</sup></a></li>
+			<li><a href="/tags/Array/" title="Array">Array<sup>4</sup></a></li>
+		
+			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>1</sup></a></li>
 		
 			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>2</sup></a></li>
 		
 			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
 		
-			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>13</sup></a></li>
+			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>4</sup></a></li>
 		
-			<li><a href="/tags/Math/" title="Math">Math<sup>4</sup></a></li>
+			<li><a href="/tags/Math/" title="Math">Math<sup>6</sup></a></li>
 		
-			<li><a href="/tags/String/" title="String">String<sup>6</sup></a></li>
+			<li><a href="/tags/Stack/" title="Stack">Stack<sup>1</sup></a></li>
 		
-			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>11</sup></a></li>
+			<li><a href="/tags/String/" title="String">String<sup>10</sup></a></li>
+		
+			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>4</sup></a></li>
 		
 			<li><a href="/tags/博客，文章/" title="博客，文章">博客，文章<sup>1</sup></a></li>
 		
@@ -236,23 +244,23 @@ mAfter removing the second node from the end, the linked list becomes 1-&gt;2-&g
   <ul class="entry">
     
       <li>
-        <a href="/2016/05/23/leetCode OJ 38/">Coding19_Remove Nth Node From End of List</a>
+        <a href="/2016/05/30/leetCode OJ 1/">Coding6_Two Sum</a>
       </li>
     
       <li>
-        <a href="/2016/05/23/leetCode OJ 21/">Coding21_Merge Two Sorted Lists</a>
+        <a href="/2016/05/30/leetCode OJ 6/">Coding6_ZigZag Conversion</a>
       </li>
     
       <li>
-        <a href="/2016/05/23/leetCode OJ 83/">Coding19_Remove Nth Node From End of List</a>
+        <a href="/2016/05/30/leetCode OJ 7/">Coding1_Reverse Integer</a>
       </li>
     
       <li>
-        <a href="/2016/05/23/leetCode OJ 14/">Coding19_Remove Nth Node From End of List</a>
+        <a href="/2016/05/30/leetCode OJ 8/">Coding1_String to Integer (atoi)</a>
       </li>
     
       <li>
-        <a href="/2016/05/23/leetCode OJ 19/">Coding19_Remove Nth Node From End of List</a>
+        <a href="/2016/05/30/leetCode OJ 9/">Coding9_Palindrome Number</a>
       </li>
     
   </ul>

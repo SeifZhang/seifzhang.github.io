@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-05-23T11:46:16.197Z</updated>
+  <updated>2016-05-23T11:18:40.956Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -16,139 +16,9 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Coding36_Valid Sudoku</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2036/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 36/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T11:46:16.197Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.&lt;/p&gt;
-&lt;p&gt;The Sudoku board could be partially filled, where empty cells are filled with the character ‘.’.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://seifzhang.jerrychia.com/img/lt36.png&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot;&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A partially filled sudoku which is valid.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:&lt;br&gt;A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding6_ZigZag Conversion</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%209/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 9/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T10:41:40.116Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;The string “PAYPALISHIRING” is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;P   A   H   N
-A P L S I I G
-Y   I   R
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;p&gt;And then read line by line: “PAHNAPLSIIGYIR”&lt;br&gt;Write the code that will take a string and make this conversion given a number of rows:&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;pre&gt;&lt;code&gt;string convert(string text, int nRows);
-&lt;/code&gt;&lt;/pre&gt;&lt;blockquote&gt;
-&lt;p&gt;convert(“PAYPALISHIRING”, 3) should return “PAHNAPLSIIGYIR”.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Coding19_Remove Nth Node From End of List</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2019/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 19/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T11:18:40.956Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a linked list, remove the nth node from the end of list and return its head.&lt;/p&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, and n = 2.
-
-mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;2-&amp;gt;3-5.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;Given n will always be valid.&lt;br&gt;Try to do this in one pass.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
-    
-      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding13_ Roman to Integer</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2013/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 13/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T10:48:11.064Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a roman numeral, convert it to an integer.&lt;/p&gt;
-&lt;p&gt;Input is guaranteed to be within the range from 1 to 3999.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
-    
-      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding19_Remove Nth Node From End of List</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2014/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 14/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2038/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 38/</id>
     <published>2016-05-23T02:54:59.000Z</published>
     <updated>2016-05-23T11:18:40.956Z</updated>
     
@@ -201,6 +71,105 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
     
     
       <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding19_Remove Nth Node From End of List</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2083/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 83/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-23T11:18:40.956Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given a linked list, remove the nth node from the end of list and return its head.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, and n = 2.
+
+mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;2-&amp;gt;3-5.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;Given n will always be valid.&lt;br&gt;Try to do this in one pass.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
+    
+      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding19_Remove Nth Node From End of List</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2014/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 14/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-23T11:18:40.956Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given a linked list, remove the nth node from the end of list and return its head.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, and n = 2.
+
+mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;2-&amp;gt;3-5.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;Given n will always be valid.&lt;br&gt;Try to do this in one pass.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
+    
+      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding19_Remove Nth Node From End of List</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2019/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 19/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-23T11:18:40.956Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given a linked list, remove the nth node from the end of list and return its head.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;Given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, and n = 2.
+
+mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;2-&amp;gt;3-5.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;Given n will always be valid.&lt;br&gt;Try to do this in one pass.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
+    
+      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
     
   </entry>
   
@@ -267,8 +236,8 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   
   <entry>
     <title>Coding19_Remove Nth Node From End of List</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2088/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 88/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2026/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 26/</id>
     <published>2016-05-23T02:54:59.000Z</published>
     <updated>2016-05-23T11:18:40.956Z</updated>
     
@@ -299,19 +268,15 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
-    <title>Coding19_Remove Nth Node From End of List</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2026/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 26/</id>
+    <title>Coding13_ Roman to Integer</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2013/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 13/</id>
     <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T11:18:40.956Z</updated>
+    <updated>2016-05-23T10:48:11.064Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a linked list, remove the nth node from the end of list and return its head.&lt;/p&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, and n = 2.
-
-mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;2-&amp;gt;3-5.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;Given n will always be valid.&lt;br&gt;Try to do this in one pass.&lt;/p&gt;
+&lt;p&gt;Given a roman numeral, convert it to an integer.&lt;/p&gt;
+&lt;p&gt;Input is guaranteed to be within the range from 1 to 3999.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
@@ -325,9 +290,9 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
     
-      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
     
   </entry>
   
@@ -401,6 +366,38 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
+    <title>Coding36_Valid Sudoku</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2036/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 36/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-23T11:46:16.197Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.&lt;/p&gt;
+&lt;p&gt;The Sudoku board could be partially filled, where empty cells are filled with the character ‘.’.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://seifzhang.jerrychia.com/img/lt36.png&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A partially filled sudoku which is valid.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:&lt;br&gt;A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Coding1_Two Sum</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%201/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 1/</id>
@@ -434,39 +431,6 @@ return [0, 1].
     <title>Coding19_Remove Nth Node From End of List</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2058/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 58/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T11:18:40.956Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a linked list, remove the nth node from the end of list and return its head.&lt;/p&gt;
-&lt;p&gt;For example:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;Given linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5, and n = 2.
-
-mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;2-&amp;gt;3-5.
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;Given n will always be valid.&lt;br&gt;Try to do this in one pass.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
-    
-      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding19_Remove Nth Node From End of List</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2038/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 38/</id>
     <published>2016-05-23T02:54:59.000Z</published>
     <updated>2016-05-23T11:18:40.956Z</updated>
     
@@ -533,6 +497,35 @@ Y   I   R
   </entry>
   
   <entry>
+    <title>Coding67_Add Binary</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2067/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 67/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-23T11:25:20.508Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given two binary strings, return their sum (also a binary string).&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;a = “11”&lt;br&gt;b = “1”&lt;br&gt;Return “100”.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Coding19_Remove Nth Node From End of List</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2066/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 66/</id>
@@ -562,35 +555,6 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
       <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
     
       <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding67_Add Binary</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2067/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 67/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T11:25:20.508Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given two binary strings, return their sum (also a binary string).&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;a = “11”&lt;br&gt;b = “1”&lt;br&gt;Return “100”.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
-    
-      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
     
   </entry>
   
@@ -655,6 +619,42 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
       <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
     
       <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding1_String to Integer (atoi)</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%208/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 8/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-23T07:29:01.335Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Difficulty&lt;/strong&gt;:&lt;br&gt;Easy&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;:&lt;br&gt;Implement atoi to convert a string to an integer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;: Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;: It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Requirements for atoi:&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.&lt;/p&gt;
+&lt;p&gt;The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.&lt;/p&gt;
+&lt;p&gt;If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.&lt;/p&gt;
+&lt;p&gt;If no valid conversion could be performed, a zero value is returned. If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt; (2015-02-10):  &lt;/p&gt;
+&lt;h2 id=&quot;The-signature-of-the-C-function-had-been-updated-If-you-still-see-your-function-signature-accepts-a-const-char-argument-please-click-the-reload-button-to-reset-your-code-definition&quot;&gt;&lt;a href=&quot;#The-signature-of-the-C-function-had-been-updated-If-you-still-see-your-function-signature-accepts-a-const-char-argument-please-click-the-reload-button-to-reset-your-code-definition&quot; class=&quot;headerlink&quot; title=&quot;The signature of the C++ function had been updated. If you still see your function signature accepts a const char * argument, please click the reload button  to reset your code definition.&quot;&gt;&lt;/a&gt;The signature of the C++ function had been updated. If you still see your function signature accepts a const char * argument, please click the reload button  to reset your code definition.&lt;/h2&gt;&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
     
   </entry>
   

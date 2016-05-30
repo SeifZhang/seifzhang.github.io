@@ -4,14 +4,16 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%207/</loc>
-    <lastmod>2016-05-30T08:29:32.633Z</lastmod>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%201/</loc>
+    <lastmod>2016-05-30T08:38:34.692Z</lastmod>
     <data>
         <display>
-        <title>Coding1_Reverse Integer</title>
-        <pubTime>2016-05-30T02:54:59.000Z</pubTime>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
         
-        <tag>Math</tag>
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
          
          
            
@@ -25,10 +27,10 @@
     
   <url>
     <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%208/</loc>
-    <lastmod>2016-05-30T08:29:24.710Z</lastmod>
+    <lastmod>2016-05-30T08:38:24.095Z</lastmod>
     <data>
         <display>
-        <title>Coding1_String to Integer (atoi)</title>
+        <title>Coding8_String to Integer (atoi)</title>
         <pubTime>2016-05-30T02:54:59.000Z</pubTime>
         
         <tag>String</tag>
@@ -46,14 +48,14 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%206/</loc>
-    <lastmod>2016-05-30T08:29:23.266Z</lastmod>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%207/</loc>
+    <lastmod>2016-05-30T08:37:44.726Z</lastmod>
     <data>
         <display>
-        <title>Coding6_ZigZag Conversion</title>
+        <title>Coding7_Reverse Integer</title>
         <pubTime>2016-05-30T02:54:59.000Z</pubTime>
         
-        <tag>String</tag>
+        <tag>Math</tag>
          
          
            
@@ -67,7 +69,7 @@
     
   <url>
     <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%209/</loc>
-    <lastmod>2016-05-30T08:29:17.591Z</lastmod>
+    <lastmod>2016-05-30T08:31:52.194Z</lastmod>
     <data>
         <display>
         <title>Coding9_Palindrome Number</title>
@@ -86,16 +88,14 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%201/</loc>
-    <lastmod>2016-05-30T07:53:45.485Z</lastmod>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%206/</loc>
+    <lastmod>2016-05-30T08:31:50.390Z</lastmod>
     <data>
         <display>
-        <title>Coding6_Two Sum</title>
-        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        <title>Coding6_ZigZag Conversion</title>
+        <pubTime>2016-05-30T02:54:59.000Z</pubTime>
         
-        <tag>Array</tag>
-         
-        <tag>Hash Table</tag>
+        <tag>String</tag>
          
          
            
@@ -263,9 +263,9 @@
         <title>Coding66_ Plus One</title>
         <pubTime>2016-05-23T02:54:59.000Z</pubTime>
         
-        <tag>Array</tag>
-         
         <tag>Math</tag>
+         
+        <tag>Array</tag>
          
          
            

@@ -14,7 +14,8 @@ Given a roman numeral, convert it to an integer.
 Input is guaranteed to be within the range from 1 to 3999.
 
 
-My Algorithmidea:c">
+My Algorithmidea:
+">
     
     
     
@@ -52,7 +53,7 @@ var _hmt = _hmt || [];
 			
 			<div id="textlogo">
 				<h1 class="site-name"><a href="/" title="SeifZhang&#39;s Blog">SeifZhang&#39;s Blog</a></h1>
-				<h2 class="blog-motto">My Blog,My Zone!</h2>
+				<h2 class="blog-motto">A girl，just a simple girl!</h2>
 			</div>
 			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
@@ -95,7 +96,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-05-23T02:54:59.000Z" itemprop="datePublished">2016-05-23</time>
-    更新日期:<time datetime="2016-05-23T10:48:11.064Z" itemprop="dateModified">2016-05-23</time>
+    更新日期:<time datetime="2016-06-01T00:47:55.999Z" itemprop="dateModified">2016-06-01</time>
     
   </p>
 </header>
@@ -112,7 +113,55 @@ var _hmt = _hmt || [];
 <p>Input is guaranteed to be within the range from 1 to 3999.</p>
 </blockquote>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
+<p>罗马数字共有七个，即I(1)，V(5)，X(10)，L(50)，C(100)，D(500)，M(1000)。按照下面的规则可以表示任意正整数。</p>
+<p>重复数次：一个罗马数字重复几次，就表示这个数的几倍。<br>右加左减：在一个较大的罗马数字的右边记上一个较小的罗马数字，表示大数字加小数字。在一个较大的数字的左边记上一个较小的罗马数字，表示大数字减小数字。但是，左减不能跨越等级。比如，99不可以用IC表示，用XCIX表示。<br>加线乘千：在一个罗马数字的上方加上一条横线或者在右下方写M，表示将这个数字乘以1000，即是原数的1000倍。同理，如果上方有两条横线，即是原数的1000000倍。<br>单位限制：同样单位只能出现3次，如40不能表示为XXXX，而要表示为XL。 </p>
+<p>   MCXIV—-1114<br>   CCCLIX—359</p>
+</blockquote>
+<hr>
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>  public class Solution {
+       public static int romanToInt(String s) {
+        if (null == s || s.trim().length() == 0)
+            return 0;
+        s = s.trim();// 去除空格
+        char[] cstr = s.toCharArray();
+        int sum = 0;
+        for (int i = 0; i &lt; cstr.length-1; i++) {
+            int cur = romanToValue(cstr[i]);
+            int next = romanToValue(cstr[i + 1]);
+            if (cur &gt;= next) {
+                sum += cur;
+            } else {
+                sum -= cur;
+            }
+        }
+        sum += romanToValue(cstr[cstr.length - 1]);
+        return sum;
+
+    }
+    //罗马数字与整数的对应
+    private static int romanToValue(char c) {
+        switch (c) {
+        case &apos;I&apos;:
+            return 1;
+        case &apos;V&apos;:
+            return 5;
+        case &apos;X&apos;:
+            return 10;
+        case &apos;L&apos;:
+            return 50;
+        case &apos;C&apos;:
+            return 100;
+        case &apos;D&apos;:
+            return 500;
+        case &apos;M&apos;:
+            return 1000;
+        default:
+            return 0;
+        }
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -141,18 +190,18 @@ var _hmt = _hmt || [];
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2016/05/23/leetCode OJ 58/" title="Coding58_Length of Last Word">
+ <a href="/2016/05/23/leetCode OJ 28/" title="Coding28_Implement strStr()">
   <strong>PREVIOUS:</strong><br/>
   <span>
-  Coding58_Length of Last Word</span>
+  Coding28_Implement strStr()</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2016/05/23/leetCode OJ 66/"  title="Coding66_ Plus One">
+<a href="/2016/05/23/leetCode OJ 38/"  title="Coding38_Count and Say">
  <strong>NEXT:</strong><br/> 
- <span>Coding66_ Plus One
+ <span>Coding38_Count and Say
 </span>
 </a>
 </div>
@@ -236,7 +285,7 @@ var _hmt = _hmt || [];
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">22</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
 
@@ -246,11 +295,11 @@ var _hmt = _hmt || [];
   <ul class="entry">
     
       <li>
-        <a href="/2016/05/30/leetCode OJ 1/">Coding1_Two Sum</a>
+        <a href="/2016/06/01/leetCode OJ 8/">Coding8_String to Integer (atoi)</a>
       </li>
     
       <li>
-        <a href="/2016/05/30/leetCode OJ 7/">Coding7_Reverse Integer</a>
+        <a href="/2016/05/30/leetCode OJ 1/">Coding1_Two Sum</a>
       </li>
     
       <li>
@@ -262,7 +311,7 @@ var _hmt = _hmt || [];
       </li>
     
       <li>
-        <a href="/2016/05/30/leetCode OJ 8/">Coding8_String to Integer (atoi)</a>
+        <a href="/2016/05/30/leetCode OJ 7/">Coding7_Reverse Integer</a>
       </li>
     
   </ul>

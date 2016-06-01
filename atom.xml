@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
   <title>SeifZhang&#39;s Blog</title>
-  <subtitle>My Blog,My Zone!</subtitle>
+  <subtitle>A girl，just a simple girl!</subtitle>
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-05-30T08:38:34.692Z</updated>
+  <updated>2016-06-01T00:46:34.246Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -16,11 +16,90 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Coding8_String to Integer (atoi)</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/01/leetCode%20OJ%208/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/01/leetCode OJ 8/</id>
+    <published>2016-06-01T02:54:59.000Z</published>
+    <updated>2016-06-01T00:46:34.246Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;:&lt;br&gt;Implement atoi to convert a string to an integer.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;: Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;: It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Requirements for atoi:&lt;/em&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.&lt;/p&gt;
+&lt;p&gt;The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.&lt;/p&gt;
+&lt;p&gt;If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.&lt;/p&gt;
+&lt;p&gt;If no valid conversion could be performed, a zero value is returned. If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;把字符串转换成一个整数&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“+0012HY”  return +12&lt;br&gt;“__ + __ 1A”  return +1&lt;br&gt;“__ - __ 1A”  return -1&lt;br&gt;“ABC+0125” return 0（错误返回0）&lt;br&gt;就是从前往后查找遇到的第一个数字&lt;br&gt;&lt;strong&gt;引用了别人的想法！！！&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;convert String to char array&lt;/li&gt;
+&lt;li&gt;judge the first character&lt;/li&gt;
+&lt;li&gt;convert one after another&lt;/li&gt;
+&lt;li&gt;judge if overflow&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public static int myAtoi(String str) {
+            str = str.trim();
+            char[] ch = str.toCharArray();
+            if (ch.length == 0) {
+                return 0;
+            }
+            int i = 0;
+            boolean isM = false;
+            if (ch[0] == &amp;apos;+&amp;apos;) {
+                i++;
+            } else if (ch[0] == &amp;apos;-&amp;apos;) {
+                isM = true;
+                i++;
+            } else if (!(ch[0] &amp;gt;= &amp;apos;0&amp;apos; &amp;amp;&amp;amp; ch[0] &amp;lt;= &amp;apos;9&amp;apos;)) {
+                return 0;
+            }
+            long result = 0;
+            while (i &amp;lt; ch.length &amp;amp;&amp;amp; ch[i] &amp;gt;= &amp;apos;0&amp;apos; &amp;amp;&amp;amp; ch[i] &amp;lt;= &amp;apos;9&amp;apos;) {
+                result = result * 10 + ch[i++] - &amp;apos;0&amp;apos;;
+                if (result &amp;gt;= Integer.MAX_VALUE) {
+                    if (isM) {
+                        if (result &amp;gt; Integer.MAX_VALUE) {
+                            return Integer.MIN_VALUE;
+                        }
+                    } else {
+                        return Integer.MAX_VALUE;
+                    }
+                }
+            }
+            return isM ? (int) (0 - result) : (int) result;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Coding1_Two Sum</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%201/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 1/</id>
     <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-05-30T08:38:34.692Z</updated>
+    <updated>2016-06-01T00:47:23.914Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
 &lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
@@ -29,7 +108,23 @@
 &lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -47,42 +142,11 @@
   </entry>
   
   <entry>
-    <title>Coding7_Reverse Integer</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%207/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 7/</id>
-    <published>2016-05-30T02:54:59.000Z</published>
-    <updated>2016-05-30T08:37:44.726Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;:&lt;br&gt;Reverse digits of an integer.&lt;br&gt;    Example1: x = 123, return 321&lt;br&gt;    Example2: x = -123, return -321&lt;/p&gt;
-&lt;p&gt;Have you thought about this?&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Here are some good questions to ask before coding. Bonus points for you if you have already thought through this!&lt;/p&gt;
-&lt;p&gt;If the integer’s last digit is 0, what should the output be? ie, cases such as 10, 100.&lt;/p&gt;
-&lt;p&gt;Did you notice that the reversed integer might overflow? Assume the input is a 32-bit integer, then the reverse of 1000000003 overflows. How should you handle such cases?&lt;/p&gt;
-&lt;p&gt;For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Coding9_Palindrome Number</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%209/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 9/</id>
     <published>2016-05-30T02:54:59.000Z</published>
-    <updated>2016-05-30T08:31:52.194Z</updated>
+    <updated>2016-06-01T00:47:47.199Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Determine whether an integer is a palindrome. Do this without extra space.&lt;/p&gt;
 &lt;blockquote&gt;
@@ -92,7 +156,8 @@
 &lt;p&gt;There is a more generic way of solving this problem.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
     
     <summary type="html">
     
@@ -112,7 +177,7 @@
     <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%206/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 6/</id>
     <published>2016-05-30T02:54:59.000Z</published>
-    <updated>2016-05-30T08:37:49.319Z</updated>
+    <updated>2016-06-01T00:47:33.288Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;The string “PAYPALISHIRING” is written in a zigzag(曲折) pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility)&lt;/p&gt;
@@ -128,7 +193,8 @@ Y   I   R
 &lt;p&gt;convert(“PAYPALISHIRING”, 3) should return “PAHNAPLSIIGYIR”.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
     
     <summary type="html">
     
@@ -144,24 +210,54 @@ Y   I   R
   </entry>
   
   <entry>
-    <title>Coding8_String to Integer (atoi)</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%208/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 8/</id>
+    <title>Coding7_Reverse Integer</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%207/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 7/</id>
     <published>2016-05-30T02:54:59.000Z</published>
-    <updated>2016-05-30T08:38:24.095Z</updated>
+    <updated>2016-05-31T02:09:47.817Z</updated>
     
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;:&lt;br&gt;Implement atoi to convert a string to an integer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;: Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;: It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Requirements for atoi:&lt;/em&gt;&lt;/p&gt;
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;:&lt;br&gt;Reverse digits of an integer.&lt;br&gt;    Example1: x = 123, return 321&lt;br&gt;    Example2: x = -123, return -321&lt;/p&gt;
+&lt;p&gt;Have you thought about this?&lt;/p&gt;
 &lt;blockquote&gt;
-&lt;p&gt;The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.&lt;/p&gt;
-&lt;p&gt;The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.&lt;/p&gt;
-&lt;p&gt;If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.&lt;/p&gt;
-&lt;p&gt;If no valid conversion could be performed, a zero value is returned. If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.&lt;/p&gt;
+&lt;p&gt;Here are some good questions to ask before coding. Bonus points for you if you have already thought through this!&lt;/p&gt;
+&lt;p&gt;If the integer’s last digit is 0, what should the output be? ie, cases such as 10, 100.&lt;/p&gt;
+&lt;p&gt;Did you notice that the reversed integer might overflow? Assume the input is a 32-bit integer, then the reverse of 1000000003 overflows. How should you handle such cases?&lt;/p&gt;
+&lt;p&gt;For the purpose of this problem, assume that your function returns 0 when the reversed integer overflows.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;NOTE:&lt;/strong&gt;&lt;br&gt;1、关于正负号的判断&lt;br&gt;2、末尾数数字为0的数字、输入100   返回1&lt;br&gt;3、int -2147483648～2147483647 翻转后字符串溢出的问题、溢出返回0&lt;br&gt;4、StringBuffer类中有对字符串反转的处理 reverse()&lt;/p&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;  public class Solution {
+    public static int reverse(int x) {
+        boolean flag = true;
+        String a = null;
+        int b = 0;
+        String string = String.valueOf(x);
+        if (x &amp;gt; 0) {
+            StringBuffer sBuffer = new StringBuffer(string);
+            a = sBuffer.reverse().toString();
+        } else if (x &amp;lt; 0) {
+            flag = false;
+            String string2 = string.substring(1);
+            StringBuffer sBuffer = new StringBuffer(string2);
+            a = sBuffer.reverse().toString();
+        }
+        try {
+            b = Integer.parseInt(a);
+        } catch (Exception e) {
+            if (b &amp;gt; 2147483647 || b &amp;lt; -2147483648) {
+                return 0;
+            }
+        }
+        if (flag) {
+            return b;
+        } else {
+            return -b;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
+</content>
     
     <summary type="html">
     
@@ -171,8 +267,6 @@ Y   I   R
     
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
-    
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
     
       <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
     
@@ -183,7 +277,7 @@ Y   I   R
     <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2019/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 19/</id>
     <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T11:18:40.956Z</updated>
+    <updated>2016-06-01T00:48:41.870Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a linked list, remove the nth node from the end of list and return its head.&lt;/p&gt;
@@ -194,7 +288,8 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;Given n will always be valid.&lt;br&gt;Try to do this in one pass.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
     
     <summary type="html">
     
@@ -212,18 +307,19 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
-    <title>Coding19_Remove Nth Node From End of List</title>
+    <title>Coding20_Valid Parentheses</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2020/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 20/</id>
     <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-30T07:46:36.469Z</updated>
+    <updated>2016-06-01T00:48:48.838Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’, determine if the input string is valid.&lt;/p&gt;
 &lt;p&gt;The brackets must close in the correct order, “()” and “()[]{}” are all valid but “(]” and “([)]” are not.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
     
     <summary type="html">
     
@@ -391,23 +487,66 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
-    <title>Coding36_Valid Sudoku</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2036/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 36/</id>
+    <title>Coding13_ Roman to Integer</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2013/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 13/</id>
     <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T11:46:16.197Z</updated>
+    <updated>2016-06-01T00:47:55.999Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.&lt;/p&gt;
-&lt;p&gt;The Sudoku board could be partially filled, where empty cells are filled with the character ‘.’.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://seifzhang.jerrychia.com/img/lt36.png&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot;&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A partially filled sudoku which is valid.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:&lt;br&gt;A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.&lt;/p&gt;
+&lt;p&gt;Given a roman numeral, convert it to an integer.&lt;/p&gt;
+&lt;p&gt;Input is guaranteed to be within the range from 1 to 3999.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;罗马数字共有七个，即I(1)，V(5)，X(10)，L(50)，C(100)，D(500)，M(1000)。按照下面的规则可以表示任意正整数。&lt;/p&gt;
+&lt;p&gt;重复数次：一个罗马数字重复几次，就表示这个数的几倍。&lt;br&gt;右加左减：在一个较大的罗马数字的右边记上一个较小的罗马数字，表示大数字加小数字。在一个较大的数字的左边记上一个较小的罗马数字，表示大数字减小数字。但是，左减不能跨越等级。比如，99不可以用IC表示，用XCIX表示。&lt;br&gt;加线乘千：在一个罗马数字的上方加上一条横线或者在右下方写M，表示将这个数字乘以1000，即是原数的1000倍。同理，如果上方有两条横线，即是原数的1000000倍。&lt;br&gt;单位限制：同样单位只能出现3次，如40不能表示为XXXX，而要表示为XL。 &lt;/p&gt;
+&lt;p&gt;   MCXIV—-1114&lt;br&gt;   CCCLIX—359&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;  public class Solution {
+       public static int romanToInt(String s) {
+        if (null == s || s.trim().length() == 0)
+            return 0;
+        s = s.trim();// 去除空格
+        char[] cstr = s.toCharArray();
+        int sum = 0;
+        for (int i = 0; i &amp;lt; cstr.length-1; i++) {
+            int cur = romanToValue(cstr[i]);
+            int next = romanToValue(cstr[i + 1]);
+            if (cur &amp;gt;= next) {
+                sum += cur;
+            } else {
+                sum -= cur;
+            }
+        }
+        sum += romanToValue(cstr[cstr.length - 1]);
+        return sum;
+
+    }
+    //罗马数字与整数的对应
+    private static int romanToValue(char c) {
+        switch (c) {
+        case &amp;apos;I&amp;apos;:
+            return 1;
+        case &amp;apos;V&amp;apos;:
+            return 5;
+        case &amp;apos;X&amp;apos;:
+            return 10;
+        case &amp;apos;L&amp;apos;:
+            return 50;
+        case &amp;apos;C&amp;apos;:
+            return 100;
+        case &amp;apos;D&amp;apos;:
+            return 500;
+        case &amp;apos;M&amp;apos;:
+            return 1000;
+        default:
+            return 0;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -418,7 +557,9 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
     
   </entry>
   
@@ -480,15 +621,20 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
-    <title>Coding13_ Roman to Integer</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2013/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 13/</id>
+    <title>Coding36_Valid Sudoku</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2036/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 36/</id>
     <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T10:48:11.064Z</updated>
+    <updated>2016-05-23T11:46:16.197Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a roman numeral, convert it to an integer.&lt;/p&gt;
-&lt;p&gt;Input is guaranteed to be within the range from 1 to 3999.&lt;/p&gt;
+&lt;p&gt;Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.&lt;/p&gt;
+&lt;p&gt;The Sudoku board could be partially filled, where empty cells are filled with the character ‘.’.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://seifzhang.jerrychia.com/img/lt36.png&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A partially filled sudoku which is valid.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:&lt;br&gt;A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
@@ -502,9 +648,7 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
-    
-      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
+      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
     
   </entry>
   
@@ -531,9 +675,9 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
       <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
     
   </entry>
   
@@ -567,6 +711,33 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
+    <title>Coding14_Longest Common Prefix</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2014/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 14/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-06-01T00:48:43.422Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Write a function to find the longest common prefix string amongst an array of strings.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Coding70_Climbing Stairs</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2070/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 70/</id>
@@ -590,32 +761,6 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
     
     
       <category term="Dynamic Programming" scheme="http://seifzhang.jerrychia.com/tags/Dynamic-Programming/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding14_Longest Common Prefix</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2014/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 14/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-30T07:46:36.047Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Write a function to find the longest common prefix string amongst an array of strings.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
     
   </entry>
   

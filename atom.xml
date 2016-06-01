@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-01T00:46:34.246Z</updated>
+  <updated>2016-06-01T12:20:29.660Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -14,6 +14,55 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Coding9_Palindrome Number</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/01/leetCode%20OJ%209/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/01/leetCode OJ 9/</id>
+    <published>2016-06-01T02:54:59.000Z</published>
+    <updated>2016-06-01T12:20:29.660Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Determine whether an integer is a palindrome. Do this without extra space.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Some hints:&lt;br&gt;Could negative integers be palindromes? (ie, -1)&lt;/p&gt;
+&lt;p&gt;If you are thinking of converting the integer to string, note the restriction of using extra space.&lt;/p&gt;
+&lt;p&gt;You could also try reversing an integer. However, if you have solved the problem “Reverse Integer”, you know that the reversed integer might overflow. How would you handle such case?&lt;/p&gt;
+&lt;p&gt;There is a more generic way of solving this problem.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;第一个跟最后一个比较，然后i++,j–&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public static boolean isPalindrome(int x) {
+        boolean flag = true;
+        if (x &amp;lt; 0) {
+            flag = false;
+        }
+        String string = String.valueOf(x);
+        // int i=0;
+        int j = string.length() - 1;
+        for (int i = 0; i &amp;lt; string.length() / 2; i++, j--) {
+            if (string.charAt(i) != string.charAt(j)) {
+                flag = false;
+            }
+        }
+        return flag;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
+    
+  </entry>
   
   <entry>
     <title>Coding8_String to Integer (atoi)</title>
@@ -138,37 +187,6 @@
       <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
     
       <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding9_Palindrome Number</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%209/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 9/</id>
-    <published>2016-05-30T02:54:59.000Z</published>
-    <updated>2016-06-01T00:47:47.199Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Determine whether an integer is a palindrome. Do this without extra space.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Some hints:&lt;br&gt;Could negative integers be palindromes? (ie, -1)&lt;/p&gt;
-&lt;p&gt;If you are thinking of converting the integer to string, note the restriction of using extra space.&lt;/p&gt;
-&lt;p&gt;You could also try reversing an integer. However, if you have solved the problem “Reverse Integer”, you know that the reversed integer might overflow. How would you handle such case?&lt;/p&gt;
-&lt;p&gt;There is a more generic way of solving this problem.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
     
   </entry>
   
@@ -337,32 +355,6 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
-    <title>Coding21_Merge Two Sorted Lists</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2021/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 21/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T11:37:41.026Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Coding24_Swap Nodes in Pairs</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2024/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 24/</id>
@@ -487,6 +479,122 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
+    <title>Coding36_Valid Sudoku</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2036/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 36/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-23T11:46:16.197Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.&lt;/p&gt;
+&lt;p&gt;The Sudoku board could be partially filled, where empty cells are filled with the character ‘.’.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;http://seifzhang.jerrychia.com/img/lt36.png&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot;&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;A partially filled sudoku which is valid.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:&lt;br&gt;A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding83_Remove Duplicates from Sorted List</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2083/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 83/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-30T07:46:30.984Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given a sorted linked list, delete all duplicates such that each element appear only once.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;Given 1-&amp;gt;1-&amp;gt;2, return 1-&amp;gt;2.&lt;br&gt;Given 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;3, return 1-&amp;gt;2-&amp;gt;3.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding38_Count and Say</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2038/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 38/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-30T07:46:35.167Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;The count-and-say sequence is the sequence of integers beginning as follows:&lt;br&gt;1, 11, 21, 1211, 111221, …&lt;/p&gt;
+&lt;p&gt;1 is read off as “one 1” or 11.&lt;br&gt;11 is read off as “two 1s” or 21.&lt;br&gt;21 is read off as “one 2, then one 1” or 1211.&lt;br&gt;Given an integer n, generate the nth sequence.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: The sequence of integers will be represented as a string.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding58_Length of Last Word</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2058/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 58/</id>
+    <published>2016-05-23T02:54:59.000Z</published>
+    <updated>2016-05-30T07:46:34.737Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given a string s consists of upper/lower-case alphabets and empty space characters ‘ ‘, return the length of last word in the string.&lt;/p&gt;
+&lt;p&gt;If the last word does not exist, return 0.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: A word is defined as a character sequence consists of non-space characters only.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;Given s = “Hello World”,&lt;br&gt;return 5.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Coding13_ Roman to Integer</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2013/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 13/</id>
@@ -564,95 +672,6 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
-    <title>Coding38_Count and Say</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2038/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 38/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-30T07:46:35.167Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;The count-and-say sequence is the sequence of integers beginning as follows:&lt;br&gt;1, 11, 21, 1211, 111221, …&lt;/p&gt;
-&lt;p&gt;1 is read off as “one 1” or 11.&lt;br&gt;11 is read off as “two 1s” or 21.&lt;br&gt;21 is read off as “one 2, then one 1” or 1211.&lt;br&gt;Given an integer n, generate the nth sequence.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: The sequence of integers will be represented as a string.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding58_Length of Last Word</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2058/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 58/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-30T07:46:34.737Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a string s consists of upper/lower-case alphabets and empty space characters ‘ ‘, return the length of last word in the string.&lt;/p&gt;
-&lt;p&gt;If the last word does not exist, return 0.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;: A word is defined as a character sequence consists of non-space characters only.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;Given s = “Hello World”,&lt;br&gt;return 5.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding36_Valid Sudoku</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2036/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 36/</id>
-    <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-05-23T11:46:16.197Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Determine if a Sudoku is valid, according to: Sudoku Puzzles - The Rules.&lt;/p&gt;
-&lt;p&gt;The Sudoku board could be partially filled, where empty cells are filled with the character ‘.’.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;http://seifzhang.jerrychia.com/img/lt36.png&quot; alt=&quot;Alt text&quot; title=&quot;Optional title attribute&quot;&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;blockquote&gt;
-&lt;p&gt;A partially filled sudoku which is valid.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:&lt;br&gt;A valid Sudoku board (partially filled) is not necessarily solvable. Only the filled cells need to be validated.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Coding66_ Plus One</title>
     <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2066/"/>
     <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 66/</id>
@@ -711,18 +730,17 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
   </entry>
   
   <entry>
-    <title>Coding14_Longest Common Prefix</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2014/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 14/</id>
+    <title>Coding21_Merge Two Sorted Lists</title>
+    <link href="http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2021/"/>
+    <id>http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 21/</id>
     <published>2016-05-23T02:54:59.000Z</published>
-    <updated>2016-06-01T00:48:43.422Z</updated>
+    <updated>2016-05-23T11:37:41.026Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Write a function to find the longest common prefix string amongst an array of strings.&lt;/p&gt;
+&lt;p&gt;Merge two sorted linked lists and return it as a new list. The new list should be made by splicing together the nodes of the first two lists.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
     
     <summary type="html">
     
@@ -733,7 +751,7 @@ mAfter removing the second node from the end, the linked list becomes 1-&amp;gt;
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
     
   </entry>
   

@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/01/leetCode%20OJ%209/</loc>
+    
+    <lastmod>2016-06-01T12:20:29.660Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2020/</loc>
     
     <lastmod>2016-06-01T00:48:48.838Z</lastmod>
@@ -26,13 +33,6 @@
     <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2013/</loc>
     
     <lastmod>2016-06-01T00:47:55.999Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%209/</loc>
-    
-    <lastmod>2016-06-01T00:47:47.199Z</lastmod>
     
   </url>
   

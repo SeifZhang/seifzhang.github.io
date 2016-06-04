@@ -4,12 +4,137 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/01/leetCode%20OJ%209/</loc>
-    <lastmod>2016-06-01T12:23:12.428Z</lastmod>
+    <loc>http://seifzhang.jerrychia.com/2016/06/04/leetCode%20OJ%20170/</loc>
+    <lastmod>2016-06-04T14:13:35.172Z</lastmod>
     <data>
         <display>
-        <title>Coding9_Palindrome Number</title>
-        <pubTime>2016-06-01T02:54:59.000Z</pubTime>
+        <title></title>
+        <pubTime>2016-06-04T14:13:35.172Z</pubTime>
+        
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20121/</loc>
+    <lastmod>2016-06-04T14:03:57.499Z</lastmod>
+    <data>
+        <display>
+        <title>Coding121_Best Time to Buy and Sell Stock</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Dynamic Programming</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20141/</loc>
+    <lastmod>2016-06-04T14:02:28.003Z</lastmod>
+    <data>
+        <display>
+        <title>Coding141_Linked List Cycle</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Linked List</tag>
+         
+        <tag>Two Pointers</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20191/</loc>
+    <lastmod>2016-06-04T14:01:05.827Z</lastmod>
+    <data>
+        <display>
+        <title>Coding191_Number of 1 Bits</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Bit Manipulation</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20169/</loc>
+    <lastmod>2016-06-04T13:58:53.906Z</lastmod>
+    <data>
+        <display>
+        <title>Coding169_Majority Element</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Divide and Conquer</tag>
+         
+        <tag>Bit Manipulation</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20100/</loc>
+    <lastmod>2016-06-04T13:56:12.522Z</lastmod>
+    <data>
+        <display>
+        <title>Coding100_Same Tree</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Tree</tag>
+         
+        <tag>Depth-first Search</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20171/</loc>
+    <lastmod>2016-06-04T13:55:54.362Z</lastmod>
+    <data>
+        <display>
+        <title>Coding171_Excel Sheet Column Number</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
         
         <tag>Math</tag>
          
@@ -24,8 +149,156 @@
 
     
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20104/</loc>
+    <lastmod>2016-06-04T13:51:08.867Z</lastmod>
+    <data>
+        <display>
+        <title>Coding104_Maximum Depth of Binary Tree</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Tree</tag>
+         
+        <tag>Depth-first Search</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/03/leetCode%20OJ%2083/</loc>
+    <lastmod>2016-06-04T13:47:55.202Z</lastmod>
+    <data>
+        <display>
+        <title>Coding83_Remove Duplicates from Sorted List</title>
+        <pubTime>2016-06-03T12:54:59.000Z</pubTime>
+        
+        <tag>LinkedList</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/04/leetCode%20OJ%2088/</loc>
+    <lastmod>2016-06-04T13:47:35.978Z</lastmod>
+    <data>
+        <display>
+        <title>Coding88_Merge Sorted Array</title>
+        <pubTime>2016-06-04T13:54:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Two Pointers</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2019/</loc>
+    <lastmod>2016-06-04T13:46:21.289Z</lastmod>
+    <data>
+        <display>
+        <title>Coding104_ Maximum Depth of Binary Tree</title>
+        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
+        
+        <tag>Tree</tag>
+         
+        <tag>Depth-first Search</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2026/</loc>
+    <lastmod>2016-06-04T01:12:25.967Z</lastmod>
+    <data>
+        <display>
+        <title>Coding26_Remove Duplicates from Sorted Array</title>
+        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Two Pointers</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2027/</loc>
+    <lastmod>2016-06-04T00:26:19.435Z</lastmod>
+    <data>
+        <display>
+        <title>Coding27_Remove Element</title>
+        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
+        
+        <tag>String</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2021/</loc>
+    <lastmod>2016-06-03T03:11:03.910Z</lastmod>
+    <data>
+        <display>
+        <title>Coding21_Merge Two Sorted Lists</title>
+        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
+        
+        <tag>LinkedList</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2020/</loc>
-    <lastmod>2016-06-01T00:48:48.838Z</lastmod>
+    <lastmod>2016-06-01T12:44:17.774Z</lastmod>
     <data>
         <display>
         <title>Coding20_Valid Parentheses</title>
@@ -47,7 +320,7 @@
     
   <url>
     <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2014/</loc>
-    <lastmod>2016-06-01T00:48:43.422Z</lastmod>
+    <lastmod>2016-06-01T12:41:30.717Z</lastmod>
     <data>
         <display>
         <title>Coding14_Longest Common Prefix</title>
@@ -66,16 +339,14 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2019/</loc>
-    <lastmod>2016-06-01T00:48:41.870Z</lastmod>
+    <loc>http://seifzhang.jerrychia.com/2016/06/01/leetCode%20OJ%209/</loc>
+    <lastmod>2016-06-01T12:23:12.428Z</lastmod>
     <data>
         <display>
-        <title>Coding19_Remove Nth Node From End of List</title>
-        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
+        <title>Coding9_Palindrome Number</title>
+        <pubTime>2016-06-01T02:54:59.000Z</pubTime>
         
-        <tag>LinkedList</tag>
-         
-        <tag>Two Pointers</tag>
+        <tag>Math</tag>
          
          
            
@@ -130,7 +401,403 @@
 
     
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20190/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20165/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20157/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20160/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20168/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20118/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20125/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20189/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20172/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20107/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20111/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%201/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20198/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20112/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20110/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20102/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20119/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20101/</loc>
+    <lastmod>2016-06-01T00:47:23.914Z</lastmod>
+    <data>
+        <display>
+        <title>Coding1_Two Sum</title>
+        <pubTime>2016-05-30T07:52:59.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20155/</loc>
     <lastmod>2016-06-01T00:47:23.914Z</lastmod>
     <data>
         <display>
@@ -296,50 +963,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2088/</loc>
-    <lastmod>2016-05-30T07:46:34.305Z</lastmod>
-    <data>
-        <display>
-        <title>Coding88_Merge Sorted Array</title>
-        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
-        
-        <tag>Array</tag>
-         
-        <tag>Two Pointers</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2026/</loc>
-    <lastmod>2016-05-30T07:46:33.856Z</lastmod>
-    <data>
-        <display>
-        <title>Coding26_Remove Duplicates from Sorted Array</title>
-        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
-        
-        <tag>Array</tag>
-         
-        <tag>Two Pointers</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2066/</loc>
     <lastmod>2016-05-30T07:46:33.306Z</lastmod>
     <data>
@@ -350,26 +973,6 @@
         <tag>Array</tag>
          
         <tag>Math</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2083/</loc>
-    <lastmod>2016-05-30T07:46:30.984Z</lastmod>
-    <data>
-        <display>
-        <title>Coding83_Remove Duplicates from Sorted List</title>
-        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
-        
-        <tag>LinkedList</tag>
          
          
            
@@ -402,26 +1005,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2021/</loc>
-    <lastmod>2016-05-23T11:37:41.026Z</lastmod>
-    <data>
-        <display>
-        <title>Coding21_Merge Two Sorted Lists</title>
-        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
-        
-        <tag>LinkedList</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2067/</loc>
     <lastmod>2016-05-23T11:25:20.508Z</lastmod>
     <data>
@@ -432,26 +1015,6 @@
         <tag>String</tag>
          
         <tag>Math</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/05/23/leetCode%20OJ%2027/</loc>
-    <lastmod>2016-05-23T10:54:41.471Z</lastmod>
-    <data>
-        <display>
-        <title>Coding27_Remove Element</title>
-        <pubTime>2016-05-23T02:54:59.000Z</pubTime>
-        
-        <tag>String</tag>
          
          
            

@@ -4,14 +4,13 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Coding88_Merge Sorted Array | SeifZhang&#39;s Blog</title>
+    <title>Coding1_Two Sum | SeifZhang&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="SeifZhang">
     
-    <meta name="description" content="Algorithm Description
-Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.
-Note:You may assume that nums1 has ">
+    <meta name="description" content="Algorithm DescriptionGiven an array of integers, return indices of the two numbers such that they add up to a specific target.
+You may assume that eac">
     
     
     
@@ -84,15 +83,15 @@ var _hmt = _hmt || [];
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/05/23/leetCode OJ 88/" title="Coding88_Merge Sorted Array" itemprop="url">Coding88_Merge Sorted Array</a>
+      <a href="/2016/05/30/leetCode OJ 111/" title="Coding1_Two Sum" itemprop="url">Coding1_Two Sum</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://seifzhang.jerrychia.com" title="SeifZhang">SeifZhang</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-05-23T02:54:59.000Z" itemprop="datePublished">2016-05-23</time>
-    Updated:<time datetime="2016-05-30T07:46:34.305Z" itemprop="dateModified">2016-05-30</time>
+    <time datetime="2016-05-30T07:52:59.000Z" itemprop="datePublished">2016-05-30</time>
+    Updated:<time datetime="2016-06-01T00:47:23.914Z" itemprop="dateModified">2016-06-01</time>
     
   </p>
 </header>
@@ -104,18 +103,36 @@ var _hmt = _hmt || [];
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
 		</div>
 		
-		<h2 id="Algorithm-Description"><a href="#Algorithm-Description" class="headerlink" title="Algorithm Description"></a>Algorithm Description</h2><blockquote>
-<p>Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.</p>
-<p><strong>Note:</strong><br>You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.</p>
+		<h2 id="Algorithm-Description"><a href="#Algorithm-Description" class="headerlink" title="Algorithm Description"></a>Algorithm Description</h2><p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.</p>
+<p>You may assume that each input would have exactly one solution.<br><strong>Example:</strong></p>
+<blockquote>
+<p>Given nums = [2, 7, 11, 15], target = 9,</p>
+<p>Because nums[0] + nums[1] = 2 + 7 = 9,<br>return [0, 1].</p>
 </blockquote>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
+<p>两数相加得一个特定数，返回两数的索引</p>
+</blockquote>
+<hr>
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &lt; nums.length; i++) {
+            for (int j = i + 1; j &lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Array/">Array</a><a href="/tags/Two-Pointers/">Two Pointers</a>
+  <span></span> <a href="/tags/Array/">Array</a><a href="/tags/Hash-Table/">Hash Table</a>
   </div>
 
 
@@ -128,7 +145,7 @@ var _hmt = _hmt || [];
 
 <div class="article-share" id="share">
 
-  <div data-url="http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 88/" data-title="Coding88_Merge Sorted Array | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
+  <div data-url="http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 111/" data-title="Coding1_Two Sum | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -138,18 +155,18 @@ var _hmt = _hmt || [];
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2016/05/23/leetCode OJ 83/" title="Coding83_Remove Duplicates from Sorted List">
+ <a href="/2016/05/30/leetCode OJ 107/" title="Coding1_Two Sum">
   <strong>PREVIOUS:</strong><br/>
   <span>
-  Coding83_Remove Duplicates from Sorted List</span>
+  Coding1_Two Sum</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2016/05/11/hello-world/"  title="你好，世界！">
+<a href="/2016/05/30/leetCode OJ 112/"  title="Coding1_Two Sum">
  <strong>NEXT:</strong><br/> 
- <span>你好，世界！
+ <span>Coding1_Two Sum
 </span>
 </a>
 </div>
@@ -158,7 +175,7 @@ var _hmt = _hmt || [];
 
 	
 <section class="comment">
-	<div class="ds-thread" data-thread-key="2016/05/23/leetCode OJ 88/" data-title="Coding88_Merge Sorted Array" data-url="http://seifzhang.jerrychia.com/2016/05/23/leetCode OJ 88/"></div>
+	<div class="ds-thread" data-thread-key="2016/05/30/leetCode OJ 111/" data-title="Coding1_Two Sum" data-url="http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 111/"></div>
 	<!-- Duoshuo Comment START -->  
 	<script type="text/javascript">
 	var duoshuoQuery = {short_name:"jerrychia"};
@@ -195,7 +212,7 @@ var _hmt = _hmt || [];
 		
 			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
 		
-			<li><a href="/categories/LeetCode/" title="LeetCode">LeetCode<sup>22</sup></a></li>
+			<li><a href="/categories/LeetCode/" title="LeetCode">LeetCode<sup>47</sup></a></li>
 		
 		</ul>
 </div>
@@ -206,21 +223,31 @@ var _hmt = _hmt || [];
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Array/" title="Array">Array<sup>4</sup></a></li>
+			<li><a href="/tags/Array/" title="Array">Array<sup>24</sup></a></li>
 		
-			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>1</sup></a></li>
+			<li><a href="/tags/Bit-Manipulation/" title="Bit Manipulation">Bit Manipulation<sup>2</sup></a></li>
 		
-			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>2</sup></a></li>
+			<li><a href="/tags/Depth-first-Search/" title="Depth-first Search">Depth-first Search<sup>3</sup></a></li>
+		
+			<li><a href="/tags/Divide-and-Conquer/" title="Divide and Conquer">Divide and Conquer<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>20</sup></a></li>
 		
 			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
 		
-			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>4</sup></a></li>
+			<li><a href="/tags/Linked-List/" title="Linked List">Linked List<sup>1</sup></a></li>
 		
-			<li><a href="/tags/Math/" title="Math">Math<sup>6</sup></a></li>
+			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>3</sup></a></li>
+		
+			<li><a href="/tags/Math/" title="Math">Math<sup>7</sup></a></li>
 		
 			<li><a href="/tags/Stack/" title="Stack">Stack<sup>1</sup></a></li>
 		
 			<li><a href="/tags/String/" title="String">String<sup>10</sup></a></li>
+		
+			<li><a href="/tags/Tree/" title="Tree">Tree<sup>3</sup></a></li>
 		
 			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>4</sup></a></li>
 		
@@ -233,7 +260,7 @@ var _hmt = _hmt || [];
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">Archives</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">2</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">21</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">44</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
 
@@ -243,23 +270,23 @@ var _hmt = _hmt || [];
   <ul class="entry">
     
       <li>
+        <a href="/2016/06/04/leetCode OJ 170/"></a>
+      </li>
+    
+      <li>
+        <a href="/2016/06/04/leetCode OJ 88/">Coding88_Merge Sorted Array</a>
+      </li>
+    
+      <li>
+        <a href="/2016/06/03/leetCode OJ 83/">Coding83_Remove Duplicates from Sorted List</a>
+      </li>
+    
+      <li>
         <a href="/2016/06/01/leetCode OJ 9/">Coding9_Palindrome Number</a>
       </li>
     
       <li>
         <a href="/2016/06/01/leetCode OJ 8/">Coding8_String to Integer (atoi)</a>
-      </li>
-    
-      <li>
-        <a href="/2016/05/30/leetCode OJ 1/">Coding1_Two Sum</a>
-      </li>
-    
-      <li>
-        <a href="/2016/05/30/leetCode OJ 6/">Coding6_ZigZag Conversion</a>
-      </li>
-    
-      <li>
-        <a href="/2016/05/30/leetCode OJ 7/">Coding7_Reverse Integer</a>
       </li>
     
   </ul>

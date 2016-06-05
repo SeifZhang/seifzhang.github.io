@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-04T14:13:35.172Z</updated>
+  <updated>2016-06-05T13:26:51.437Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -16,693 +16,54 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title></title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/04/leetCode%20OJ%20170/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/04/leetCode OJ 170/</id>
-    <published>2016-06-04T14:13:35.172Z</published>
-    <updated>2016-06-04T14:13:35.172Z</updated>
+    <title>Coding198_House_Robber</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20198/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 198/</id>
+    <published>2016-06-05T02:54:59.000Z</published>
+    <updated>2016-06-05T13:26:51.437Z</updated>
     
-    <content type="html"></content>
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;You are a professional robber planning to rob houses along a street. Each house has a certain amount of money stashed, the only constraint stopping you from robbing each of them is that adjacent houses have security system connected and &lt;strong&gt;it will automatically contact the police if two adjacent houses were broken into on the same night&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Given a list of non-negative integers representing the amount of money of each house, determine the maximum amount of money you can rob tonight &lt;strong&gt;without alerting the police&lt;/strong&gt;.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
     </summary>
     
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Dynamic Programming" scheme="http://seifzhang.jerrychia.com/tags/Dynamic-Programming/"/>
     
   </entry>
   
   <entry>
-    <title>Coding88_Merge Sorted Array</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/04/leetCode%20OJ%2088/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/04/leetCode OJ 88/</id>
-    <published>2016-06-04T13:54:59.000Z</published>
-    <updated>2016-06-04T13:47:35.978Z</updated>
+    <title>Coding191_Number_of_1_Bits</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20191/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 191/</id>
+    <published>2016-06-05T02:52:59.000Z</published>
+    <updated>2016-06-05T13:25:12.013Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given two sorted integer arrays nums1 and nums2, merge nums2 into nums1 as one sorted array.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;You may assume that nums1 has enough space (size that is greater or equal to m + n) to hold additional elements from nums2. The number of elements initialized in nums1 and nums2 are m and n respectively.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;从后往前合并！！！&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public void merge(int[] nums1, int m, int[] nums2, int n) {
-
-      int l = m + n - 1;
-        m--;
-        n--;
-        while (m &amp;gt;= 0 &amp;amp;&amp;amp; n &amp;gt;= 0) {
-            if (nums1[m] &amp;gt; nums2[n]) {
-                nums1[l] = nums1[m];
-                l--;
-                m--;
-            } else {
-                nums1[l] = nums2[n];
-                l--;
-                n--;
-            }
-        }
-        // if nums2 still has sth left
-        for (int i = 0; i &amp;lt;= n; i++) {
-            nums1[i] = nums2[i];
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding83_Remove Duplicates from Sorted List</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/03/leetCode%20OJ%2083/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/03/leetCode OJ 83/</id>
-    <published>2016-06-03T12:54:59.000Z</published>
-    <updated>2016-06-04T13:47:55.202Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a sorted linked list, delete all duplicates such that each element appear only once.&lt;/p&gt;
-&lt;p&gt;For example,&lt;br&gt;Given 1-&amp;gt;1-&amp;gt;2, return 1-&amp;gt;2.&lt;br&gt;Given 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;3, return 1-&amp;gt;2-&amp;gt;3.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;设两个指针p,q   如果与给定的值不相等，让p、q一起往前走；如果与给定的值相等，q往前走，最后让p.next = q.next;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode(int x) { val = x; }
- * }
- */
-public class Solution {
-    public ListNode deleteDuplicates(ListNode head) {
-    if (head==null) {
-            return  null;
-        }
-      ListNode p = head;
-        ListNode q = p;
-        while (q.next != null) {
-            if (q.next.val != q.val) {
-                p = p.next;
-                q = q.next;
-            } else {
-                q = q.next;
-                p.next = q.next;
-            }
-
-        }
-        return head;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding9_Palindrome Number</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/01/leetCode%20OJ%209/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/01/leetCode OJ 9/</id>
-    <published>2016-06-01T02:54:59.000Z</published>
-    <updated>2016-06-01T12:23:12.428Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Determine whether an integer is a palindrome. Do this without extra space.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Some hints:&lt;br&gt;Could negative integers be palindromes? (ie, -1)&lt;/p&gt;
-&lt;p&gt;If you are thinking of converting the integer to string, note the restriction of using extra space.&lt;/p&gt;
-&lt;p&gt;You could also try reversing an integer. However, if you have solved the problem “Reverse Integer”, you know that the reversed integer might overflow. How would you handle such case?&lt;/p&gt;
-&lt;p&gt;There is a more generic way of solving this problem.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;第一个跟最后一个比较，然后i++,j–&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public static boolean isPalindrome(int x) {
-        boolean flag = true;
-        if (x &amp;lt; 0) {
-            flag = false;
-        }
-        String string = String.valueOf(x);
-        // int i=0;
-        int j = string.length() - 1;
-        for (int i = 0; i &amp;lt; string.length() / 2; i++, j--) {
-            if (string.charAt(i) != string.charAt(j)) {
-                flag = false;
-            }
-        }
-        return flag;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding8_String to Integer (atoi)</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/01/leetCode%20OJ%208/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/01/leetCode OJ 8/</id>
-    <published>2016-06-01T02:54:59.000Z</published>
-    <updated>2016-06-01T00:46:34.246Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;Description&lt;/strong&gt;:&lt;br&gt;Implement atoi to convert a string to an integer.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Hint&lt;/strong&gt;: Carefully consider all possible input cases. If you want a challenge, please do not see below and ask yourself what are the possible input cases.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Notes&lt;/strong&gt;: It is intended for this problem to be specified vaguely (ie, no given input specs). You are responsible to gather all the input requirements up front.&lt;/p&gt;
-&lt;p&gt;&lt;em&gt;Requirements for atoi:&lt;/em&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value.&lt;/p&gt;
-&lt;p&gt;The string can contain additional characters after those that form the integral number, which are ignored and have no effect on the behavior of this function.&lt;/p&gt;
-&lt;p&gt;If the first sequence of non-whitespace characters in str is not a valid integral number, or if no such sequence exists because either str is empty or it contains only whitespace characters, no conversion is performed.&lt;/p&gt;
-&lt;p&gt;If no valid conversion could be performed, a zero value is returned. If the correct value is out of the range of representable values, INT_MAX (2147483647) or INT_MIN (-2147483648) is returned.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;把字符串转换成一个整数&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;“+0012HY”  return +12&lt;br&gt;“__ + __ 1A”  return +1&lt;br&gt;“__ - __ 1A”  return -1&lt;br&gt;“ABC+0125” return 0（错误返回0）&lt;br&gt;就是从前往后查找遇到的第一个数字&lt;br&gt;&lt;strong&gt;引用了别人的想法！！！&lt;/strong&gt;&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;convert String to char array&lt;/li&gt;
-&lt;li&gt;judge the first character&lt;/li&gt;
-&lt;li&gt;convert one after another&lt;/li&gt;
-&lt;li&gt;judge if overflow&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public static int myAtoi(String str) {
-            str = str.trim();
-            char[] ch = str.toCharArray();
-            if (ch.length == 0) {
-                return 0;
-            }
-            int i = 0;
-            boolean isM = false;
-            if (ch[0] == &amp;apos;+&amp;apos;) {
-                i++;
-            } else if (ch[0] == &amp;apos;-&amp;apos;) {
-                isM = true;
-                i++;
-            } else if (!(ch[0] &amp;gt;= &amp;apos;0&amp;apos; &amp;amp;&amp;amp; ch[0] &amp;lt;= &amp;apos;9&amp;apos;)) {
-                return 0;
-            }
-            long result = 0;
-            while (i &amp;lt; ch.length &amp;amp;&amp;amp; ch[i] &amp;gt;= &amp;apos;0&amp;apos; &amp;amp;&amp;amp; ch[i] &amp;lt;= &amp;apos;9&amp;apos;) {
-                result = result * 10 + ch[i++] - &amp;apos;0&amp;apos;;
-                if (result &amp;gt;= Integer.MAX_VALUE) {
-                    if (isM) {
-                        if (result &amp;gt; Integer.MAX_VALUE) {
-                            return Integer.MIN_VALUE;
-                        }
-                    } else {
-                        return Integer.MAX_VALUE;
-                    }
-                }
-            }
-            return isM ? (int) (0 - result) : (int) result;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
-    
-      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20172/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 172/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20102/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 102/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20107/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 107/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20111/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 111/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20112/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 112/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20119/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 119/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20118/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 118/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20125/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 125/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%201/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 1/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding104_Maximum Depth of Binary Tree</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20104/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 104/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-04T13:51:08.867Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a binary tree, find its maximum depth.&lt;/p&gt;
-&lt;p&gt;The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node.&lt;/p&gt;
+&lt;p&gt;Write a function that takes an unsigned integer and returns the number of ’1’ bits it has (also known as the Hamming weight).&lt;/p&gt;
+&lt;p&gt;For example, the 32-bit integer ’11’ has binary representation 00000000000000000000000000001011, so the function should return 3.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
@@ -718,18 +79,565 @@ public class Solution {
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="Tree" scheme="http://seifzhang.jerrychia.com/tags/Tree/"/>
-    
-      <category term="Depth-first Search" scheme="http://seifzhang.jerrychia.com/tags/Depth-first-Search/"/>
+      <category term="Bit Manipulation" scheme="http://seifzhang.jerrychia.com/tags/Bit-Manipulation/"/>
     
   </entry>
   
   <entry>
-    <title>Coding121_Best Time to Buy and Sell Stock</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20121/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 121/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-04T14:03:57.499Z</updated>
+    <title>Coding190_Reverse_Bits</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20190/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 190/</id>
+    <published>2016-06-05T02:50:59.000Z</published>
+    <updated>2016-06-05T13:24:34.089Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Reverse bits of a given 32 bits unsigned integer.&lt;/p&gt;
+&lt;p&gt;For example, given input 43261596 (represented in binary as &lt;strong&gt;00000010100101000001111010011100&lt;/strong&gt;), return 964176192 (represented in binary as &lt;strong&gt;00111001011110000010100101000000&lt;/strong&gt;).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Follow up:&lt;/strong&gt;&lt;br&gt;If this function is called many times, how would you optimize it?&lt;/p&gt;
+&lt;p&gt;Related problem: Reverse Integer&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Bit Manipulation" scheme="http://seifzhang.jerrychia.com/tags/Bit-Manipulation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding189_Rotate_Array</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20189/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 189/</id>
+    <published>2016-06-05T02:48:59.000Z</published>
+    <updated>2016-06-05T13:22:48.401Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Rotate an array of n elements to the right by k steps.&lt;/p&gt;
+&lt;p&gt;For example, with n = 7 and k = 3, the array [1,2,3,4,5,6,7] is rotated to [5,6,7,1,2,3,4].&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt;&lt;br&gt;Try to come up as many solutions as you can, there are at least 3 different ways to solve this problem.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Hint:&lt;/strong&gt;&lt;br&gt;Could you do it in-place with O(1) extra space?&lt;br&gt;Related problem: Reverse Words in a String II&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding172_Factorial_Trailing_Zeroes</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20172/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 172/</id>
+    <published>2016-06-05T02:46:59.000Z</published>
+    <updated>2016-06-05T13:21:41.878Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given an integer n, return the number of trailing zeroes in n!.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; Your solution should be in logarithmic time complexity.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding171_Excel_Sheet_Column_Number</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20171/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 171/</id>
+    <published>2016-06-05T02:44:59.000Z</published>
+    <updated>2016-06-05T13:20:01.019Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Related to question Excel Sheet Column Title&lt;/p&gt;
+&lt;p&gt;Given a column title as appear in an Excel sheet, return its corresponding column number.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;pre&gt;&lt;code&gt;A -&amp;gt; 1
+B -&amp;gt; 2
+C -&amp;gt; 3
+...
+Z -&amp;gt; 26
+AA -&amp;gt; 27
+AB -&amp;gt; 28 
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding170_***</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20170/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 170/</id>
+    <published>2016-06-05T02:42:59.000Z</published>
+    <updated>2016-06-05T13:19:17.125Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.&lt;/p&gt;
+&lt;p&gt;You may assume that the array is non-empty and the majority element always exist in the array.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+      <category term="Divide and Conquer" scheme="http://seifzhang.jerrychia.com/tags/Divide-and-Conquer/"/>
+    
+      <category term="Bit Manipulation" scheme="http://seifzhang.jerrychia.com/tags/Bit-Manipulation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding169_Majority_Element</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20169/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 169/</id>
+    <published>2016-06-05T02:40:59.000Z</published>
+    <updated>2016-06-05T13:18:38.471Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times.&lt;/p&gt;
+&lt;p&gt;You may assume that the array is non-empty and the majority element always exist in the array.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+      <category term="Divide and Conquer" scheme="http://seifzhang.jerrychia.com/tags/Divide-and-Conquer/"/>
+    
+      <category term="Bit Manipulation" scheme="http://seifzhang.jerrychia.com/tags/Bit-Manipulation/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding168_Excel_Sheet_Column_Title</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20168/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 168/</id>
+    <published>2016-06-05T02:38:59.000Z</published>
+    <updated>2016-06-05T13:18:13.476Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given a positive integer, return its corresponding column title as appear in an Excel sheet.&lt;/p&gt;
+&lt;p&gt;For example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1 -&amp;gt; A
+2 -&amp;gt; B
+3 -&amp;gt; C
+...
+26 -&amp;gt; Z
+27 -&amp;gt; AA
+28 -&amp;gt; AB 
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Math" scheme="http://seifzhang.jerrychia.com/tags/Math/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding165_Compare_Version_Numbers</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20165/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 165/</id>
+    <published>2016-06-05T02:36:59.000Z</published>
+    <updated>2016-06-05T13:17:14.928Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Compare two version numbers version1 and version2.&lt;br&gt;If version1 &amp;gt; version2 return 1, if version1 &amp;lt; version2 return -1, otherwise return 0.&lt;/p&gt;
+&lt;p&gt;You may assume that the version strings are non-empty and contain only digits and the . character.&lt;br&gt;The . character does not represent a decimal point and is used to separate number sequences.&lt;br&gt;For instance, 2.5 is not “two and a half” or “half way to version three”, it is the fifth second-level revision of the second first-level revision.&lt;/p&gt;
+&lt;p&gt;Here is an example of version numbers ordering:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;0.1 &amp;lt; 1.1 &amp;lt; 1.2 &amp;lt; 13.37
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding160_Intersection_of_Two_Linked_Lists</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20160/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 160/</id>
+    <published>2016-06-05T02:34:59.000Z</published>
+    <updated>2016-06-05T13:15:42.980Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Write a program to find the node at which the intersection of two singly linked lists begins.&lt;/p&gt;
+&lt;p&gt;For example, the following two linked lists:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;A:          a1 → a2
+                   ↘
+                     c1 → c2 → c3
+                   ↗            
+B:     b1 → b2 → b3
+begin to intersect at node c1.
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;If the two linked lists have no intersection at all, return null.&lt;/li&gt;
+&lt;li&gt;The linked lists must retain their original structure after the function returns.&lt;/li&gt;
+&lt;li&gt;You may assume there are no cycles anywhere in the entire linked structure.&lt;/li&gt;
+&lt;li&gt;Your code should preferably run in O(n) time and use only O(1) memory.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Linked List" scheme="http://seifzhang.jerrychia.com/tags/Linked-List/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding157_***</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20157/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 157/</id>
+    <published>2016-06-05T02:32:59.000Z</published>
+    <updated>2016-06-05T13:13:06.065Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
+&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
+&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding155_Min_Stack</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20155/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 155/</id>
+    <published>2016-06-05T02:30:59.000Z</published>
+    <updated>2016-06-05T13:12:32.890Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Design a stack that supports push, pop, top, and retrieving the minimum element in constant time.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;push(x) – Push element x onto stack.&lt;/li&gt;
+&lt;li&gt;pop() – Removes the element on top of the stack.&lt;/li&gt;
+&lt;li&gt;top() – Get the top element.&lt;/li&gt;
+&lt;li&gt;getMin() – Retrieve the minimum element in the stack.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Example:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;MinStack minStack = new MinStack();
+minStack.push(-2);
+minStack.push(0);
+minStack.push(-3);
+minStack.getMin();   --&amp;gt; Returns -3.
+minStack.pop();
+minStack.top();      --&amp;gt; Returns 0.
+minStack.getMin();   --&amp;gt; Returns -2.
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Stack" scheme="http://seifzhang.jerrychia.com/tags/Stack/"/>
+    
+      <category term="Design" scheme="http://seifzhang.jerrychia.com/tags/Design/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding141_Linked_List_Cycle</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20141/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 141/</id>
+    <published>2016-06-05T02:28:59.000Z</published>
+    <updated>2016-06-05T12:11:06.243Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given a linked list, determine if it has a cycle in it.&lt;/p&gt;
+&lt;p&gt;Follow up:&lt;br&gt;Can you solve it without using extra space?&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+    
+      <category term="Linked List" scheme="http://seifzhang.jerrychia.com/tags/Linked-List/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding125_Valid_Palindrome</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20125/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 125/</id>
+    <published>2016-06-05T02:26:59.000Z</published>
+    <updated>2016-06-05T12:10:55.559Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
+&lt;p&gt;Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.&lt;/p&gt;
+&lt;p&gt;For example,&lt;br&gt;“A man, a plan, a canal: Panama” is a palindrome.&lt;br&gt;“race a car” is not a palindrome.&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;Have you consider that the string might be empty? This is a good question to ask during an interview.&lt;/p&gt;
+&lt;p&gt;For the purpose of this problem, we define empty string as valid palindrome.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding121_Best_Time_to_Buy_and_Sell_Stock</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20121/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 121/</id>
+    <published>2016-06-05T02:24:59.000Z</published>
+    <updated>2016-06-05T12:02:17.417Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Say you have an array for which the ith element is the price of a given stock on day i.&lt;/p&gt;
@@ -756,20 +664,128 @@ public class Solution {
   </entry>
   
   <entry>
-    <title>Coding100_Same Tree</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20100/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 100/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-04T13:56:12.522Z</updated>
+    <title>Coding119_Pascal&#39;s_Triangle_II</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20119/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 119/</id>
+    <published>2016-06-05T02:22:59.000Z</published>
+    <updated>2016-06-05T13:28:48.669Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given two binary trees, write a function to check if they are equal or not.&lt;/p&gt;
-&lt;p&gt;Two binary trees are considered equal if they are structurally identical and the nodes have the same value.&lt;/p&gt;
+&lt;p&gt;Given an index k, return the kth row of the Pascal’s triangle.&lt;/p&gt;
+&lt;p&gt;For example, given k = 3,&lt;br&gt;Return [1,3,3,1].&lt;/p&gt;
+&lt;p&gt;Note:&lt;br&gt;Could you optimize your algorithm to use only O(k) extra space?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding118_Two Sum</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20118/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 118/</id>
+    <published>2016-06-05T02:20:59.000Z</published>
+    <updated>2016-06-05T11:59:45.041Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given numRows, generate the first numRows of Pascal’s triangle.&lt;/p&gt;
+&lt;p&gt;For example, given numRows = 5,&lt;br&gt;Return&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+     [1],
+    [1,1],
+   [1,2,1],
+  [1,3,3,1],
+ [1,4,6,4,1]
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Coding112_Two Sum</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20112/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 112/</id>
+    <published>2016-06-05T02:19:59.000Z</published>
+    <updated>2016-06-05T11:59:47.177Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.&lt;/p&gt;
+&lt;p&gt;For example:&lt;br&gt;Given the below binary tree and sum = 22,&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;      5
+     / \
+    4   8
+   /   / \
+  11  13  4
+ /  \      \
+7    2      1
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;return true, as there exist a root-to-leaf path 5-&amp;gt;4-&amp;gt;11-&amp;gt;2 which sum is 22.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -787,101 +803,19 @@ public class Solution {
   </entry>
   
   <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20101/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 101/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding141_Linked List Cycle</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20141/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 141/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-04T14:02:28.003Z</updated>
+    <title>Coding111_Minimum Depth of Binary Tree</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20111/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 111/</id>
+    <published>2016-06-05T02:17:59.000Z</published>
+    <updated>2016-06-05T11:59:49.114Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a linked list, determine if it has a cycle in it.&lt;/p&gt;
-&lt;p&gt;Follow up:&lt;br&gt;Can you solve it without using extra space?&lt;/p&gt;
+&lt;p&gt;Given a binary tree, find its minimum depth.&lt;/p&gt;
+&lt;p&gt;The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Linked List" scheme="http://seifzhang.jerrychia.com/tags/Linked-List/"/>
-    
-      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding1_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/05/30/leetCode%20OJ%20155/"/>
-    <id>http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 155/</id>
-    <published>2016-05-30T07:52:59.000Z</published>
-    <updated>2016-06-01T00:47:23.914Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array of integers, return indices of the two numbers such that they add up to a specific target.&lt;/p&gt;
-&lt;p&gt;You may assume that each input would have exactly one solution.&lt;br&gt;&lt;strong&gt;Example:&lt;/strong&gt;&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Given nums = [2, 7, 11, 15], target = 9,&lt;/p&gt;
-&lt;p&gt;Because nums[0] + nums[1] = 2 + 7 = 9,&lt;br&gt;return [0, 1].&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
 &lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
     public int[] twoSum(int[] nums, int target) {
           for (int i = 0; i &amp;lt; nums.length; i++) {
@@ -905,9 +839,11 @@ public class Solution {
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+      <category term="Tree" scheme="http://seifzhang.jerrychia.com/tags/Tree/"/>
     
-      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+      <category term="Depth-first Search" scheme="http://seifzhang.jerrychia.com/tags/Depth-first-Search/"/>
+    
+      <category term="Breadth-first Search" scheme="http://seifzhang.jerrychia.com/tags/Breadth-first-Search/"/>
     
   </entry>
   

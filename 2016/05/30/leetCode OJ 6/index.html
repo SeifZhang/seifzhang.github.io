@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Coding6_ZigZag Conversion | SeifZhang&#39;s Blog</title>
+    <title>Coding6_ZigZag_Conversion | SeifZhang&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="SeifZhang">
@@ -83,15 +83,15 @@ var _hmt = _hmt || [];
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/05/30/leetCode OJ 6/" title="Coding6_ZigZag Conversion" itemprop="url">Coding6_ZigZag Conversion</a>
+      <a href="/2016/05/30/leetCode OJ 6/" title="Coding6_ZigZag_Conversion" itemprop="url">Coding6_ZigZag_Conversion</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://seifzhang.jerrychia.com" title="SeifZhang">SeifZhang</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-05-30T02:54:59.000Z" itemprop="datePublished">2016-05-30</time>
-    Updated:<time datetime="2016-06-01T00:47:33.288Z" itemprop="dateModified">2016-06-01</time>
+    <time datetime="2016-05-30T01:04:59.000Z" itemprop="datePublished">2016-05-30</time>
+    Updated:<time datetime="2016-06-05T13:40:23.361Z" itemprop="dateModified">2016-06-05</time>
     
   </p>
 </header>
@@ -118,7 +118,60 @@ Y   I   R
 </blockquote>
 <hr>
 <h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>public class Solution {
+    public String convert(String s, int numRows) {
+       char[] cs=s.toCharArray();
+        if(numRows==1) return s;
+        int j_max=(int) Math.ceil( cs.length / numRows );
+        //i=1,j=1
+        String fistline=&quot;&quot;;
+        int k=0;
+        for (int i = 1; i &lt;= numRows; i++) {
+            for (int j = 1; j &lt;= j_max+1; j++) {
+
+                if(i==1){
+                    k = 1+(j-1)*2*(numRows-1);
+                    if(k-1&lt;cs.length){
+                        fistline += String.valueOf(cs[k-1]); 
+                    }
+                    else {
+                        continue;
+                    }
+                }else if(i==numRows) {
+                    k = 1+(j-1)*2*(numRows-1);
+                    k= k+ (numRows-1);
+                    if(k-1&lt;cs.length){
+                        fistline += String.valueOf(cs[k-1]); 
+                    }
+                    else {
+                        continue;
+                    }
+
+                }else {
+                    k = 1+(j-1)*2*(numRows-1);
+
+                    int lk= k- (i-1);
+                    if(lk-1&lt;cs.length &amp;&amp; lk&gt;0){
+                        fistline += String.valueOf(cs[lk-1]); 
+                    }
+
+                    k=k+ (i-1);
+                    if(k-1&lt;cs.length){
+                        fistline += String.valueOf(cs[k-1]); 
+                    }
+                    else {
+                        continue;
+                    }
+                }
+
+            }
+
+        }
+
+        return fistline;
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -137,7 +190,7 @@ Y   I   R
 
 <div class="article-share" id="share">
 
-  <div data-url="http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 6/" data-title="Coding6_ZigZag Conversion | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
+  <div data-url="http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 6/" data-title="Coding6_ZigZag_Conversion | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -147,18 +200,18 @@ Y   I   R
 <nav class="article-nav clearfix">
  
  <div class="prev" >
- <a href="/2016/05/30/leetCode OJ 171/" title="Coding171_Excel Sheet Column Number">
+ <a href="/2016/05/30/leetCode OJ 7/" title="Coding7_Reverse_Integer">
   <strong>PREVIOUS:</strong><br/>
   <span>
-  Coding171_Excel Sheet Column Number</span>
+  Coding7_Reverse_Integer</span>
 </a>
 </div>
 
 
 <div class="next">
-<a href="/2016/05/30/leetCode OJ 7/"  title="Coding7_Reverse Integer">
+<a href="/2016/05/30/leetCode OJ 1/"  title="Coding1_Two_Sum">
  <strong>NEXT:</strong><br/> 
- <span>Coding7_Reverse Integer
+ <span>Coding1_Two_Sum
 </span>
 </a>
 </div>
@@ -167,7 +220,7 @@ Y   I   R
 
 	
 <section class="comment">
-	<div class="ds-thread" data-thread-key="2016/05/30/leetCode OJ 6/" data-title="Coding6_ZigZag Conversion" data-url="http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 6/"></div>
+	<div class="ds-thread" data-thread-key="2016/05/30/leetCode OJ 6/" data-title="Coding6_ZigZag_Conversion" data-url="http://seifzhang.jerrychia.com/2016/05/30/leetCode OJ 6/"></div>
 	<!-- Duoshuo Comment START -->  
 	<script type="text/javascript">
 	var duoshuoQuery = {short_name:"jerrychia"};
@@ -204,7 +257,7 @@ Y   I   R
 		
 			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
 		
-			<li><a href="/categories/LeetCode/" title="LeetCode">LeetCode<sup>47</sup></a></li>
+			<li><a href="/categories/LeetCode/" title="LeetCode">LeetCode<sup>48</sup></a></li>
 		
 		</ul>
 </div>
@@ -215,33 +268,39 @@ Y   I   R
 	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Array/" title="Array">Array<sup>24</sup></a></li>
+			<li><a href="/tags/Array/" title="Array">Array<sup>11</sup></a></li>
 		
-			<li><a href="/tags/Bit-Manipulation/" title="Bit Manipulation">Bit Manipulation<sup>2</sup></a></li>
+			<li><a href="/tags/Bit-Manipulation/" title="Bit Manipulation">Bit Manipulation<sup>4</sup></a></li>
 		
-			<li><a href="/tags/Depth-first-Search/" title="Depth-first Search">Depth-first Search<sup>3</sup></a></li>
+			<li><a href="/tags/Breadth-first-Search/" title="Breadth-first Search">Breadth-first Search<sup>3</sup></a></li>
 		
-			<li><a href="/tags/Divide-and-Conquer/" title="Divide and Conquer">Divide and Conquer<sup>1</sup></a></li>
+			<li><a href="/tags/Depth-first-Search/" title="Depth-first Search">Depth-first Search<sup>6</sup></a></li>
 		
-			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>2</sup></a></li>
+			<li><a href="/tags/Design/" title="Design">Design<sup>1</sup></a></li>
 		
-			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>20</sup></a></li>
+			<li><a href="/tags/Divide-and-Conquer/" title="Divide and Conquer">Divide and Conquer<sup>2</sup></a></li>
+		
+			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>3</sup></a></li>
+		
+			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>3</sup></a></li>
 		
 			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
 		
-			<li><a href="/tags/Linked-List/" title="Linked List">Linked List<sup>1</sup></a></li>
+			<li><a href="/tags/Linked-List/" title="Linked List">Linked List<sup>3</sup></a></li>
 		
 			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>3</sup></a></li>
 		
-			<li><a href="/tags/Math/" title="Math">Math<sup>7</sup></a></li>
+			<li><a href="/tags/Math/" title="Math">Math<sup>9</sup></a></li>
 		
-			<li><a href="/tags/Stack/" title="Stack">Stack<sup>1</sup></a></li>
+			<li><a href="/tags/Stack/" title="Stack">Stack<sup>2</sup></a></li>
 		
-			<li><a href="/tags/String/" title="String">String<sup>10</sup></a></li>
+			<li><a href="/tags/String/" title="String">String<sup>12</sup></a></li>
 		
-			<li><a href="/tags/Tree/" title="Tree">Tree<sup>3</sup></a></li>
+			<li><a href="/tags/Tree/" title="Tree">Tree<sup>8</sup></a></li>
 		
-			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>4</sup></a></li>
+			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>6</sup></a></li>
+		
+			<li><a href="/tags/Width-first-Search/" title="Width-first Search">Width-first Search<sup>1</sup></a></li>
 		
 			<li><a href="/tags/博客，文章/" title="博客，文章">博客，文章<sup>1</sup></a></li>
 		
@@ -252,7 +311,7 @@ Y   I   R
   
   <div class="archiveslist">
     <p class="asidetitle"><a href="/archives">Archives</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">5</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">44</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">26</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
 
@@ -262,23 +321,23 @@ Y   I   R
   <ul class="entry">
     
       <li>
-        <a href="/2016/06/04/leetCode OJ 170/"></a>
+        <a href="/2016/06/05/leetCode OJ 198/">Coding198_House_Robber</a>
       </li>
     
       <li>
-        <a href="/2016/06/04/leetCode OJ 88/">Coding88_Merge Sorted Array</a>
+        <a href="/2016/06/05/leetCode OJ 191/">Coding191_Number_of_1_Bits</a>
       </li>
     
       <li>
-        <a href="/2016/06/03/leetCode OJ 83/">Coding83_Remove Duplicates from Sorted List</a>
+        <a href="/2016/06/05/leetCode OJ 190/">Coding190_Reverse_Bits</a>
       </li>
     
       <li>
-        <a href="/2016/06/01/leetCode OJ 9/">Coding9_Palindrome Number</a>
+        <a href="/2016/06/05/leetCode OJ 189/">Coding189_Rotate_Array</a>
       </li>
     
       <li>
-        <a href="/2016/06/01/leetCode OJ 8/">Coding8_String to Integer (atoi)</a>
+        <a href="/2016/06/05/leetCode OJ 172/">Coding172_Factorial_Trailing_Zeroes</a>
       </li>
     
   </ul>

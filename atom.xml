@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-05T13:26:51.437Z</updated>
+  <updated>2016-06-15T13:30:25.857Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -16,9 +16,47 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title></title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/15/16%E7%AB%AF%E5%8D%88-CCIT-%E5%9F%B9-%E6%9C%88/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/15/16端午-CCIT-培-月/</id>
+    <published>2016-06-15T13:30:25.857Z</published>
+    <updated>2016-06-15T13:30:25.857Z</updated>
+    
+    <content type="html"></content>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>16端午-CCIT-培-月</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/13/dairy/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/13/dairy/</id>
+    <published>2016-06-13T06:09:37.897Z</published>
+    <updated>2016-06-15T13:30:28.047Z</updated>
+    
+    <content type="html">&lt;p&gt;回长春，回学校，是毕业之后一直想做的事情！在端午节的时候，我，培培，月月终于回去了！吃了一直想吃的麻辣烫，烤冷面，去了红旗街等等。。。&lt;br&gt;9号下午，我们就回了沈阳，带他们来我们学校玩了玩。。。&lt;/p&gt;
+&lt;h2 id=&quot;长春&quot;&gt;&lt;a href=&quot;#长春&quot; class=&quot;headerlink&quot; title=&quot;长春&quot;&gt;&lt;/a&gt;长春&lt;/h2&gt;&lt;h2 id=&quot;沈阳&quot;&gt;&lt;a href=&quot;#沈阳&quot; class=&quot;headerlink&quot; title=&quot;沈阳&quot;&gt;&lt;/a&gt;沈阳&lt;/h2&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;回长春，回学校，是毕业之后一直想做的事情！在端午节的时候，我，培培，月月终于回去了！吃了一直想吃的麻辣烫，烤冷面，去了红旗街等等。。。&lt;br&gt;9号下午，我们就回了沈阳，带他们来我们学校玩了玩。。。&lt;/p&gt;
+&lt;h2 id=&quot;长春&quot;&gt;&lt;a href=&quot;#长春&quot; class=&quot;h
+    
+    </summary>
+    
+    
+      <category term="博客，文章" scheme="http://seifzhang.jerrychia.com/tags/%E5%8D%9A%E5%AE%A2%EF%BC%8C%E6%96%87%E7%AB%A0/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Coding198_House_Robber</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20198/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 198/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-198/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-198/</id>
     <published>2016-06-05T02:54:59.000Z</published>
     <updated>2016-06-05T13:26:51.437Z</updated>
     
@@ -56,8 +94,8 @@
   
   <entry>
     <title>Coding191_Number_of_1_Bits</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20191/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 191/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-191/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-191/</id>
     <published>2016-06-05T02:52:59.000Z</published>
     <updated>2016-06-05T13:25:12.013Z</updated>
     
@@ -85,8 +123,8 @@
   
   <entry>
     <title>Coding190_Reverse_Bits</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20190/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 190/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-190/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-190/</id>
     <published>2016-06-05T02:50:59.000Z</published>
     <updated>2016-06-05T13:24:34.089Z</updated>
     
@@ -128,8 +166,8 @@
   
   <entry>
     <title>Coding189_Rotate_Array</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20189/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 189/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-189/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-189/</id>
     <published>2016-06-05T02:48:59.000Z</published>
     <updated>2016-06-05T13:22:48.401Z</updated>
     
@@ -171,8 +209,8 @@
   
   <entry>
     <title>Coding172_Factorial_Trailing_Zeroes</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20172/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 172/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-172/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-172/</id>
     <published>2016-06-05T02:46:59.000Z</published>
     <updated>2016-06-05T13:21:41.878Z</updated>
     
@@ -212,8 +250,8 @@
   
   <entry>
     <title>Coding171_Excel_Sheet_Column_Number</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20171/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 171/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-171/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-171/</id>
     <published>2016-06-05T02:44:59.000Z</published>
     <updated>2016-06-05T13:20:01.019Z</updated>
     
@@ -249,8 +287,8 @@ AB -&amp;gt; 28
   
   <entry>
     <title>Coding170_***</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20170/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 170/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-170/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-170/</id>
     <published>2016-06-05T02:42:59.000Z</published>
     <updated>2016-06-05T13:19:17.125Z</updated>
     
@@ -282,8 +320,8 @@ AB -&amp;gt; 28
   
   <entry>
     <title>Coding169_Majority_Element</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20169/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 169/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-169/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-169/</id>
     <published>2016-06-05T02:40:59.000Z</published>
     <updated>2016-06-05T13:18:38.471Z</updated>
     
@@ -315,8 +353,8 @@ AB -&amp;gt; 28
   
   <entry>
     <title>Coding168_Excel_Sheet_Column_Title</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20168/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 168/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-168/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-168/</id>
     <published>2016-06-05T02:38:59.000Z</published>
     <updated>2016-06-05T13:18:13.476Z</updated>
     
@@ -361,8 +399,8 @@ AB -&amp;gt; 28
   
   <entry>
     <title>Coding165_Compare_Version_Numbers</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20165/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 165/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-165/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-165/</id>
     <published>2016-06-05T02:36:59.000Z</published>
     <updated>2016-06-05T13:17:14.928Z</updated>
     
@@ -402,8 +440,8 @@ AB -&amp;gt; 28
   
   <entry>
     <title>Coding160_Intersection_of_Two_Linked_Lists</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20160/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 160/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-160/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-160/</id>
     <published>2016-06-05T02:34:59.000Z</published>
     <updated>2016-06-05T13:15:42.980Z</updated>
     
@@ -454,8 +492,8 @@ begin to intersect at node c1.
   
   <entry>
     <title>Coding157_***</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20157/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 157/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-157/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-157/</id>
     <published>2016-06-05T02:32:59.000Z</published>
     <updated>2016-06-05T13:13:06.065Z</updated>
     
@@ -501,8 +539,8 @@ begin to intersect at node c1.
   
   <entry>
     <title>Coding155_Min_Stack</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20155/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 155/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-155/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-155/</id>
     <published>2016-06-05T02:30:59.000Z</published>
     <updated>2016-06-05T13:12:32.890Z</updated>
     
@@ -556,8 +594,8 @@ minStack.getMin();   --&amp;gt; Returns -2.
   
   <entry>
     <title>Coding141_Linked_List_Cycle</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20141/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 141/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-141/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-141/</id>
     <published>2016-06-05T02:28:59.000Z</published>
     <updated>2016-06-05T12:11:06.243Z</updated>
     
@@ -587,8 +625,8 @@ minStack.getMin();   --&amp;gt; Returns -2.
   
   <entry>
     <title>Coding125_Valid_Palindrome</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20125/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 125/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-125/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-125/</id>
     <published>2016-06-05T02:26:59.000Z</published>
     <updated>2016-06-05T12:10:55.559Z</updated>
     
@@ -634,8 +672,8 @@ minStack.getMin();   --&amp;gt; Returns -2.
   
   <entry>
     <title>Coding121_Best_Time_to_Buy_and_Sell_Stock</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20121/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 121/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-121/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-121/</id>
     <published>2016-06-05T02:24:59.000Z</published>
     <updated>2016-06-05T12:02:17.417Z</updated>
     
@@ -665,10 +703,10 @@ minStack.getMin();   --&amp;gt; Returns -2.
   
   <entry>
     <title>Coding119_Pascal&#39;s_Triangle_II</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20119/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 119/</id>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-119/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-119/</id>
     <published>2016-06-05T02:22:59.000Z</published>
-    <updated>2016-06-05T13:28:48.669Z</updated>
+    <updated>2016-06-15T14:08:51.148Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given an index k, return the kth row of the Pascal’s triangle.&lt;/p&gt;
@@ -676,18 +714,19 @@ minStack.getMin();   --&amp;gt; Returns -2.
 &lt;p&gt;Note:&lt;br&gt;Could you optimize your algorithm to use only O(k) extra space?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
-&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
 &lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
+    public List&amp;lt;Integer&amp;gt; getRow(int rowIndex) {
+        List&amp;lt;Integer&amp;gt; currow = null;// 定义当前行
+        List&amp;lt;Integer&amp;gt; prerow = null;// 定义上一行
+        for (int i = 0; i &amp;lt;= rowIndex; i++) {
+            currow = new ArrayList&amp;lt;&amp;gt;();
+            for (int j = 0; j &amp;lt;= i; j++) {
+                currow.add(j == 0 || i == j ? 1 : prerow.get(j) + prerow.get(j - 1));// 当前行是根据上一行得出来的
             }
+            prerow = currow;
         }
-    return null;
+        return currow;
     }
 }
 &lt;/code&gt;&lt;/pre&gt;</content>
@@ -706,11 +745,11 @@ minStack.getMin();   --&amp;gt; Returns -2.
   </entry>
   
   <entry>
-    <title>Coding118_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20118/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 118/</id>
+    <title>Coding118_Pascal&#39;s_Triangle</title>
+    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-118/"/>
+    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-118/</id>
     <published>2016-06-05T02:20:59.000Z</published>
-    <updated>2016-06-05T11:59:45.041Z</updated>
+    <updated>2016-06-15T14:09:00.044Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given numRows, generate the first numRows of Pascal’s triangle.&lt;/p&gt;
 &lt;p&gt;For example, given numRows = 5,&lt;br&gt;Return&lt;/p&gt;
@@ -722,18 +761,30 @@ minStack.getMin();   --&amp;gt; Returns -2.
  [1,4,6,4,1]
 ]
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
-&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
 &lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
+    public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; generate(int numRows) {
+        List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ret = new ArrayList&amp;lt;&amp;gt;();
+        if (numRows == 0) {
+            return ret;
+        }
+        List&amp;lt;Integer&amp;gt; l = new ArrayList&amp;lt;&amp;gt;();
+        l.add(1);
+        ret.add(l);
+        for (int i = 1; i &amp;lt; numRows; i++) {
+            List&amp;lt;Integer&amp;gt; uprow = ret.get(i - 1);
+            List&amp;lt;Integer&amp;gt; clow = new ArrayList&amp;lt;&amp;gt;();
+            clow.add(1);// 左边的1放入进去
+            for (int j = 0; j &amp;lt; uprow.size(); j++) {
+                if (j == uprow.size() - 1) {
+                    clow.add(1);// 如果是每一行的最后，就放1，即把右边的1放入
+                } else {
+                    clow.add(uprow.get(j) + uprow.get(j + 1));
                 }
             }
+            ret.add(clow);
         }
-    return null;
+        return ret;
     }
 }
 &lt;/code&gt;&lt;/pre&gt;</content>
@@ -748,102 +799,6 @@ minStack.getMin();   --&amp;gt; Returns -2.
     
     
       <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding112_Two Sum</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20112/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 112/</id>
-    <published>2016-06-05T02:19:59.000Z</published>
-    <updated>2016-06-05T11:59:47.177Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum.&lt;/p&gt;
-&lt;p&gt;For example:&lt;br&gt;Given the below binary tree and sum = 22,&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;      5
-     / \
-    4   8
-   /   / \
-  11  13  4
- /  \      \
-7    2      1
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;return true, as there exist a root-to-leaf path 5-&amp;gt;4-&amp;gt;11-&amp;gt;2 which sum is 22.&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Tree" scheme="http://seifzhang.jerrychia.com/tags/Tree/"/>
-    
-      <category term="Depth-first Search" scheme="http://seifzhang.jerrychia.com/tags/Depth-first-Search/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding111_Minimum Depth of Binary Tree</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode%20OJ%20111/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode OJ 111/</id>
-    <published>2016-06-05T02:17:59.000Z</published>
-    <updated>2016-06-05T11:59:49.114Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;Given a binary tree, find its minimum depth.&lt;/p&gt;
-&lt;p&gt;The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Tree" scheme="http://seifzhang.jerrychia.com/tags/Tree/"/>
-    
-      <category term="Depth-first Search" scheme="http://seifzhang.jerrychia.com/tags/Depth-first-Search/"/>
-    
-      <category term="Breadth-first Search" scheme="http://seifzhang.jerrychia.com/tags/Breadth-first-Search/"/>
     
   </entry>
   

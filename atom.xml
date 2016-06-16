@@ -597,16 +597,48 @@ minStack.getMin();   --&amp;gt; Returns -2.
     <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-141/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-141/</id>
     <published>2016-06-05T02:28:59.000Z</published>
-    <updated>2016-06-05T12:11:06.243Z</updated>
+    <updated>2016-06-16T01:26:53.436Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a linked list, determine if it has a cycle in it.&lt;/p&gt;
 &lt;p&gt;Follow up:&lt;br&gt;Can you solve it without using extra space?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;&amp;gt;&lt;/p&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;给定链表，判断是否存在环&lt;br&gt;不要用额外的空间来解决问题&lt;br&gt;复杂度O(n^2)的方法:使用两个指针a, b。a从表头开始一步一步往前走，遇到null则说明没有环，返回false；a每走一步，b从头开始走，如果遇到b==a.next，则说明有环true，如果遇到b==a，则说明暂时没有环，继续循环。&lt;/p&gt;
+&lt;p&gt;复杂度O(n)的方法:使用两个指针slow,fast。两个指针都从表头开始走，slow每次走一步，fast每次走两步，如果fast遇到null，则说明没有环，返回false；如果slow==fast，说明有环，并且此时fast超了slow一圈，返回true。&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;**注意：&lt;/em&gt;为什么有环的情况下二者一定会相遇呢？因为fast先进入环，在slow进入之后，如果把slow看作在前面，fast在后面每次循环都向slow靠近1，所以一定会相遇，而不会出现fast直接跳过slow的情况。&lt;br&gt;&lt;a href=&quot;http://www.cnblogs.com/hiddenfox/p/3408931.html&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;参考这篇文章&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/**
+ * Definition for singly-linked list.
+ * class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) {
+ *         val = x;
+ *         next = null;
+ *     }
+ * }
+ */
+public class Solution {
+    public boolean hasCycle(ListNode head) {
+        if (head == null || head.next == null) {
+                return false;
+            }
+            ListNode fast = head.next;
+            ListNode slow = head;
+            while (fast != null &amp;amp;&amp;amp; fast.next != null) {
+                if (fast == slow) {
+                    return true;
+                }
+                fast = fast.next.next;
+                slow = slow.next;
+            }
+            return false;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -628,7 +660,7 @@ minStack.getMin();   --&amp;gt; Returns -2.
     <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-125/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-125/</id>
     <published>2016-06-05T02:26:59.000Z</published>
-    <updated>2016-06-05T12:10:55.559Z</updated>
+    <updated>2016-06-16T00:55:34.586Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases.&lt;/p&gt;
@@ -638,19 +670,31 @@ minStack.getMin();   --&amp;gt; Returns -2.
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
+&lt;p&gt;给定一个字符串，判定是否是回文，只考虑字母数字字符，忽略例子给出的情况。&lt;br&gt;&lt;strong&gt;注意：&lt;/strong&gt;&lt;br&gt;如果字符串为空，则是一个有效的回文。&lt;br&gt;“As202sA”—–true&lt;br&gt;“A0”———-false&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &amp;lt; nums.length; i++) {
-            for (int j = i + 1; j &amp;lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
+    public boolean isPalindrome(String s) {
+       boolean flag = true;
+        if (s == null) {
+            flag = true;
+        }//不要
+        s = s.toLowerCase();//把大写变小写
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i &amp;lt; s.length(); i++) {//去掉与数字字母无关的字符
+            if ((s.charAt(i) &amp;gt;= &amp;apos;a&amp;apos; &amp;amp;&amp;amp; s.charAt(i) &amp;lt;= &amp;apos;z&amp;apos;)||(s.charAt(i) &amp;gt;= &amp;apos;0&amp;apos; &amp;amp;&amp;amp; s.charAt(i) &amp;lt;= &amp;apos;9&amp;apos;)) 
+            {
+                sb.append(s.charAt(i));
             }
         }
-    return null;
+        String s1 = sb.toString();
+        for (int i = 0, j = s1.length() - 1; i &amp;lt; s1.length() / 2; i++, j--) {
+            if (s1.charAt(i) != s1.charAt(j)) {
+                flag = false;
+            }
+        }
+        return flag;
+
     }
 }
 &lt;/code&gt;&lt;/pre&gt;</content>
@@ -749,7 +793,7 @@ minStack.getMin();   --&amp;gt; Returns -2.
     <link href="http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-118/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-118/</id>
     <published>2016-06-05T02:20:59.000Z</published>
-    <updated>2016-06-15T14:09:00.044Z</updated>
+    <updated>2016-06-16T00:27:02.937Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given numRows, generate the first numRows of Pascal’s triangle.&lt;/p&gt;
 &lt;p&gt;For example, given numRows = 5,&lt;br&gt;Return&lt;/p&gt;
@@ -783,6 +827,26 @@ minStack.getMin();   --&amp;gt; Returns -2.
                 }
             }
             ret.add(clow);
+        }
+        return ret;
+    }
+}
+//与第119题一致的解法
+public class Solution {
+    public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; generate(int numRows) {
+          List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; ret = new ArrayList&amp;lt;&amp;gt;();
+        if (numRows == 0) {
+            return ret;
+        }
+        List&amp;lt;Integer&amp;gt; currow = null;// 定义当前行
+        List&amp;lt;Integer&amp;gt; prerow = null;// 定义上一行
+        for (int i = 0; i &amp;lt;numRows; i++) {
+            currow = new ArrayList&amp;lt;&amp;gt;();
+            for (int j = 0; j &amp;lt;= i; j++) {
+                currow.add(j == 0 || i == j ? 1 : prerow.get(j) + prerow.get(j - 1));// 当前行是根据上一行得出来的
+            }
+            ret.add(currow);
+            prerow = currow;
         }
         return ret;
     }

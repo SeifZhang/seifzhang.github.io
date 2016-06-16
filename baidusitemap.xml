@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/13/dairy/</loc>
+    <lastmod>2016-06-16T01:44:58.869Z</lastmod>
+    <data>
+        <display>
+        <title>16端午-CCIT</title>
+        <pubTime>2016-06-13T06:09:37.897Z</pubTime>
+        
+        <tag>博客，文章</tag>
+         
+         
+           
+             
+              <breadCrumb title="Diary" url="http://seifzhang.jerrychia.com/categories/Diary/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-141/</loc>
     <lastmod>2016-06-16T01:26:53.436Z</lastmod>
     <data>
@@ -88,38 +108,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/13/dairy/</loc>
-    <lastmod>2016-06-15T13:30:28.047Z</lastmod>
-    <data>
-        <display>
-        <title>16端午-CCIT-培-月</title>
-        <pubTime>2016-06-13T06:09:37.897Z</pubTime>
-        
-        <tag>博客，文章</tag>
-         
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/15/16%E7%AB%AF%E5%8D%88-CCIT-%E5%9F%B9-%E6%9C%88/</loc>
-    <lastmod>2016-06-15T13:30:25.857Z</lastmod>
-    <data>
-        <display>
-        <title></title>
-        <pubTime>2016-06-15T13:30:25.857Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-112/</loc>
     <lastmod>2016-06-15T13:29:42.289Z</lastmod>
     <data>
@@ -173,9 +161,9 @@
         
         <tag>Tree</tag>
          
-        <tag>Depth-first Search</tag>
-         
         <tag>Breadth-first Search</tag>
+         
+        <tag>Depth-first Search</tag>
          
          
            
@@ -285,9 +273,9 @@
         
         <tag>Tree</tag>
          
-        <tag>Depth-first Search</tag>
-         
         <tag>Breadth-first Search</tag>
+         
+        <tag>Depth-first Search</tag>
          
          
            

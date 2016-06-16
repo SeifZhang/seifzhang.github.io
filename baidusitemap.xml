@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/16/dairy2/</loc>
+    <lastmod>2016-06-16T02:51:45.439Z</lastmod>
+    <data>
+        <display>
+        <title>16端午-我的记忆</title>
+        <pubTime>2016-06-16T02:29:20.602Z</pubTime>
+        
+        <tag>博客，文章</tag>
+         
+         
+           
+             
+              <breadCrumb title="Diary" url="http://seifzhang.jerrychia.com/categories/Diary/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/13/dairy1/</loc>
-    <lastmod>2016-06-16T02:02:04.309Z</lastmod>
+    <lastmod>2016-06-16T02:51:42.297Z</lastmod>
     <data>
         <display>
         <title>16端午-CCIT</title>
@@ -53,9 +73,9 @@
         <title>Coding125_Valid_Palindrome</title>
         <pubTime>2016-06-05T02:26:59.000Z</pubTime>
         
-        <tag>Two Pointers</tag>
-         
         <tag>String</tag>
+         
+        <tag>Two Pointers</tag>
          
          
            
@@ -399,9 +419,9 @@
         <title>Coding28_Implement_strStr()</title>
         <pubTime>2016-05-30T01:28:59.000Z</pubTime>
         
-        <tag>Two Pointers</tag>
-         
         <tag>String</tag>
+         
+        <tag>Two Pointers</tag>
          
          
            

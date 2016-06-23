@@ -177,9 +177,9 @@ String s3 = sBuffer.toString();
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
-    
       <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
     
   </entry>
   
@@ -231,9 +231,9 @@ String s3 = sBuffer.toString();
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
-    
       <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
+    
+      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
     
   </entry>
   
@@ -721,9 +721,9 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
-    
       <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
+    
+      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
     
   </entry>
   

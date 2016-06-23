@@ -90,26 +90,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2015/01/10/hexo-markdown-note/</loc>
-    <lastmod>2016-06-23T08:09:09.617Z</lastmod>
-    <data>
-        <display>
-        <title>Markdown语法笔记</title>
-        <pubTime>2015-01-10T11:54:59.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://seifzhang.jerrychia.com/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/23/1methods/</loc>
     <lastmod>2016-06-23T08:09:02.962Z</lastmod>
     <data>
@@ -1167,9 +1147,9 @@
         
         <tag>Tree</tag>
          
-        <tag>Breadth-first Search</tag>
-         
         <tag>Depth-first Search</tag>
+         
+        <tag>Breadth-first Search</tag>
          
          
            
@@ -1279,9 +1259,9 @@
         
         <tag>Tree</tag>
          
-        <tag>Breadth-first Search</tag>
-         
         <tag>Depth-first Search</tag>
+         
+        <tag>Breadth-first Search</tag>
          
          
            

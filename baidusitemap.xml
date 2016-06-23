@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/23/1methods/</loc>
+    <lastmod>2016-06-23T12:25:42.112Z</lastmod>
+    <data>
+        <display>
+        <title>方法集合</title>
+        <pubTime>2016-06-23T07:56:51.238Z</pubTime>
+        
+        <tag>文章</tag>
+         
+         
+           
+             
+              <breadCrumb title="Seif&#39;s Summery" url="http://seifzhang.jerrychia.com/categories/Seif-s-Summery/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-223/</loc>
-    <lastmod>2016-06-23T12:21:48.119Z</lastmod>
+    <lastmod>2016-06-23T12:25:39.793Z</lastmod>
     <data>
         <display>
         <title>Coding223_Rectangle_Area</title>
@@ -39,26 +59,6 @@
            
              
               <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/23/1methods/</loc>
-    <lastmod>2016-06-23T11:50:56.189Z</lastmod>
-    <data>
-        <display>
-        <title>方法集合</title>
-        <pubTime>2016-06-23T07:56:51.238Z</pubTime>
-        
-        <tag>文章</tag>
-         
-         
-           
-             
-              <breadCrumb title="Seif&#39;s Summery" url="http://seifzhang.jerrychia.com/categories/Seif-s-Summery/"/>
           
         </display>
     </data>

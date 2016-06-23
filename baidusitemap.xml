@@ -4,6 +4,52 @@
 
     
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-111/</loc>
+    <lastmod>2016-06-23T08:18:54.148Z</lastmod>
+    <data>
+        <display>
+        <title>Coding111_Minimum Depth of Binary Tree</title>
+        <pubTime>2016-06-05T02:17:59.000Z</pubTime>
+        
+        <tag>Tree</tag>
+         
+        <tag>Depth-first Search</tag>
+         
+        <tag>Breadth-first Search</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-257/</loc>
+    <lastmod>2016-06-23T08:18:51.427Z</lastmod>
+    <data>
+        <display>
+        <title>Coding257_Binary_Tree_Paths</title>
+        <pubTime>2016-06-21T02:44:00.000Z</pubTime>
+        
+        <tag>Tree</tag>
+         
+        <tag>Depth-first Search</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/05/30/leetCode-OJ-19/</loc>
     <lastmod>2016-06-23T08:11:47.043Z</lastmod>
     <data>
@@ -476,28 +522,6 @@
         <pubTime>2016-06-21T02:46:00.000Z</pubTime>
         
         <tag>Math</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-257/</loc>
-    <lastmod>2016-06-23T06:52:12.986Z</lastmod>
-    <data>
-        <display>
-        <title>Coding257_Binary_Tree_Paths</title>
-        <pubTime>2016-06-21T02:44:00.000Z</pubTime>
-        
-        <tag>Tree</tag>
-         
-        <tag>Depth_first Search</tag>
          
          
            
@@ -1126,30 +1150,6 @@
         <tag>Tree</tag>
          
         <tag>Depth-first Search</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-111/</loc>
-    <lastmod>2016-06-15T12:58:47.687Z</lastmod>
-    <data>
-        <display>
-        <title>Coding111_Minimum Depth of Binary Tree</title>
-        <pubTime>2016-06-05T02:17:59.000Z</pubTime>
-        
-        <tag>Tree</tag>
-         
-        <tag>Depth-first Search</tag>
-         
-        <tag>Breadth-first Search</tag>
          
          
            

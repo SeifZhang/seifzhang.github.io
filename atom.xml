@@ -561,7 +561,7 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-257/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-257/</id>
     <published>2016-06-21T02:44:00.000Z</published>
-    <updated>2016-06-23T06:52:12.986Z</updated>
+    <updated>2016-06-23T08:18:51.427Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a binary tree, return all root-to-leaf paths.&lt;/p&gt;
@@ -589,7 +589,7 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     
       <category term="Tree" scheme="http://seifzhang.jerrychia.com/tags/Tree/"/>
     
-      <category term="Depth_first Search" scheme="http://seifzhang.jerrychia.com/tags/Depth-first-Search/"/>
+      <category term="Depth-first Search" scheme="http://seifzhang.jerrychia.com/tags/Depth-first-Search/"/>
     
   </entry>
   

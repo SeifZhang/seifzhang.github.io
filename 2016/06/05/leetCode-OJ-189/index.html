@@ -50,7 +50,7 @@ var _hmt = _hmt || [];
 				<h1 class="site-name"><a href="/" title="SeifZhang&#39;s Blog">SeifZhang&#39;s Blog</a></h1>
 				<h2 class="blog-motto">A girl，just a simple girl!</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -91,7 +91,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-05T02:48:59.000Z" itemprop="datePublished">2016-06-05</time>
-    更新日期:<time datetime="2016-06-05T13:22:48.401Z" itemprop="dateModified">2016-06-05</time>
+    Updated:<time datetime="2016-06-20T03:21:06.875Z" itemprop="dateModified">2016-06-20</time>
     
   </p>
 </header>
@@ -99,8 +99,8 @@ var _hmt = _hmt || [];
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
+			<strong class="toc-title">Contents</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#再将整个字符串反转，即为所求"><span class="toc-number">3.</span> <span class="toc-text">再将整个字符串反转，即为所求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">3.1.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
 		</div>
 		
 		<h2 id="Algorithm-Description"><a href="#Algorithm-Description" class="headerlink" title="Algorithm Description"></a>Algorithm Description</h2><p>Rotate an array of n elements to the right by k steps.</p>
@@ -109,22 +109,52 @@ var _hmt = _hmt || [];
 <p><strong>Hint:</strong><br>Could you do it in-place with O(1) extra space?<br>Related problem: Reverse Words in a String II</p>
 <hr>
 <h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
-<p>两数相加得一个特定数，返回两数的索引</p>
-</blockquote>
-<hr>
+<p>旋转n个元素向右移k步的阵列<br>[-1],k=2——————-[-1]<br>[1,2],k=3——————[2,1]<br>[1,2,3],k=4—————-[3,1,2]<br>[1,2,3,4,5,6,7],k=1——–[7,1,2,3,4,5,6]<br>[1,2,3,4,5,6,7],k=2——–[6,7,1,2,3,4,5]<br>[1,2,3,4,5,6,7],k=3——–[5,6,7,1,2,3,4]<br>[1,2,3,4,5,6,7],k=4——–[4,5,6,7,1,2,3]<br>将数组分为前后两部分：[1,2,3,4||5,6,7],k=3<br>将前4个数反转[4,3,2,1],强后3个数反转[7,6,5]</p>
+<h2 id="再将整个字符串反转，即为所求"><a href="#再将整个字符串反转，即为所求" class="headerlink" title="再将整个字符串反转，即为所求"></a>再将整个字符串反转，即为所求</h2></blockquote>
 <h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &lt; nums.length; i++) {
-            for (int j = i + 1; j &lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
+    public void rotate(int[] nums, int k) {
+        int n = nums.length;
+        k = k % n;// 如上例，k=10的话前7次反转之后还是原数组，如果进行反转浪费时间，即k=10与k=3是一样的
+        if (n == 1 || k == 0) {
+            return;
         }
-    return null;
+        reverse(nums, 0, n - k - 1);
+        reverse(nums, n - k, n - 1);
+        reverse(nums, 0, n - 1);
+    }
+
+    public static void reverse(int[] nums, int left, int right) {
+        while (left &lt; right) {
+            int temp = nums[left];
+            nums[left] = nums[right];
+            nums[right] = temp;
+            left++;
+            right--;
+        }
     }
 }
-</code></pre>  
+//此法时间复杂度太高
+public class Solution {
+public void rotate(int[] nums, int k) {
+    k = k % nums.length;
+    for (int i = 0; i &lt; k; i++) {
+        reverse1(nums);
+    }
+}
+
+public static void reverse1(int[] nums) {// 每调用一次就要移动非常多的元素，时间复杂度高，而且占用额外空间
+    int n = nums.length;
+    int[] nums1 = new int[n];
+    for (int i = 0; i &lt; n; i++) {
+        nums1[i] = nums[i];
+    }
+    nums[0] = nums1[n - 1];
+    for (int i = 1; i &lt; n; i++) {
+        nums[i] = nums1[i - 1];
+    }
+}
+</code></pre><p>}</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -192,27 +222,29 @@ var _hmt = _hmt || [];
 	
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"right","bdTop":"201.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
-  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
+  <strong class="toc-title">Contents</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#再将整个字符串反转，即为所求"><span class="toc-number">3.</span> <span class="toc-text">再将整个字符串反转，即为所求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">3.1.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">分类</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 			<li><a href="/categories/Diary/" title="Diary">Diary<sup>2</sup></a></li>
 		
-			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>3</sup></a></li>
 		
-			<li><a href="/categories/LeetCode/" title="LeetCode">LeetCode<sup>48</sup></a></li>
+			<li><a href="/categories/LeetCode/" title="LeetCode">LeetCode<sup>79</sup></a></li>
+		
+			<li><a href="/categories/Seif-s-Summery/" title="Seif&#39;s Summery">Seif&#39;s Summery<sup>2</sup></a></li>
 		
 		</ul>
 </div>
@@ -220,44 +252,48 @@ var _hmt = _hmt || [];
 
   
 <div class="tagslist">
-	<p class="asidetitle">标签</p>
+	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Array/" title="Array">Array<sup>11</sup></a></li>
+			<li><a href="/tags/Array/" title="Array">Array<sup>14</sup></a></li>
 		
-			<li><a href="/tags/Bit-Manipulation/" title="Bit Manipulation">Bit Manipulation<sup>4</sup></a></li>
+			<li><a href="/tags/Binary-Search/" title="Binary Search">Binary Search<sup>3</sup></a></li>
+		
+			<li><a href="/tags/Bit-Manipulation/" title="Bit Manipulation">Bit Manipulation<sup>6</sup></a></li>
+		
+			<li><a href="/tags/Brainteaser/" title="Brainteaser">Brainteaser<sup>1</sup></a></li>
 		
 			<li><a href="/tags/Breadth-first-Search/" title="Breadth-first Search">Breadth-first Search<sup>3</sup></a></li>
 		
 			<li><a href="/tags/Depth-first-Search/" title="Depth-first Search">Depth-first Search<sup>6</sup></a></li>
 		
-			<li><a href="/tags/Design/" title="Design">Design<sup>1</sup></a></li>
+			<li><a href="/tags/Depth-first-Search/" title="Depth_first Search">Depth_first Search<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Design/" title="Design">Design<sup>3</sup></a></li>
 		
 			<li><a href="/tags/Divide-and-Conquer/" title="Divide and Conquer">Divide and Conquer<sup>2</sup></a></li>
 		
-			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>3</sup></a></li>
+			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>4</sup></a></li>
 		
-			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>3</sup></a></li>
+			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>13</sup></a></li>
 		
-			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>2</sup></a></li>
 		
-			<li><a href="/tags/Linked-List/" title="Linked List">Linked List<sup>3</sup></a></li>
+			<li><a href="/tags/Linked-List/" title="Linked List">Linked List<sup>0</sup></a></li>
 		
-			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>3</sup></a></li>
+			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>10</sup></a></li>
 		
-			<li><a href="/tags/Math/" title="Math">Math<sup>9</sup></a></li>
+			<li><a href="/tags/Math/" title="Math">Math<sup>16</sup></a></li>
 		
-			<li><a href="/tags/Stack/" title="Stack">Stack<sup>2</sup></a></li>
+			<li><a href="/tags/Sort/" title="Sort">Sort<sup>3</sup></a></li>
 		
-			<li><a href="/tags/String/" title="String">String<sup>12</sup></a></li>
+			<li><a href="/tags/Stack/" title="Stack">Stack<sup>4</sup></a></li>
 		
-			<li><a href="/tags/Tree/" title="Tree">Tree<sup>8</sup></a></li>
+			<li><a href="/tags/String/" title="String">String<sup>14</sup></a></li>
 		
-			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>6</sup></a></li>
+			<li><a href="/tags/Tree/" title="Tree">Tree<sup>11</sup></a></li>
 		
-			<li><a href="/tags/Width-first-Search/" title="Width-first Search">Width-first Search<sup>1</sup></a></li>
-		
-			<li><a href="/tags/博客，文章/" title="博客，文章">博客，文章<sup>3</sup></a></li>
+			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>12</sup></a></li>
 		
 		</ul>
 </div>
@@ -265,8 +301,8 @@ var _hmt = _hmt || [];
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">61</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">2</span></li></ul>
   </div>
 
 
@@ -276,23 +312,23 @@ var _hmt = _hmt || [];
   <ul class="entry">
     
       <li>
-        <a href="/2016/06/16/dairy2/">16端午-我的记忆</a>
+        <a href="/2016/06/23/1methods/">方法集合</a>
       </li>
     
       <li>
-        <a href="/2016/06/13/dairy1/">16端午-CCIT</a>
+        <a href="/2016/06/22/leetCode-OJ-350/">Coding350_Intersection_of_Two_Arrays_II</a>
       </li>
     
       <li>
-        <a href="/2016/06/05/leetCode-OJ-198/">Coding198_House_Robber</a>
+        <a href="/2016/06/22/leetCode-OJ-349/">Coding349_Intersection_of_Two_Arrays</a>
       </li>
     
       <li>
-        <a href="/2016/06/05/leetCode-OJ-191/">Coding191_Number_of_1_Bits</a>
+        <a href="/2016/06/22/leetCode-OJ-345/">Coding345_Reverse_Vowels_of_a_String</a>
       </li>
     
       <li>
-        <a href="/2016/06/05/leetCode-OJ-190/">Coding190_Reverse_Bits</a>
+        <a href="/2016/06/22/leetCode-OJ-344/">Coding344_Reverse_String</a>
       </li>
     
   </ul>
@@ -307,7 +343,7 @@ var _hmt = _hmt || [];
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
 </aside>

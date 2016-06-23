@@ -4,30 +4,13 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>16端午-我的记忆 | SeifZhang&#39;s Blog</title>
+    <title>Coding219_Contains_Duplicate_II | SeifZhang&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="SeifZhang">
     
-    <meta name="description" content="我的端午之行
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-好吧，结束了。我好累，接下来要吃土了，哈哈">
+    <meta name="description" content="Algorithm Description
+Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums">
     
     
     
@@ -67,7 +50,7 @@ var _hmt = _hmt || [];
 				<h1 class="site-name"><a href="/" title="SeifZhang&#39;s Blog">SeifZhang&#39;s Blog</a></h1>
 				<h2 class="blog-motto">A girl，just a simple girl!</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -100,15 +83,15 @@ var _hmt = _hmt || [];
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/06/16/dairy2/" title="16端午-我的记忆" itemprop="url">16端午-我的记忆</a>
+      <a href="/2016/06/21/leetCode-OJ-219/" title="Coding219_Contains_Duplicate_II" itemprop="url">Coding219_Contains_Duplicate_II</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://seifzhang.jerrychia.com" title="SeifZhang">SeifZhang</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-06-16T02:29:20.602Z" itemprop="datePublished">2016-06-16</time>
-    更新日期:<time datetime="2016-06-16T02:54:45.182Z" itemprop="dateModified">2016-06-16</time>
+    <time datetime="2016-06-21T02:24:00.000Z" itemprop="datePublished">2016-06-21</time>
+    Updated:<time datetime="2016-06-22T09:06:18.259Z" itemprop="dateModified">2016-06-22</time>
     
   </p>
 </header>
@@ -116,49 +99,35 @@ var _hmt = _hmt || [];
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
-		
+			<strong class="toc-title">Contents</strong>
+		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
 		</div>
 		
-		<p><strong>我的端午之行</strong><br><img src="http://seifzhang.jerrychia.com/img/duanwu/1.jpg" alt="烤冷面"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/2.jpg" alt="三个人吃5份"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/3.jpg" alt="等烤冷面"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/4.jpg" alt="吃着呢"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/5.jpg" alt="做着呢"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/6.jpg" alt="麻辣烫"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/7.jpg" alt="麻辣烫和面"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/8.jpg" alt="就想吃烤冷面"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/9.jpg" alt="三公寓合照"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/10.jpg" alt="三公寓合照"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/11.jpg" alt="校外"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/12.jpg" alt="松辉市场"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/13.jpg" alt="七教"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/14.jpg" alt="五彩绳"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/15.jpg" alt="五彩绳"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/16.jpg" alt="普通话考试"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/17.jpg" alt="顺便报个名"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/18.jpg" alt="轻轨三号线"></p>
-<p><img src="http://seifzhang.jerrychia.com/img/duanwu/19.jpg" alt="回校的动车，端午节几乎没人"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/20.jpg" alt="第一次坐，就是快"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/21.jpg" alt="韩国干脆面，也就那样"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/22.jpg" alt="嗑瓜子呢"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/23.jpg" alt="臭美呢"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/24.jpg" alt="比较和谐"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/25.jpg" alt="挡什么挡"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/26.jpg" alt="沈阳北站"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/27.jpg" alt="到学校了"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/28.jpg" alt="大帅府的樱桃"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/29.jpg" alt="把很短"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/30.jpg" alt="大青楼"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/31.jpg" alt="金鱼"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/32.jpg" alt="金鱼，金鱼"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/33.jpg" alt="金鱼，金鱼，金鱼"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/34.jpg" alt="富丽"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/35.jpg" alt="堂皇"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/36.jpg" alt="周总理和张学良"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/37.jpg" alt="都是假人，你信？"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/38.jpg" alt="小时候用过"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/39.jpg" alt="饿的时候对这个真的无感"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/40.jpg" alt="国华烧烤"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/41.jpg" alt="她俩"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/42.jpg" alt="漫湖公园"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/43.jpg" alt="轮滑"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/44.jpg" alt="轮滑"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/45.jpg" alt="小狗你看啥"><br><img src="http://seifzhang.jerrychia.com/img/duanwu/46.jpg" alt="美津火锅，赢了一瓶大雪碧"><br><strong>好吧，结束了。我好累，接下来要吃土了，哈哈</strong></p>
-  
+		<h2 id="Algorithm-Description"><a href="#Algorithm-Description" class="headerlink" title="Algorithm Description"></a>Algorithm Description</h2><blockquote>
+<p>Given an array of integers and an integer k, find out whether there are two distinct indices i and j in the array such that nums[i] = nums[j] and the difference between i and j is at most k.</p>
+</blockquote>
+<hr>
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><hr>
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/博客，文章/">博客，文章</a>
+  <span></span> <a href="/tags/Array/">Array</a><a href="/tags/Hash-Table/">Hash Table</a>
   </div>
 
 
 <div class="article-categories">
   <span></span>
-  <a class="article-category-link" href="/categories/Diary/">Diary</a>
+  <a class="article-category-link" href="/categories/LeetCode/">LeetCode</a>
 </div>
 
 
 
 <div class="article-share" id="share">
 
-  <div data-url="http://seifzhang.jerrychia.com/2016/06/16/dairy2/" data-title="16端午-我的记忆 | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
+  <div data-url="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-219/" data-title="Coding219_Contains_Duplicate_II | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -167,11 +136,19 @@ var _hmt = _hmt || [];
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2016/06/21/leetCode-OJ-223/" title="Coding223_Rectangle_Area">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  Coding223_Rectangle_Area</span>
+</a>
+</div>
+
 
 <div class="next">
-<a href="/2016/06/13/dairy1/"  title="16端午-CCIT">
+<a href="/2016/06/21/leetCode-OJ-217/"  title="Coding217_Contains_Duplicate">
  <strong>NEXT:</strong><br/> 
- <span>16端午-CCIT
+ <span>Coding217_Contains_Duplicate
 </span>
 </a>
 </div>
@@ -180,7 +157,7 @@ var _hmt = _hmt || [];
 
 	
 <section class="comment">
-	<div class="ds-thread" data-thread-key="2016/06/16/dairy2/" data-title="16端午-我的记忆" data-url="http://seifzhang.jerrychia.com/2016/06/16/dairy2/"></div>
+	<div class="ds-thread" data-thread-key="2016/06/21/leetCode-OJ-219/" data-title="Coding219_Contains_Duplicate_II" data-url="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-219/"></div>
 	<!-- Duoshuo Comment START -->  
 	<script type="text/javascript">
 	var duoshuoQuery = {short_name:"jerrychia"};
@@ -199,27 +176,29 @@ var _hmt = _hmt || [];
 	
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"right","bdTop":"201.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
-  
+  <strong class="toc-title">Contents</strong>
+  <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">分类</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 			<li><a href="/categories/Diary/" title="Diary">Diary<sup>2</sup></a></li>
 		
-			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+			<li><a href="/categories/Hexo/" title="Hexo">Hexo<sup>3</sup></a></li>
 		
-			<li><a href="/categories/LeetCode/" title="LeetCode">LeetCode<sup>48</sup></a></li>
+			<li><a href="/categories/LeetCode/" title="LeetCode">LeetCode<sup>79</sup></a></li>
+		
+			<li><a href="/categories/Seif-s-Summery/" title="Seif&#39;s Summery">Seif&#39;s Summery<sup>2</sup></a></li>
 		
 		</ul>
 </div>
@@ -227,44 +206,48 @@ var _hmt = _hmt || [];
 
   
 <div class="tagslist">
-	<p class="asidetitle">标签</p>
+	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Array/" title="Array">Array<sup>11</sup></a></li>
+			<li><a href="/tags/Array/" title="Array">Array<sup>14</sup></a></li>
 		
-			<li><a href="/tags/Bit-Manipulation/" title="Bit Manipulation">Bit Manipulation<sup>4</sup></a></li>
+			<li><a href="/tags/Binary-Search/" title="Binary Search">Binary Search<sup>3</sup></a></li>
+		
+			<li><a href="/tags/Bit-Manipulation/" title="Bit Manipulation">Bit Manipulation<sup>6</sup></a></li>
+		
+			<li><a href="/tags/Brainteaser/" title="Brainteaser">Brainteaser<sup>1</sup></a></li>
 		
 			<li><a href="/tags/Breadth-first-Search/" title="Breadth-first Search">Breadth-first Search<sup>3</sup></a></li>
 		
 			<li><a href="/tags/Depth-first-Search/" title="Depth-first Search">Depth-first Search<sup>6</sup></a></li>
 		
-			<li><a href="/tags/Design/" title="Design">Design<sup>1</sup></a></li>
+			<li><a href="/tags/Depth-first-Search/" title="Depth_first Search">Depth_first Search<sup>1</sup></a></li>
+		
+			<li><a href="/tags/Design/" title="Design">Design<sup>3</sup></a></li>
 		
 			<li><a href="/tags/Divide-and-Conquer/" title="Divide and Conquer">Divide and Conquer<sup>2</sup></a></li>
 		
-			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>3</sup></a></li>
+			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>4</sup></a></li>
 		
-			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>3</sup></a></li>
+			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>13</sup></a></li>
 		
-			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
+			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>2</sup></a></li>
 		
-			<li><a href="/tags/Linked-List/" title="Linked List">Linked List<sup>3</sup></a></li>
+			<li><a href="/tags/Linked-List/" title="Linked List">Linked List<sup>0</sup></a></li>
 		
-			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>3</sup></a></li>
+			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>10</sup></a></li>
 		
-			<li><a href="/tags/Math/" title="Math">Math<sup>9</sup></a></li>
+			<li><a href="/tags/Math/" title="Math">Math<sup>16</sup></a></li>
 		
-			<li><a href="/tags/Stack/" title="Stack">Stack<sup>2</sup></a></li>
+			<li><a href="/tags/Sort/" title="Sort">Sort<sup>3</sup></a></li>
 		
-			<li><a href="/tags/String/" title="String">String<sup>12</sup></a></li>
+			<li><a href="/tags/Stack/" title="Stack">Stack<sup>4</sup></a></li>
 		
-			<li><a href="/tags/Tree/" title="Tree">Tree<sup>8</sup></a></li>
+			<li><a href="/tags/String/" title="String">String<sup>14</sup></a></li>
 		
-			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>6</sup></a></li>
+			<li><a href="/tags/Tree/" title="Tree">Tree<sup>11</sup></a></li>
 		
-			<li><a href="/tags/Width-first-Search/" title="Width-first Search">Width-first Search<sup>1</sup></a></li>
-		
-			<li><a href="/tags/博客，文章/" title="博客，文章">博客，文章<sup>3</sup></a></li>
+			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>12</sup></a></li>
 		
 		</ul>
 </div>
@@ -272,8 +255,8 @@ var _hmt = _hmt || [];
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">28</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">61</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">2</span></li></ul>
   </div>
 
 
@@ -283,23 +266,23 @@ var _hmt = _hmt || [];
   <ul class="entry">
     
       <li>
-        <a href="/2016/06/16/dairy2/">16端午-我的记忆</a>
+        <a href="/2016/06/23/1methods/">方法集合</a>
       </li>
     
       <li>
-        <a href="/2016/06/13/dairy1/">16端午-CCIT</a>
+        <a href="/2016/06/22/leetCode-OJ-350/">Coding350_Intersection_of_Two_Arrays_II</a>
       </li>
     
       <li>
-        <a href="/2016/06/05/leetCode-OJ-198/">Coding198_House_Robber</a>
+        <a href="/2016/06/22/leetCode-OJ-349/">Coding349_Intersection_of_Two_Arrays</a>
       </li>
     
       <li>
-        <a href="/2016/06/05/leetCode-OJ-191/">Coding191_Number_of_1_Bits</a>
+        <a href="/2016/06/22/leetCode-OJ-345/">Coding345_Reverse_Vowels_of_a_String</a>
       </li>
     
       <li>
-        <a href="/2016/06/05/leetCode-OJ-190/">Coding190_Reverse_Bits</a>
+        <a href="/2016/06/22/leetCode-OJ-344/">Coding344_Reverse_String</a>
       </li>
     
   </ul>
@@ -314,7 +297,7 @@ var _hmt = _hmt || [];
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
 </aside>

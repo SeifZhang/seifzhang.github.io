@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-23T08:09:02.962Z</updated>
+  <updated>2016-06-23T11:50:56.189Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://seifzhang.jerrychia.com/2016/06/23/1methods/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/23/1methods/</id>
     <published>2016-06-23T07:56:51.238Z</published>
-    <updated>2016-06-23T08:09:02.962Z</updated>
+    <updated>2016-06-23T11:50:56.189Z</updated>
     
     <content type="html">&lt;h2 id=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;a href=&quot;#字符数组转换成字符串的方法&quot; class=&quot;headerlink&quot; title=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;/a&gt;字符数组转换成字符串的方法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;char[] chs = { &amp;apos;a&amp;apos;, &amp;apos;b&amp;apos;, &amp;apos;c&amp;apos;, &amp;apos;d&amp;apos;, &amp;apos;e&amp;apos; };
 String s1 = new String(chs);
@@ -31,7 +31,15 @@ for (int i = 0; i &amp;lt; chs.length; i++) {
 }
 String s3 = sBuffer.toString();
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;p&gt;##&lt;/p&gt;
+&lt;h2 id=&quot;HashSet-的使用&quot;&gt;&lt;a href=&quot;#HashSet-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashSet()的使用&quot;&gt;&lt;/a&gt;HashSet()的使用&lt;/h2&gt;&lt;p&gt;leetcode中第202题（happy number）和217题,219题（contains duplicate）都用到了.&lt;br&gt;HashSet 是 Set 接口的常用实现类&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;`Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;Integer&amp;gt;();`    
+&lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
+&lt;li&gt;它不允许出现重复元素；&lt;/li&gt;
+&lt;li&gt;不保证和政集合中元素的顺序&lt;/li&gt;
+&lt;li&gt;允许包含值为null的元素，但最多只能有一个null元素。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;HashMap-的使用&quot;&gt;&lt;a href=&quot;#HashMap-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashMap()的使用&quot;&gt;&lt;/a&gt;HashMap()的使用&lt;/h2&gt;&lt;p&gt;leetcode中第219题（contains duplicate）用到了.&lt;br&gt;HashMap 是 Map 接口的常用实现类&lt;br&gt;    &lt;code&gt;Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();&lt;/code&gt;&lt;br&gt;存储实现：put(key,vlaue);&lt;br&gt;读取实现：get(key);&lt;/p&gt;
 </content>
     
     <summary type="html">

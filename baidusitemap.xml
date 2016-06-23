@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-107/</loc>
+    <lastmod>2016-06-23T08:21:26.667Z</lastmod>
+    <data>
+        <display>
+        <title>Coding107_Binary_Tree_Level_Order_Traversal_II</title>
+        <pubTime>2016-06-05T02:09:59.000Z</pubTime>
+        
+        <tag>Tree</tag>
+         
+        <tag>Breadth-first Search</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-111/</loc>
     <lastmod>2016-06-23T08:18:54.148Z</lastmod>
     <data>
@@ -1150,28 +1172,6 @@
         <tag>Tree</tag>
          
         <tag>Depth-first Search</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/05/leetCode-OJ-107/</loc>
-    <lastmod>2016-06-15T12:58:21.224Z</lastmod>
-    <data>
-        <display>
-        <title>Coding107_Binary_Tree_Level_Order_Traversal_II</title>
-        <pubTime>2016-06-05T02:09:59.000Z</pubTime>
-        
-        <tag>Tree</tag>
-         
-        <tag>Width-first Search</tag>
          
          
            

@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-05-30T01:42:59.000Z" itemprop="datePublished">2016-05-30</time>
-    Updated:<time datetime="2016-06-05T13:42:51.152Z" itemprop="dateModified">2016-06-05</time>
+    Updated:<time datetime="2016-06-24T01:28:11.378Z" itemprop="dateModified">2016-06-24</time>
     
   </p>
 </header>
@@ -131,6 +131,7 @@ public class Solution {
             } else {
                 q = q.next;
                 p.next = q.next;
+                q=p;//这句加不加都一样啊！
             }
 
         }

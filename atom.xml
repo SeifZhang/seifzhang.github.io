@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-23T12:25:42.112Z</updated>
+  <updated>2016-06-23T13:34:34.549Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://seifzhang.jerrychia.com/2016/06/23/1methods/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/23/1methods/</id>
     <published>2016-06-23T07:56:51.238Z</published>
-    <updated>2016-06-23T12:25:42.112Z</updated>
+    <updated>2016-06-23T13:34:34.549Z</updated>
     
     <content type="html">&lt;h2 id=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;a href=&quot;#字符数组转换成字符串的方法&quot; class=&quot;headerlink&quot; title=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;/a&gt;字符数组转换成字符串的方法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;char[] chs = { &amp;apos;a&amp;apos;, &amp;apos;b&amp;apos;, &amp;apos;c&amp;apos;, &amp;apos;d&amp;apos;, &amp;apos;e&amp;apos; };
 String s1 = new String(chs);
@@ -40,6 +40,8 @@ String s3 = sBuffer.toString();
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;HashMap-的使用&quot;&gt;&lt;a href=&quot;#HashMap-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashMap()的使用&quot;&gt;&lt;/a&gt;HashMap()的使用&lt;/h2&gt;&lt;p&gt;leetcode中第219题（contains duplicate）用到了.&lt;br&gt;HashMap 是 Map 接口的常用实现类&lt;br&gt;    &lt;code&gt;Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();&lt;/code&gt;&lt;br&gt;存储实现：put(key,vlaue);&lt;br&gt;读取实现：get(key);&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;2-3-4的幂&quot;&gt;&lt;a href=&quot;#2-3-4的幂&quot; class=&quot;headerlink&quot; title=&quot;2,3,4的幂&quot;&gt;&lt;/a&gt;2,3,4的幂&lt;/h2&gt;&lt;p&gt;T231，T326，T342分别是有关2，3，4的幂的问题。用位操作，求3的幂不是用位操作。&lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -177,9 +179,9 @@ String s3 = sBuffer.toString();
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
-    
       <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
     
   </entry>
   
@@ -231,9 +233,9 @@ String s3 = sBuffer.toString();
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
-    
       <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+    
+      <category term="String" scheme="http://seifzhang.jerrychia.com/tags/String/"/>
     
   </entry>
   
@@ -242,7 +244,7 @@ String s3 = sBuffer.toString();
     <link href="http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-342/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-342/</id>
     <published>2016-06-22T03:04:00.000Z</published>
-    <updated>2016-06-23T07:29:30.649Z</updated>
+    <updated>2016-06-23T13:37:46.941Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given an integer (signed 32 bits), write a function to check whether it is a power of 4.&lt;/p&gt;
@@ -250,7 +252,10 @@ String s3 = sBuffer.toString();
 &lt;p&gt;&lt;strong&gt;Follow up:&lt;/strong&gt; Could you solve it without loops/recursion?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;不能用求2的幂的方法来求，因为第一个是1的情况也有可能是2的幂，而不是4的幂。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
 &lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
     
     <summary type="html">
@@ -271,15 +276,34 @@ String s3 = sBuffer.toString();
     <link href="http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-326/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-326/</id>
     <published>2016-06-22T03:02:00.000Z</published>
-    <updated>2016-06-23T07:29:27.586Z</updated>
+    <updated>2016-06-24T01:19:02.054Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given an integer, write a function to determine if it is a power of three.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Follow up:&lt;/strong&gt;&lt;br&gt;Could you do it without using any loop / recursion?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;p&gt;3^0=1,3^1=3,3^2=9,3^3=27,3^4=81,3^5=243…&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public boolean isPowerOfThree(int n) {
+      if (n &amp;lt; 0) {
+            return false;
+        }
+        double ret = Math.log10(n) / Math.log10(3);
+        // 如果n=5,ret=1.4649735207179273,ret%1肯定不等于0
+        //System.out.println(ret);
+        if (ret % 1 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+        // 网上的一行代码
+        // 1162261467 is 3^19, 3^20 is bigger than int
+        // return ( n&amp;gt;0 &amp;amp;&amp;amp; 1162261467%n==0);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -721,9 +745,9 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
       <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
     
     
-      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
-    
       <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+    
+      <category term="LinkedList" scheme="http://seifzhang.jerrychia.com/tags/LinkedList/"/>
     
   </entry>
   

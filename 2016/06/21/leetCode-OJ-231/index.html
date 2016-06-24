@@ -14,7 +14,8 @@ Given an integer, write a function to determine if it is a power of two.
 
 
 My Algorithmidea:
-code:">
+因为如果n是2的幂，那么在n的二进制表达中，只有第一位是1，其他为0
+">
     
     
     
@@ -93,7 +94,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-21T02:32:00.000Z" itemprop="datePublished">2016-06-21</time>
-    Updated:<time datetime="2016-06-22T12:26:55.982Z" itemprop="dateModified">2016-06-22</time>
+    Updated:<time datetime="2016-06-23T13:29:06.156Z" itemprop="dateModified">2016-06-23</time>
     
   </p>
 </header>
@@ -109,8 +110,26 @@ var _hmt = _hmt || [];
 <p>Given an integer, write a function to determine if it is a power of two.</p>
 </blockquote>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
+<p>因为如果n是2的幂，那么在n的二进制表达中，只有第一位是1，其他为0</p>
+</blockquote>
+<hr>
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>public class Solution {
+    public boolean isPowerOfTwo(int n) {
+        if(n&lt;=0) return false;
+        String str = Integer.toBinaryString(n);
+        Set&lt;Character&gt; set = new HashSet&lt;Character&gt;();
+        int i = 0;
+        set.add(str.charAt(0));
+        for (i = 1; i &lt; str.length(); i++) {
+            if (set.contains(str.charAt(i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 

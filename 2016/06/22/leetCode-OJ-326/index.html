@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-22T03:02:00.000Z" itemprop="datePublished">2016-06-22</time>
-    Updated:<time datetime="2016-06-23T07:29:27.586Z" itemprop="dateModified">2016-06-23</time>
+    Updated:<time datetime="2016-06-24T01:19:02.054Z" itemprop="dateModified">2016-06-24</time>
     
   </p>
 </header>
@@ -107,8 +107,27 @@ var _hmt = _hmt || [];
 <p><strong>Follow up:</strong><br>Could you do it without using any loop / recursion?</p>
 </blockquote>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><p>3^0=1,3^1=3,3^2=9,3^3=27,3^4=81,3^5=243…</p>
+<hr>
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>public class Solution {
+    public boolean isPowerOfThree(int n) {
+      if (n &lt; 0) {
+            return false;
+        }
+        double ret = Math.log10(n) / Math.log10(3);
+        // 如果n=5,ret=1.4649735207179273,ret%1肯定不等于0
+        //System.out.println(ret);
+        if (ret % 1 == 0) {
+            return true;
+        } else {
+            return false;
+        }
+        // 网上的一行代码
+        // 1162261467 is 3^19, 3^20 is bigger than int
+        // return ( n&gt;0 &amp;&amp; 1162261467%n==0);
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 

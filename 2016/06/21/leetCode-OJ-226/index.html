@@ -101,7 +101,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-21T02:30:00.000Z" itemprop="datePublished">2016-06-21</time>
-    Updated:<time datetime="2016-06-22T12:25:16.213Z" itemprop="dateModified">2016-06-22</time>
+    Updated:<time datetime="2016-06-23T13:15:45.091Z" itemprop="dateModified">2016-06-23</time>
     
   </p>
 </header>
@@ -126,14 +126,61 @@ var _hmt = _hmt || [];
   7     2
  / \   / \
 9   6 3   1
-</code></pre><p><strong>Trivia:</strong><br>This problem was inspired by this original tweet by Max Howell:</p>
+</code></pre><p><strong>Trivia:</strong><br>This problem was inspired by <a href="https://twitter.com/mxcl/status/608682016205344768" target="_blank" rel="external">this original tweet</a> by <a href="https://twitter.com/mxcl" target="_blank" rel="external">Max Howell</a>:</p>
 <blockquote>
 <p>   <strong>Google: 90% of our engineers use the software you wrote (Homebrew), but you can’t invert a binary tree on a whiteboard so fuck off.</strong></p>
 </blockquote>
 </blockquote>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
+<p>递归法，设一个临时树节点。左右子树交换</p>
+</blockquote>
+<hr>
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+       public TreeNode invertTree(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        TreeNode temp = root.left;
+        root.left = invertTree(root.right);
+        root.right = invertTree(temp);
+        return root;
+    }
+
+    // 非递归写法
+    //先把根节点排入队列中，然后从队中取出来，交换其左右节点，如果存在则分别将左右节点在排入队列中，以此类推直到队列中木有节点了停止循环，返回root即可。
+    public TreeNode invertTree1(TreeNode root) {
+        if (root == null) {
+            return null;
+        }
+        Queue&lt;TreeNode&gt; queue = new LinkedList&lt;TreeNode&gt;();
+        queue.add(root);
+        while (!queue.isEmpty()) {
+            TreeNode pNode = queue.peek();
+            queue.poll();
+            TreeNode temp = pNode.left;
+            pNode.left = pNode.right;
+            pNode.right = temp;
+            if (pNode.left != null) {
+                queue.add(pNode.left);
+            }
+            if (pNode.right != null) {
+                queue.add(pNode.right);
+            }
+        }
+        return root;
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 

@@ -92,7 +92,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-21T02:28:00.000Z" itemprop="datePublished">2016-06-21</time>
-    Updated:<time datetime="2016-06-22T12:19:33.247Z" itemprop="dateModified">2016-06-22</time>
+    Updated:<time datetime="2016-06-25T09:05:22.349Z" itemprop="dateModified">2016-06-25</time>
     
   </p>
 </header>
@@ -121,8 +121,61 @@ var _hmt = _hmt || [];
 <p><strong>Update (2015-06-11):</strong><br>The class name of the Java function had been updated to MyStack instead of Stack.</p>
 </blockquote>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
+<p>入栈：a队列当前有元素，b为空（倒过来也一样）则将需要入栈的元素先放b中，然后将a中的元素依次出列并入列倒b中。（保证有一个队列是空的）</p>
+<pre><code>push(1):[ , ,1] [ , , ]
+
+push(2):[ , , ] [ ,1,2]
+
+push(3):[ 1, 2,3 ] [ , , ]
+</code></pre></blockquote>
+<hr>
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>class MyStack {
+    Queue&lt;Integer&gt; queue1 = new LinkedList&lt;&gt;();
+    Queue&lt;Integer&gt; queue2 = new LinkedList&lt;&gt;();
+
+    public void push(int x) {
+        if (queue1.isEmpty()) {
+            queue1.add(x);
+            while (!queue2.isEmpty()) {
+                queue1.add(queue2.poll());
+            }
+        } else {
+            queue2.add(x);
+            while (!queue1.isEmpty()) {
+                queue2.add(queue1.poll());
+            }
+        }
+    }
+
+    // Removes the element on top of the stack.
+    public void pop() {
+        if (!queue1.isEmpty()) {
+            queue1.poll();
+        }
+        if (!queue2.isEmpty()) {
+            queue2.poll();
+        }
+    }
+
+    // Get the top element.
+    public int top() {
+        if (!queue1.isEmpty()) {
+            return queue1.peek();
+        }
+        if (!queue2.isEmpty()) {
+            return queue2.peek();
+        }
+        return 0;
+    }
+
+    // Return whether the stack is empty.
+    public boolean empty() {
+        return queue1.isEmpty() &amp;&amp; queue2.isEmpty();
+
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 

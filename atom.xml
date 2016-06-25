@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-23T13:34:34.549Z</updated>
+  <updated>2016-06-25T08:47:13.270Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://seifzhang.jerrychia.com/2016/06/23/1methods/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/23/1methods/</id>
     <published>2016-06-23T07:56:51.238Z</published>
-    <updated>2016-06-23T13:34:34.549Z</updated>
+    <updated>2016-06-25T08:47:13.270Z</updated>
     
     <content type="html">&lt;h2 id=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;a href=&quot;#字符数组转换成字符串的方法&quot; class=&quot;headerlink&quot; title=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;/a&gt;字符数组转换成字符串的方法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;char[] chs = { &amp;apos;a&amp;apos;, &amp;apos;b&amp;apos;, &amp;apos;c&amp;apos;, &amp;apos;d&amp;apos;, &amp;apos;e&amp;apos; };
 String s1 = new String(chs);
@@ -42,6 +42,11 @@ String s3 = sBuffer.toString();
 &lt;h2 id=&quot;HashMap-的使用&quot;&gt;&lt;a href=&quot;#HashMap-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashMap()的使用&quot;&gt;&lt;/a&gt;HashMap()的使用&lt;/h2&gt;&lt;p&gt;leetcode中第219题（contains duplicate）用到了.&lt;br&gt;HashMap 是 Map 接口的常用实现类&lt;br&gt;    &lt;code&gt;Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();&lt;/code&gt;&lt;br&gt;存储实现：put(key,vlaue);&lt;br&gt;读取实现：get(key);&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;2-3-4的幂&quot;&gt;&lt;a href=&quot;#2-3-4的幂&quot; class=&quot;headerlink&quot; title=&quot;2,3,4的幂&quot;&gt;&lt;/a&gt;2,3,4的幂&lt;/h2&gt;&lt;p&gt;T231，T326，T342分别是有关2，3，4的幂的问题。用位操作，求3的幂不是用位操作。&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;Queue的使用&quot;&gt;&lt;a href=&quot;#Queue的使用&quot; class=&quot;headerlink&quot; title=&quot;Queue的使用&quot;&gt;&lt;/a&gt;Queue的使用&lt;/h2&gt;&lt;p&gt;Queue接口与List、Set同一级别，都是继承了Collection接口。LinkedList实现了Queue接 口。Queue接口窄化了对LinkedList的方法的访问权限（即在方法中的参数类型如果是Queue时，就完全只能访问Queue接口所定义的方法 了，而不能直接访问 LinkedList的非Queue的方法），以使得只有恰当的方法才可以使用。BlockingQueue 继承了Queue接口。&lt;/p&gt;
+&lt;p&gt;队列是一种数据结构．它有两个基本操作：在队列尾部加人一个元素，和从队列头部移除一个元素：&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;add&lt;/strong&gt;        –增加一个元索                     如果队列已满，则抛出一个IIIegaISlabEepeplian异常&lt;br&gt;&lt;strong&gt;remove&lt;/strong&gt;   –移除并返回队列头部的元素    如果队列为空，则抛出一个NoSuchElementException异常&lt;br&gt;&lt;strong&gt;element&lt;/strong&gt;  –返回队列头部的元素             如果队列为空，则抛出一个NoSuchElementException异常&lt;br&gt;&lt;strong&gt;offer&lt;/strong&gt;       –添加一个元素并返回true       如果队列已满，则返回false&lt;br&gt;&lt;strong&gt;poll&lt;/strong&gt;         –移除并返问队列头部的元素    如果队列为空，则返回null&lt;br&gt;&lt;strong&gt;peek&lt;/strong&gt;       –返回队列头部的元素             如果队列为空，则返回null&lt;br&gt;&lt;strong&gt;put&lt;/strong&gt;         –添加一个元素                      如果队列满，则阻塞&lt;br&gt;&lt;strong&gt;take&lt;/strong&gt;        –移除并返回队列头部的元素     如果队列为空，则阻塞&lt;/p&gt;
+&lt;p&gt;remove、element、offer 、poll、peek 其实是属于Queue接口。 &lt;/p&gt;
 </content>
     
     <summary type="html">
@@ -690,7 +695,7 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-235/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-235/</id>
     <published>2016-06-21T02:38:00.000Z</published>
-    <updated>2016-06-22T13:12:21.128Z</updated>
+    <updated>2016-06-25T13:22:44.052Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a binary search tree (BST), find the lowest common ancestor (LCA) of two given nodes in the BST.&lt;/p&gt;
@@ -705,8 +710,48 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;注意是&lt;strong&gt;二分查找树&lt;/strong&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;二叉查找树或者是一棵空树，或者是具有下列性质的二叉树：&lt;br&gt;（1）若左子树不空，则左子树上所有结点的值均小于它的根结点的值；&lt;br&gt;（2）若右子树不空，则右子树上所有结点的值均大于或等于它的根结点的值；&lt;br&gt;（3）左、右子树也分别为二叉查找树；&lt;br&gt;（4）没有键值相等的节点。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;先判断入口是否有非法输入。&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;如果某一个root==p || root == q，那么LCA肯定是root（因为是top down，LCA肯定在root所囊括的树上，而root又是p q其中一个节点了，那么另外一个节点肯定在root之下，那么root就是LCA），那么返回root&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果root&amp;lt;min(p, q)，那么LCA肯定在右子树上，那么递归&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果max(p, q)&amp;lt;root，那么LCA肯定在左子树上，那么递归&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;如果p&amp;lt;root&amp;lt;q，那么root肯定为LCA&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || p == null || q == null) {
+            return null;
+        }
+        if ((root.val - p.val) * (q.val - root.val) &amp;gt;= 0) {
+            return root;
+        }
+        if (root.val &amp;gt;= p.val) {
+            return lowestCommonAncestor(root.left, p, q);
+        }
+        return lowestCommonAncestor(root.right, p, q);
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -726,15 +771,102 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-234/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-234/</id>
     <published>2016-06-21T02:36:00.000Z</published>
-    <updated>2016-06-23T08:11:34.948Z</updated>
+    <updated>2016-06-25T10:46:10.542Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a singly linked list, determine if it is a palindrome.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Follow up:&lt;/strong&gt;&lt;br&gt;Could you do it in O(n) time and O(1) space?&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;判断一个单向链表是否是回文链表，要求O（n）的时间复杂度和O（1）的空间复杂度。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;遍历整个链表，将链表每个节点的值记录在数组中，再判断数组是不是一个回文数组，时间复杂度为O（n），空间复杂度也为O（n）。&lt;/li&gt;
+&lt;li&gt;利用栈先进后出的性质，将链表前半段压入栈中，再逐个弹出与链表后半段比较。时间复杂度O（n），但仍然需要n/2的栈空间，空间复杂度为O（n）。&lt;/li&gt;
+&lt;li&gt;反转链表法，将链表后半段原地翻转，再将前半段、后半段依次比较，判断是否相等，时间复杂度O（n），空间复杂度为O（1）。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+ // 此法不对，因为是在一个单链表上操作；p2 = reverseList(head);相当于是在另一个链表上操作了
+    public boolean isPalindrome1(ListNode head) {
+        if (head == null)
+            return true;
+        ListNode p1 = head;
+        ListNode p2 = null;
+        p2 = reverseList(head);
+        while ((p1.next != null) &amp;amp;&amp;amp; (p2.next != null)) {
+            if (p1.val != p2.val) {
+                return false;
+            }
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+        return true;
+    }
+
+    public boolean isPalindrome(ListNode head) {
+        if (head == null)
+            return true;
+        // 1、寻找中间的指针start--mid--end，使用快慢指针
+        ListNode slow = head;
+        ListNode fast = head;
+        ListNode mid = null;
+        while (fast != null &amp;amp;&amp;amp; fast.next != null) {// 循环条件缺一不可（缺少程序会崩溃），链表节点个数可能为为奇数或偶数
+            slow = slow.next;// 慢指针走一步
+            fast = fast.next.next;// 快指针走两步
+        }
+        mid = slow;
+        // 2、然后把中间到最后的链表反转start--end--mid(mid_new)
+        ListNode mid_new = reverseList(mid);
+        // 3、然后start--mid_new与end--mid_new比较
+        while (mid_new != null &amp;amp;&amp;amp; head != null) {
+            if (mid_new.val != head.val) {
+                return false;
+            }
+            mid_new = mid_new.next;
+            head = head.next;
+        }
+        return true;
+    }
+
+    public ListNode reverseList(ListNode head) {
+        ListNode preHead = new ListNode(-1);
+        preHead.next = head;
+        ListNode tmp, p;
+        if (head == null) {
+            return null;
+        }
+        tmp = preHead.next;
+        while (tmp.next != null) {
+            p = tmp.next;
+            tmp.next = p.next;
+            p.next = preHead.next;
+            preHead.next = p;
+        }
+        return preHead.next;
+    }
+
+    public ListNode reverseList1(ListNode head) {
+        ListNode prev = null;
+        while (head != null) {
+            ListNode tmp = head.next;
+            head.next = prev;
+            prev = head;
+            head = tmp;
+        }
+        return prev;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     

@@ -93,7 +93,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-21T02:36:00.000Z" itemprop="datePublished">2016-06-21</time>
-    Updated:<time datetime="2016-06-23T08:11:34.948Z" itemprop="dateModified">2016-06-23</time>
+    Updated:<time datetime="2016-06-25T10:46:10.542Z" itemprop="dateModified">2016-06-25</time>
     
   </p>
 </header>
@@ -110,8 +110,95 @@ var _hmt = _hmt || [];
 <p><strong>Follow up:</strong><br>Could you do it in O(n) time and O(1) space?</p>
 </blockquote>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
+<p>判断一个单向链表是否是回文链表，要求O（n）的时间复杂度和O（1）的空间复杂度。</p>
+<ul>
+<li>遍历整个链表，将链表每个节点的值记录在数组中，再判断数组是不是一个回文数组，时间复杂度为O（n），空间复杂度也为O（n）。</li>
+<li>利用栈先进后出的性质，将链表前半段压入栈中，再逐个弹出与链表后半段比较。时间复杂度O（n），但仍然需要n/2的栈空间，空间复杂度为O（n）。</li>
+<li>反转链表法，将链表后半段原地翻转，再将前半段、后半段依次比较，判断是否相等，时间复杂度O（n），空间复杂度为O（1）。</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+ // 此法不对，因为是在一个单链表上操作；p2 = reverseList(head);相当于是在另一个链表上操作了
+    public boolean isPalindrome1(ListNode head) {
+        if (head == null)
+            return true;
+        ListNode p1 = head;
+        ListNode p2 = null;
+        p2 = reverseList(head);
+        while ((p1.next != null) &amp;&amp; (p2.next != null)) {
+            if (p1.val != p2.val) {
+                return false;
+            }
+            p1 = p1.next;
+            p2 = p2.next;
+        }
+        return true;
+    }
+
+    public boolean isPalindrome(ListNode head) {
+        if (head == null)
+            return true;
+        // 1、寻找中间的指针start--mid--end，使用快慢指针
+        ListNode slow = head;
+        ListNode fast = head;
+        ListNode mid = null;
+        while (fast != null &amp;&amp; fast.next != null) {// 循环条件缺一不可（缺少程序会崩溃），链表节点个数可能为为奇数或偶数
+            slow = slow.next;// 慢指针走一步
+            fast = fast.next.next;// 快指针走两步
+        }
+        mid = slow;
+        // 2、然后把中间到最后的链表反转start--end--mid(mid_new)
+        ListNode mid_new = reverseList(mid);
+        // 3、然后start--mid_new与end--mid_new比较
+        while (mid_new != null &amp;&amp; head != null) {
+            if (mid_new.val != head.val) {
+                return false;
+            }
+            mid_new = mid_new.next;
+            head = head.next;
+        }
+        return true;
+    }
+
+    public ListNode reverseList(ListNode head) {
+        ListNode preHead = new ListNode(-1);
+        preHead.next = head;
+        ListNode tmp, p;
+        if (head == null) {
+            return null;
+        }
+        tmp = preHead.next;
+        while (tmp.next != null) {
+            p = tmp.next;
+            tmp.next = p.next;
+            p.next = preHead.next;
+            preHead.next = p;
+        }
+        return preHead.next;
+    }
+
+    public ListNode reverseList1(ListNode head) {
+        ListNode prev = null;
+        while (head != null) {
+            ListNode tmp = head.next;
+            head.next = prev;
+            prev = head;
+            head = tmp;
+        }
+        return prev;
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 

@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-21T02:38:00.000Z" itemprop="datePublished">2016-06-21</time>
-    Updated:<time datetime="2016-06-22T13:12:21.128Z" itemprop="dateModified">2016-06-22</time>
+    Updated:<time datetime="2016-06-25T13:22:44.052Z" itemprop="dateModified">2016-06-25</time>
     
   </p>
 </header>
@@ -115,8 +115,48 @@ var _hmt = _hmt || [];
 </code></pre><p>For example, the lowest common ancestor (LCA) of nodes 2 and 8 is 6. Another example is LCA of nodes 2 and 4 is 2, since a node can be a descendant of itself according to the LCA definition.</p>
 </blockquote>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
+<p>注意是<strong>二分查找树</strong></p>
+<blockquote>
+<p>二叉查找树或者是一棵空树，或者是具有下列性质的二叉树：<br>（1）若左子树不空，则左子树上所有结点的值均小于它的根结点的值；<br>（2）若右子树不空，则右子树上所有结点的值均大于或等于它的根结点的值；<br>（3）左、右子树也分别为二叉查找树；<br>（4）没有键值相等的节点。</p>
+</blockquote>
+<p>先判断入口是否有非法输入。</p>
+<ol>
+<li><p>如果某一个root==p || root == q，那么LCA肯定是root（因为是top down，LCA肯定在root所囊括的树上，而root又是p q其中一个节点了，那么另外一个节点肯定在root之下，那么root就是LCA），那么返回root</p>
+</li>
+<li><p>如果root&lt;min(p, q)，那么LCA肯定在右子树上，那么递归</p>
+</li>
+<li><p>如果max(p, q)&lt;root，那么LCA肯定在左子树上，那么递归</p>
+</li>
+<li><p>如果p&lt;root&lt;q，那么root肯定为LCA</p>
+</li>
+</ol>
+</blockquote>
+<hr>
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>/**
+ * Definition for a binary tree node.
+ * public class TreeNode {
+ *     int val;
+ *     TreeNode left;
+ *     TreeNode right;
+ *     TreeNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        if (root == null || p == null || q == null) {
+            return null;
+        }
+        if ((root.val - p.val) * (q.val - root.val) &gt;= 0) {
+            return root;
+        }
+        if (root.val &gt;= p.val) {
+            return lowestCommonAncestor(root.left, p, q);
+        }
+        return lowestCommonAncestor(root.right, p, q);
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 

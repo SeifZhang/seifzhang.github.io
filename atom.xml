@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-25T08:47:13.270Z</updated>
+  <updated>2016-06-25T13:30:35.613Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://seifzhang.jerrychia.com/2016/06/23/1methods/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/23/1methods/</id>
     <published>2016-06-23T07:56:51.238Z</published>
-    <updated>2016-06-25T08:47:13.270Z</updated>
+    <updated>2016-06-25T13:30:35.613Z</updated>
     
     <content type="html">&lt;h2 id=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;a href=&quot;#字符数组转换成字符串的方法&quot; class=&quot;headerlink&quot; title=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;/a&gt;字符数组转换成字符串的方法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;char[] chs = { &amp;apos;a&amp;apos;, &amp;apos;b&amp;apos;, &amp;apos;c&amp;apos;, &amp;apos;d&amp;apos;, &amp;apos;e&amp;apos; };
 String s1 = new String(chs);
@@ -47,7 +47,27 @@ String s3 = sBuffer.toString();
 &lt;p&gt;队列是一种数据结构．它有两个基本操作：在队列尾部加人一个元素，和从队列头部移除一个元素：&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;add&lt;/strong&gt;        –增加一个元索                     如果队列已满，则抛出一个IIIegaISlabEepeplian异常&lt;br&gt;&lt;strong&gt;remove&lt;/strong&gt;   –移除并返回队列头部的元素    如果队列为空，则抛出一个NoSuchElementException异常&lt;br&gt;&lt;strong&gt;element&lt;/strong&gt;  –返回队列头部的元素             如果队列为空，则抛出一个NoSuchElementException异常&lt;br&gt;&lt;strong&gt;offer&lt;/strong&gt;       –添加一个元素并返回true       如果队列已满，则返回false&lt;br&gt;&lt;strong&gt;poll&lt;/strong&gt;         –移除并返问队列头部的元素    如果队列为空，则返回null&lt;br&gt;&lt;strong&gt;peek&lt;/strong&gt;       –返回队列头部的元素             如果队列为空，则返回null&lt;br&gt;&lt;strong&gt;put&lt;/strong&gt;         –添加一个元素                      如果队列满，则阻塞&lt;br&gt;&lt;strong&gt;take&lt;/strong&gt;        –移除并返回队列头部的元素     如果队列为空，则阻塞&lt;/p&gt;
 &lt;p&gt;remove、element、offer 、poll、peek 其实是属于Queue接口。 &lt;/p&gt;
-</content>
+&lt;hr&gt;
+&lt;p&gt;##寻找单链表中间节点，快慢指针法&lt;br&gt;第一步，有两个指针同时从头开始遍历。第二步，一个快指针一次走2步，一个慢指针一次走一步。第三步，快指针先到链表尾部，而慢指针则恰好到达链表中部。（快指针到链表尾部时，当链表长度为奇数时，慢指针指向的即是链表中间指针，当链表长度为偶数时，慢指针指向的结点和慢指针指向结点的下一个结点都是链表的中间结点）。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;void SearchMid(node* head, node* mid){
+          node* temp = head;
+          while(head-&amp;gt;next-&amp;gt;next != NULL)
+          {
+                 head = head-&amp;gt;next-&amp;gt;next;
+                 temp = temp-&amp;gt;next;
+                 mid=temp;
+          }
+}
+// 1、寻找中间的指针start--mid--end，使用快慢指针
+        ListNode slow = head;
+        ListNode fast = head;
+        ListNode mid = null;
+        while (fast != null &amp;amp;&amp;amp; fast.next != null) {// 循环条件缺一不可（缺少程序会崩溃），链表节点个数可能为为奇数或偶数
+            slow = slow.next;// 慢指针走一步
+            fast = fast.next.next;// 快指针走两步
+        }
+        mid = slow;
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     

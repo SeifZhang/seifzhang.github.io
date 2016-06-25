@@ -51,7 +51,7 @@ var _hmt = _hmt || [];
 				<h1 class="site-name"><a href="/" title="SeifZhang&#39;s Blog">SeifZhang&#39;s Blog</a></h1>
 				<h2 class="blog-motto">A girl，just a simple girl!</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-23T07:56:51.238Z" itemprop="datePublished">2016-06-23</time>
-    Updated:<time datetime="2016-06-25T08:47:13.270Z" itemprop="dateModified">2016-06-25</time>
+    更新日期:<time datetime="2016-06-25T13:30:35.613Z" itemprop="dateModified">2016-06-25</time>
     
   </p>
 </header>
@@ -98,7 +98,7 @@ var _hmt = _hmt || [];
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#字符数组转换成字符串的方法"><span class="toc-number">1.</span> <span class="toc-text">字符数组转换成字符串的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashSet-的使用"><span class="toc-number">2.</span> <span class="toc-text">HashSet()的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashMap-的使用"><span class="toc-number">3.</span> <span class="toc-text">HashMap()的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-4的幂"><span class="toc-number">4.</span> <span class="toc-text">2,3,4的幂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Queue的使用"><span class="toc-number">5.</span> <span class="toc-text">Queue的使用</span></a></li></ol>
 		</div>
 		
@@ -127,7 +127,27 @@ String s3 = sBuffer.toString();
 <p>队列是一种数据结构．它有两个基本操作：在队列尾部加人一个元素，和从队列头部移除一个元素：</p>
 <p><strong>add</strong>        –增加一个元索                     如果队列已满，则抛出一个IIIegaISlabEepeplian异常<br><strong>remove</strong>   –移除并返回队列头部的元素    如果队列为空，则抛出一个NoSuchElementException异常<br><strong>element</strong>  –返回队列头部的元素             如果队列为空，则抛出一个NoSuchElementException异常<br><strong>offer</strong>       –添加一个元素并返回true       如果队列已满，则返回false<br><strong>poll</strong>         –移除并返问队列头部的元素    如果队列为空，则返回null<br><strong>peek</strong>       –返回队列头部的元素             如果队列为空，则返回null<br><strong>put</strong>         –添加一个元素                      如果队列满，则阻塞<br><strong>take</strong>        –移除并返回队列头部的元素     如果队列为空，则阻塞</p>
 <p>remove、element、offer 、poll、peek 其实是属于Queue接口。 </p>
-  
+<hr>
+<p>##寻找单链表中间节点，快慢指针法<br>第一步，有两个指针同时从头开始遍历。第二步，一个快指针一次走2步，一个慢指针一次走一步。第三步，快指针先到链表尾部，而慢指针则恰好到达链表中部。（快指针到链表尾部时，当链表长度为奇数时，慢指针指向的即是链表中间指针，当链表长度为偶数时，慢指针指向的结点和慢指针指向结点的下一个结点都是链表的中间结点）。</p>
+<pre><code>void SearchMid(node* head, node* mid){
+          node* temp = head;
+          while(head-&gt;next-&gt;next != NULL)
+          {
+                 head = head-&gt;next-&gt;next;
+                 temp = temp-&gt;next;
+                 mid=temp;
+          }
+}
+// 1、寻找中间的指针start--mid--end，使用快慢指针
+        ListNode slow = head;
+        ListNode fast = head;
+        ListNode mid = null;
+        while (fast != null &amp;&amp; fast.next != null) {// 循环条件缺一不可（缺少程序会崩溃），链表节点个数可能为为奇数或偶数
+            slow = slow.next;// 慢指针走一步
+            fast = fast.next.next;// 快指针走两步
+        }
+        mid = slow;
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -187,20 +207,20 @@ String s3 = sBuffer.toString();
 	
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"right","bdTop":"201.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#字符数组转换成字符串的方法"><span class="toc-number">1.</span> <span class="toc-text">字符数组转换成字符串的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashSet-的使用"><span class="toc-number">2.</span> <span class="toc-text">HashSet()的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashMap-的使用"><span class="toc-number">3.</span> <span class="toc-text">HashMap()的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-4的幂"><span class="toc-number">4.</span> <span class="toc-text">2,3,4的幂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Queue的使用"><span class="toc-number">5.</span> <span class="toc-text">Queue的使用</span></a></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Categories</p>
+	<p class="asidetitle">分类</p>
 		<ul>
 		
 			<li><a href="/categories/Diary/" title="Diary">Diary<sup>2</sup></a></li>
@@ -217,7 +237,7 @@ String s3 = sBuffer.toString();
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
 			<li><a href="/tags/Array/" title="Array">Array<sup>14</sup></a></li>
@@ -266,7 +286,7 @@ String s3 = sBuffer.toString();
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archives</a></p>
+    <p class="asidetitle"><a href="/archives">归档</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">61</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -308,7 +328,7 @@ String s3 = sBuffer.toString();
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>

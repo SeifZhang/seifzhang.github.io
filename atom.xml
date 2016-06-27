@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-25T13:30:35.613Z</updated>
+  <updated>2016-06-27T06:22:47.403Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://seifzhang.jerrychia.com/2016/06/23/1methods/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/23/1methods/</id>
     <published>2016-06-23T07:56:51.238Z</published>
-    <updated>2016-06-25T13:30:35.613Z</updated>
+    <updated>2016-06-27T06:22:47.403Z</updated>
     
     <content type="html">&lt;h2 id=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;a href=&quot;#字符数组转换成字符串的方法&quot; class=&quot;headerlink&quot; title=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;/a&gt;字符数组转换成字符串的方法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;char[] chs = { &amp;apos;a&amp;apos;, &amp;apos;b&amp;apos;, &amp;apos;c&amp;apos;, &amp;apos;d&amp;apos;, &amp;apos;e&amp;apos; };
 String s1 = new String(chs);
@@ -31,7 +31,7 @@ for (int i = 0; i &amp;lt; chs.length; i++) {
 }
 String s3 = sBuffer.toString();
 &lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
-&lt;h2 id=&quot;HashSet-的使用&quot;&gt;&lt;a href=&quot;#HashSet-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashSet()的使用&quot;&gt;&lt;/a&gt;HashSet()的使用&lt;/h2&gt;&lt;p&gt;leetcode中第202题（happy number）和217题,219题（contains duplicate）都用到了.&lt;br&gt;HashSet 是 Set 接口的常用实现类&lt;/p&gt;
+&lt;h2 id=&quot;HashSet-的使用&quot;&gt;&lt;a href=&quot;#HashSet-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashSet()的使用&quot;&gt;&lt;/a&gt;HashSet()的使用&lt;/h2&gt;&lt;p&gt;leetcode中&lt;strong&gt;T202&lt;/strong&gt;（happy number）和&lt;strong&gt;T217&lt;/strong&gt;,&lt;strong&gt;T219&lt;/strong&gt;（contains duplicate）都用到了.&lt;br&gt;HashSet 是 Set 接口的常用实现类&lt;/p&gt;
 &lt;pre&gt;&lt;code&gt;`Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;Integer&amp;gt;();`    
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;它不允许出现重复元素；&lt;/li&gt;
@@ -39,9 +39,9 @@ String s3 = sBuffer.toString();
 &lt;li&gt;允许包含值为null的元素，但最多只能有一个null元素。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;HashMap-的使用&quot;&gt;&lt;a href=&quot;#HashMap-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashMap()的使用&quot;&gt;&lt;/a&gt;HashMap()的使用&lt;/h2&gt;&lt;p&gt;leetcode中第219题（contains duplicate）用到了.&lt;br&gt;HashMap 是 Map 接口的常用实现类&lt;br&gt;    &lt;code&gt;Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();&lt;/code&gt;&lt;br&gt;存储实现：put(key,vlaue);&lt;br&gt;读取实现：get(key);&lt;/p&gt;
+&lt;h2 id=&quot;HashMap-的使用&quot;&gt;&lt;a href=&quot;#HashMap-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashMap()的使用&quot;&gt;&lt;/a&gt;HashMap()的使用&lt;/h2&gt;&lt;p&gt;leetcode中&lt;strong&gt;T219&lt;/strong&gt;（contains duplicate）用到了.&lt;br&gt;HashMap 是 Map 接口的常用实现类&lt;br&gt;    &lt;code&gt;Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();&lt;/code&gt;&lt;br&gt;存储实现：put(key,vlaue);&lt;br&gt;读取实现：get(key);&lt;/p&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;2-3-4的幂&quot;&gt;&lt;a href=&quot;#2-3-4的幂&quot; class=&quot;headerlink&quot; title=&quot;2,3,4的幂&quot;&gt;&lt;/a&gt;2,3,4的幂&lt;/h2&gt;&lt;p&gt;T231，T326，T342分别是有关2，3，4的幂的问题。用位操作，求3的幂不是用位操作。&lt;/p&gt;
+&lt;h2 id=&quot;2-3-4的幂&quot;&gt;&lt;a href=&quot;#2-3-4的幂&quot; class=&quot;headerlink&quot; title=&quot;2,3,4的幂&quot;&gt;&lt;/a&gt;2,3,4的幂&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;T231，T326，T342&lt;/strong&gt;分别是有关2，3，4的幂的问题。用位操作，求3的幂不是用位操作。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;Queue的使用&quot;&gt;&lt;a href=&quot;#Queue的使用&quot; class=&quot;headerlink&quot; title=&quot;Queue的使用&quot;&gt;&lt;/a&gt;Queue的使用&lt;/h2&gt;&lt;p&gt;Queue接口与List、Set同一级别，都是继承了Collection接口。LinkedList实现了Queue接 口。Queue接口窄化了对LinkedList的方法的访问权限（即在方法中的参数类型如果是Queue时，就完全只能访问Queue接口所定义的方法 了，而不能直接访问 LinkedList的非Queue的方法），以使得只有恰当的方法才可以使用。BlockingQueue 继承了Queue接口。&lt;/p&gt;
 &lt;p&gt;队列是一种数据结构．它有两个基本操作：在队列尾部加人一个元素，和从队列头部移除一个元素：&lt;/p&gt;
@@ -67,6 +67,27 @@ String s3 = sBuffer.toString();
             fast = fast.next.next;// 快指针走两步
         }
         mid = slow;
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;##对数字各位相加&lt;br&gt;&lt;strong&gt;T202与T258&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public int add(int num) {
+    int sum = 0;
+    while (num != 0) {
+        sum += num % 10;
+        num = num / 10;
+    }
+    return sum;
+}
+
+// 另一种使数字中各位上数字相加的方法
+public int add1(int num) {
+    String s = String.valueOf(num);
+    char[] chs = s.toCharArray();
+    int sum = 0;
+    for (int i = 0; i &amp;lt; chs.length; i++) {
+        sum += chs[i] - &amp;apos;0&amp;apos;;
+    }
+    return sum;
+}
 &lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
@@ -581,7 +602,7 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-258/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-258/</id>
     <published>2016-06-21T02:46:00.000Z</published>
-    <updated>2016-06-23T06:58:30.395Z</updated>
+    <updated>2016-06-27T06:20:10.048Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a non-negative integer num, repeatedly add all its digits until the result has only one digit.&lt;/p&gt;
@@ -597,8 +618,57 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;总结了两种数字中各位上数字相加的方法&lt;br&gt;总结规律：&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;1 -2 -3 -4 -5 -6 -7 -8 -9
+10-11-12-13-14-15-16-17-18
+19-20-21-22-23-24-25-26-27
+&lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int addDigits(int num) {
+        if (num &amp;lt; 10)
+            return num;
+        int ret = 0;
+        ret = add(num);
+        return addDigits(ret);
+    }
+
+    public int add(int num) {
+        int sum = 0;
+        while (num != 0) {
+            sum += num % 10;
+            num = num / 10;
+        }
+        return sum;
+    }
+
+    // 另一种使数字中各位上数字相加的方法
+    public int add1(int num) {
+        String s = String.valueOf(num);
+        char[] chs = s.toCharArray();
+        int sum = 0;
+        for (int i = 0; i &amp;lt; chs.length; i++) {
+            sum += chs[i] - &amp;apos;0&amp;apos;;
+        }
+        return sum;
+    }
+    //自己做出来的是上面的方法，下面的方法是网上的方法
+    public int addDigits1(int num) {
+         while(num&amp;gt;=10){  
+                num = (num/10)+num%10;  
+            }  
+            return num;  
+    }
+    //总结规律：
+    //1 -2 -3 -4 -5 -6 -7 -8 -9
+    //10-11-12-13-14-15-16-17-18
+    //19-20-21-22-23-24-25-26-27
+    public int addDigits2(int num) {
+        return 1+(num-1)%9;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -687,15 +757,35 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-237/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-237/</id>
     <published>2016-06-21T02:40:00.000Z</published>
-    <updated>2016-06-23T06:45:51.194Z</updated>
+    <updated>2016-06-27T05:20:07.870Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Write a function to delete a node (except the tail) in a singly linked list, given only access to that node.&lt;/p&gt;
 &lt;p&gt;Supposed the linked list is &lt;code&gt;1 -&amp;gt; 2 -&amp;gt; 3 -&amp;gt; 4&lt;/code&gt;and you are given the third node with value 3, the linked list should become&lt;code&gt;1 -&amp;gt; 2 -&amp;gt; 4&lt;/code&gt;after calling your function.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;删除单链表中的一个节点，只给出要删除的节点，没有别的信息。并且该节点不是最后一个节点。&lt;br&gt;所以把要删除的节点与下一节点交换，删除下一节点就可以了&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode(int x) { val = x; }
+ * }
+ */
+public class Solution {
+    public void deleteNode(ListNode node) {
+        if (node == null || node.next == null) {
+            return;
+        }
+        node.val = node.next.val;
+        node.next = node.next.next;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     

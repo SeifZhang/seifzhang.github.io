@@ -5,7 +5,7 @@
     
   <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/23/1methods/</loc>
-    <lastmod>2016-06-25T13:30:35.613Z</lastmod>
+    <lastmod>2016-06-27T06:22:47.403Z</lastmod>
     <data>
         <display>
         <title>方法集合</title>
@@ -17,6 +17,46 @@
            
              
               <breadCrumb title="Seif&#39;s Summery" url="http://seifzhang.jerrychia.com/categories/Seif-s-Summery/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-258/</loc>
+    <lastmod>2016-06-27T06:20:10.048Z</lastmod>
+    <data>
+        <display>
+        <title>Coding258_Add_Digits</title>
+        <pubTime>2016-06-21T02:46:00.000Z</pubTime>
+        
+        <tag>Math</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-237/</loc>
+    <lastmod>2016-06-27T05:20:07.870Z</lastmod>
+    <data>
+        <display>
+        <title>Coding237_Delete_Node_in_a_Linked_List</title>
+        <pubTime>2016-06-21T02:40:00.000Z</pubTime>
+        
+        <tag>LinkedList</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
           
         </display>
     </data>
@@ -746,26 +786,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-258/</loc>
-    <lastmod>2016-06-23T06:58:30.395Z</lastmod>
-    <data>
-        <display>
-        <title>Coding258_Add_Digits</title>
-        <pubTime>2016-06-21T02:46:00.000Z</pubTime>
-        
-        <tag>Math</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-242/</loc>
     <lastmod>2016-06-23T06:48:40.418Z</lastmod>
     <data>
@@ -776,26 +796,6 @@
         <tag>Hash Table</tag>
          
         <tag>Sort</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-237/</loc>
-    <lastmod>2016-06-23T06:45:51.194Z</lastmod>
-    <data>
-        <display>
-        <title>Coding237_Delete_Node_in_a_Linked_List</title>
-        <pubTime>2016-06-21T02:40:00.000Z</pubTime>
-        
-        <tag>LinkedList</tag>
          
          
            

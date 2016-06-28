@@ -4,8 +4,60 @@
 
     
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-350/</loc>
+    <lastmod>2016-06-28T08:39:53.576Z</lastmod>
+    <data>
+        <display>
+        <title>Coding350_Intersection_of_Two_Arrays_II</title>
+        <pubTime>2016-06-22T03:12:00.000Z</pubTime>
+        
+        <tag>Hash Table</tag>
+         
+        <tag>Two Pointers</tag>
+         
+        <tag>Sort</tag>
+         
+        <tag>Binary Search</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-349/</loc>
+    <lastmod>2016-06-28T08:20:58.599Z</lastmod>
+    <data>
+        <display>
+        <title>Coding349_Intersection_of_Two_Arrays</title>
+        <pubTime>2016-06-22T03:10:00.000Z</pubTime>
+        
+        <tag>Hash Table</tag>
+         
+        <tag>Two Pointers</tag>
+         
+        <tag>Sort</tag>
+         
+        <tag>Binary Search</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/23/1methods/</loc>
-    <lastmod>2016-06-27T06:22:47.403Z</lastmod>
+    <lastmod>2016-06-28T07:49:50.833Z</lastmod>
     <data>
         <display>
         <title>方法集合</title>
@@ -17,6 +69,108 @@
            
              
               <breadCrumb title="Seif&#39;s Summery" url="http://seifzhang.jerrychia.com/categories/Seif-s-Summery/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-345/</loc>
+    <lastmod>2016-06-28T07:07:19.776Z</lastmod>
+    <data>
+        <display>
+        <title>Coding345_Reverse_Vowels_of_a_String</title>
+        <pubTime>2016-06-22T03:08:00.000Z</pubTime>
+        
+        <tag>Two Pointers</tag>
+         
+        <tag>String</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-290/</loc>
+    <lastmod>2016-06-28T06:37:08.766Z</lastmod>
+    <data>
+        <display>
+        <title>Coding290_Word_Pattern</title>
+        <pubTime>2016-06-21T02:54:00.000Z</pubTime>
+        
+        <tag>Hash Table</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-303/</loc>
+    <lastmod>2016-06-28T06:37:00.949Z</lastmod>
+    <data>
+        <display>
+        <title>Coding303_Range_Sum_Query - Immutable</title>
+        <pubTime>2016-06-22T03:00:00.000Z</pubTime>
+        
+        <tag>Dynamic Programming</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-278/</loc>
+    <lastmod>2016-06-28T04:57:20.774Z</lastmod>
+    <data>
+        <display>
+        <title>Coding278_First_Bad_Version</title>
+        <pubTime>2016-06-21T02:50:00.000Z</pubTime>
+        
+        <tag>Binary Search</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-263/</loc>
+    <lastmod>2016-06-28T04:42:30.374Z</lastmod>
+    <data>
+        <display>
+        <title>Coding263_Ugly_Number</title>
+        <pubTime>2016-06-21T02:48:00.000Z</pubTime>
+        
+        <tag>Math</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
           
         </display>
     </data>
@@ -570,100 +724,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-350/</loc>
-    <lastmod>2016-06-23T07:37:43.161Z</lastmod>
-    <data>
-        <display>
-        <title>Coding350_Intersection_of_Two_Arrays_II</title>
-        <pubTime>2016-06-22T03:12:00.000Z</pubTime>
-        
-        <tag>Hash Table</tag>
-         
-        <tag>Two Pointers</tag>
-         
-        <tag>Sort</tag>
-         
-        <tag>Binary Search</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-349/</loc>
-    <lastmod>2016-06-23T07:34:49.737Z</lastmod>
-    <data>
-        <display>
-        <title>Coding349_Intersection_of_Two_Arrays</title>
-        <pubTime>2016-06-22T03:10:00.000Z</pubTime>
-        
-        <tag>Hash Table</tag>
-         
-        <tag>Two Pointers</tag>
-         
-        <tag>Sort</tag>
-         
-        <tag>Binary Search</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-345/</loc>
-    <lastmod>2016-06-23T07:32:35.585Z</lastmod>
-    <data>
-        <display>
-        <title>Coding345_Reverse_Vowels_of_a_String</title>
-        <pubTime>2016-06-22T03:08:00.000Z</pubTime>
-        
-        <tag>Two Pointers</tag>
-         
-        <tag>String</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-303/</loc>
-    <lastmod>2016-06-23T07:21:22.140Z</lastmod>
-    <data>
-        <display>
-        <title>Coding303_Range_Sum_Query - Immutable</title>
-        <pubTime>2016-06-22T03:00:00.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-299/</loc>
     <lastmod>2016-06-23T07:18:23.835Z</lastmod>
     <data>
@@ -704,26 +764,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-290/</loc>
-    <lastmod>2016-06-23T07:11:26.907Z</lastmod>
-    <data>
-        <display>
-        <title>Coding290_Word_Pattern</title>
-        <pubTime>2016-06-21T02:54:00.000Z</pubTime>
-        
-        <tag>Hash Table</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-283/</loc>
     <lastmod>2016-06-23T07:07:54.587Z</lastmod>
     <data>
@@ -734,46 +774,6 @@
         <tag>Array</tag>
          
         <tag>Two Pointers</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-278/</loc>
-    <lastmod>2016-06-23T07:04:55.635Z</lastmod>
-    <data>
-        <display>
-        <title>Coding278_First_Bad_Version</title>
-        <pubTime>2016-06-21T02:50:00.000Z</pubTime>
-        
-        <tag>Binary Search</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-263/</loc>
-    <lastmod>2016-06-23T07:04:19.371Z</lastmod>
-    <data>
-        <display>
-        <title>Coding263_Ugly_Number</title>
-        <pubTime>2016-06-21T02:48:00.000Z</pubTime>
-        
-        <tag>Math</tag>
          
          
            

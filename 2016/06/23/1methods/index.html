@@ -51,7 +51,7 @@ var _hmt = _hmt || [];
 				<h1 class="site-name"><a href="/" title="SeifZhang&#39;s Blog">SeifZhang&#39;s Blog</a></h1>
 				<h2 class="blog-motto">A girl，just a simple girl!</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-23T07:56:51.238Z" itemprop="datePublished">2016-06-23</time>
-    Updated:<time datetime="2016-06-27T06:22:47.403Z" itemprop="dateModified">2016-06-27</time>
+    更新日期:<time datetime="2016-06-28T07:49:50.833Z" itemprop="dateModified">2016-06-28</time>
     
   </p>
 </header>
@@ -98,7 +98,7 @@ var _hmt = _hmt || [];
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">Contents</strong>
+			<strong class="toc-title">文章目录</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#字符数组转换成字符串的方法"><span class="toc-number">1.</span> <span class="toc-text">字符数组转换成字符串的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashSet-的使用"><span class="toc-number">2.</span> <span class="toc-text">HashSet()的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashMap-的使用"><span class="toc-number">3.</span> <span class="toc-text">HashMap()的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-4的幂"><span class="toc-number">4.</span> <span class="toc-text">2,3,4的幂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Queue的使用"><span class="toc-number">5.</span> <span class="toc-text">Queue的使用</span></a></li></ol>
 		</div>
 		
@@ -115,12 +115,48 @@ String s3 = sBuffer.toString();
 <pre><code>`Set&lt;Integer&gt; set = new HashSet&lt;Integer&gt;();`    
 </code></pre><ul>
 <li>它不允许出现重复元素；</li>
-<li>不保证和政集合中元素的顺序</li>
+<li>不保证集合中元素的顺序</li>
 <li>允许包含值为null的元素，但最多只能有一个null元素。</li>
 </ul>
 <hr>
-<h2 id="HashMap-的使用"><a href="#HashMap-的使用" class="headerlink" title="HashMap()的使用"></a>HashMap()的使用</h2><p>leetcode中<strong>T219</strong>（contains duplicate）用到了.<br>HashMap 是 Map 接口的常用实现类<br>    <code>Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();</code><br>存储实现：put(key,vlaue);<br>读取实现：get(key);</p>
-<hr>
+<h2 id="HashMap-的使用"><a href="#HashMap-的使用" class="headerlink" title="HashMap()的使用"></a>HashMap()的使用</h2><p>leetcode中<strong>T219</strong>（contains duplicate）用到了.<br>HashMap 是 Map 接口的常用实现类<br>    <code>Map&lt;Integer, Integer&gt; map = new HashMap&lt;&gt;();</code><br>存储实现：put(key,vlaue);<br>读取实现：get(key);<br><code>Object put(K key,V value)</code><br>向集合中添加指定值与指定键映射关系。<br><code>putAll(Map m)</code><br>将指定映射M的所有映射关系复制到此映射中，这些映射关系将替换此映射目前针对指定映射中所有键的所有映射关系。<br><code>Object get(Object K)</code><br>返回指定键在此标识哈希映射中所映射的值，如果存在指定的键对象则返回与该键对应的值对象;否则返null。<br><code>void clear()</code><br>移除集合中所有的映射关系。<br><code>int size()</code><br>返回集合中的键-值映射关系个数。<br><code>int hashCode()</code><br>返回调用映射的散列码。<br><code>Object clone()</code><br>返回此 HashMap 实例的浅表复制：并不克隆键和值本身。<br><code>boolean equals(Object obj)</code><br>如果obj是一个map并包含相同的映射，则返回true.<br><code>boolean containsKey(Object K)</code><br>如果映射中包含了作为键的K，则返回true。<br><code>boolean containsValue(Object value)</code><br>如果映射中包含了作为值的V，则返回true。<br><code>Set &gt; entrySet()</code><br>返回此映射所包含的映射关系的 collection视图。<br><code>boolean isEmpty()</code><br>如果此映射不包含键-值映射关系，也就是说映射是空的，则返回true。<br><code>Set keySet()</code><br>返回此映射中所包含的键的set视图。<br><code>remove(Object K)</code><br>删除关键字等于K的映射关系。<br><code>Collection values()</code><br>返回此映射所包含的值的collection视图,也就是值的集合。</p>
+<pre><code>public static void main(String[] args){    
+     HashMap hs=new HashMap();       
+     hs.put(&quot;name&quot;, &quot;张三&quot;);       
+     hs.put(&quot;sex&quot;, &quot;男&quot;);       
+     hs.put(&quot;age&quot;, &quot;30&quot;);       
+    hs.put(&quot;home&quot;, &quot;河北&quot;);    
+    //测试是否包含关键字&quot;name&quot; 
+    System.out.println(hs.containsKey(&quot;name&quot;));//返回true 
+    System.out.println(hs.get(&quot;name&quot;));//返回  张三 
+    System.out.println(hs.entrySet());//返回  [home=河北, sex=男, age=30, name=张三]  System.out.println(hs.hashCode()); //返回7960688 
+    System.out.println(hs.keySet()); //返回 [home, sex, age, name] 
+
+    //1 测试entrySet().的用法
+    Iterator it=hs.entrySet().iterator();//迭代程序  
+    while(it.hasNext())  
+    {      
+        System.out.println(it.next());  
+    }                  
+
+    //2 Set keySet()返回关键字各值的集合    
+    it=hs.keySet().iterator();     
+    while(it.hasNext())     
+    {      
+        System.out.println(hs.get(it.next()));    
+    }                
+    //返回结果如下：  
+
+
+    //3 测试  values()的用法
+    it=hs.values().iterator();     
+    while(it.hasNext())     
+    {      
+        System.out.println(it.next());     
+    }                 
+    //返回结果如下：     
+}
+</code></pre><hr>
 <h2 id="2-3-4的幂"><a href="#2-3-4的幂" class="headerlink" title="2,3,4的幂"></a>2,3,4的幂</h2><p><strong>T231，T326，T342</strong>分别是有关2，3，4的幂的问题。用位操作，求3的幂不是用位操作。</p>
 <hr>
 <h2 id="Queue的使用"><a href="#Queue的使用" class="headerlink" title="Queue的使用"></a>Queue的使用</h2><p>Queue接口与List、Set同一级别，都是继承了Collection接口。LinkedList实现了Queue接 口。Queue接口窄化了对LinkedList的方法的访问权限（即在方法中的参数类型如果是Queue时，就完全只能访问Queue接口所定义的方法 了，而不能直接访问 LinkedList的非Queue的方法），以使得只有恰当的方法才可以使用。BlockingQueue 继承了Queue接口。</p>
@@ -228,20 +264,20 @@ public int add1(int num) {
 	
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"right","bdTop":"201.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">Contents</strong>
+  <strong class="toc-title">文章目录</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#字符数组转换成字符串的方法"><span class="toc-number">1.</span> <span class="toc-text">字符数组转换成字符串的方法</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashSet-的使用"><span class="toc-number">2.</span> <span class="toc-text">HashSet()的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#HashMap-的使用"><span class="toc-number">3.</span> <span class="toc-text">HashMap()的使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2-3-4的幂"><span class="toc-number">4.</span> <span class="toc-text">2,3,4的幂</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Queue的使用"><span class="toc-number">5.</span> <span class="toc-text">Queue的使用</span></a></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">Categories</p>
+	<p class="asidetitle">分类</p>
 		<ul>
 		
 			<li><a href="/categories/Diary/" title="Diary">Diary<sup>2</sup></a></li>
@@ -258,7 +294,7 @@ public int add1(int num) {
 
   
 <div class="tagslist">
-	<p class="asidetitle">Tags</p>
+	<p class="asidetitle">标签</p>
 		<ul class="clearfix">
 		
 			<li><a href="/tags/Array/" title="Array">Array<sup>14</sup></a></li>
@@ -307,7 +343,7 @@ public int add1(int num) {
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">Archives</a></p>
+    <p class="asidetitle"><a href="/archives">归档</a></p>
       <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">61</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">23</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
@@ -349,7 +385,7 @@ public int add1(int num) {
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
 </div>
 
 </aside>

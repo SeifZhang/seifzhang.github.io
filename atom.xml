@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-27T06:22:47.403Z</updated>
+  <updated>2016-06-28T07:49:50.833Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://seifzhang.jerrychia.com/2016/06/23/1methods/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/23/1methods/</id>
     <published>2016-06-23T07:56:51.238Z</published>
-    <updated>2016-06-27T06:22:47.403Z</updated>
+    <updated>2016-06-28T07:49:50.833Z</updated>
     
     <content type="html">&lt;h2 id=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;a href=&quot;#字符数组转换成字符串的方法&quot; class=&quot;headerlink&quot; title=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;/a&gt;字符数组转换成字符串的方法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;char[] chs = { &amp;apos;a&amp;apos;, &amp;apos;b&amp;apos;, &amp;apos;c&amp;apos;, &amp;apos;d&amp;apos;, &amp;apos;e&amp;apos; };
 String s1 = new String(chs);
@@ -35,12 +35,48 @@ String s3 = sBuffer.toString();
 &lt;pre&gt;&lt;code&gt;`Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;Integer&amp;gt;();`    
 &lt;/code&gt;&lt;/pre&gt;&lt;ul&gt;
 &lt;li&gt;它不允许出现重复元素；&lt;/li&gt;
-&lt;li&gt;不保证和政集合中元素的顺序&lt;/li&gt;
+&lt;li&gt;不保证集合中元素的顺序&lt;/li&gt;
 &lt;li&gt;允许包含值为null的元素，但最多只能有一个null元素。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;HashMap-的使用&quot;&gt;&lt;a href=&quot;#HashMap-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashMap()的使用&quot;&gt;&lt;/a&gt;HashMap()的使用&lt;/h2&gt;&lt;p&gt;leetcode中&lt;strong&gt;T219&lt;/strong&gt;（contains duplicate）用到了.&lt;br&gt;HashMap 是 Map 接口的常用实现类&lt;br&gt;    &lt;code&gt;Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();&lt;/code&gt;&lt;br&gt;存储实现：put(key,vlaue);&lt;br&gt;读取实现：get(key);&lt;/p&gt;
-&lt;hr&gt;
+&lt;h2 id=&quot;HashMap-的使用&quot;&gt;&lt;a href=&quot;#HashMap-的使用&quot; class=&quot;headerlink&quot; title=&quot;HashMap()的使用&quot;&gt;&lt;/a&gt;HashMap()的使用&lt;/h2&gt;&lt;p&gt;leetcode中&lt;strong&gt;T219&lt;/strong&gt;（contains duplicate）用到了.&lt;br&gt;HashMap 是 Map 接口的常用实现类&lt;br&gt;    &lt;code&gt;Map&amp;lt;Integer, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();&lt;/code&gt;&lt;br&gt;存储实现：put(key,vlaue);&lt;br&gt;读取实现：get(key);&lt;br&gt;&lt;code&gt;Object put(K key,V value)&lt;/code&gt;&lt;br&gt;向集合中添加指定值与指定键映射关系。&lt;br&gt;&lt;code&gt;putAll(Map m)&lt;/code&gt;&lt;br&gt;将指定映射M的所有映射关系复制到此映射中，这些映射关系将替换此映射目前针对指定映射中所有键的所有映射关系。&lt;br&gt;&lt;code&gt;Object get(Object K)&lt;/code&gt;&lt;br&gt;返回指定键在此标识哈希映射中所映射的值，如果存在指定的键对象则返回与该键对应的值对象;否则返null。&lt;br&gt;&lt;code&gt;void clear()&lt;/code&gt;&lt;br&gt;移除集合中所有的映射关系。&lt;br&gt;&lt;code&gt;int size()&lt;/code&gt;&lt;br&gt;返回集合中的键-值映射关系个数。&lt;br&gt;&lt;code&gt;int hashCode()&lt;/code&gt;&lt;br&gt;返回调用映射的散列码。&lt;br&gt;&lt;code&gt;Object clone()&lt;/code&gt;&lt;br&gt;返回此 HashMap 实例的浅表复制：并不克隆键和值本身。&lt;br&gt;&lt;code&gt;boolean equals(Object obj)&lt;/code&gt;&lt;br&gt;如果obj是一个map并包含相同的映射，则返回true.&lt;br&gt;&lt;code&gt;boolean containsKey(Object K)&lt;/code&gt;&lt;br&gt;如果映射中包含了作为键的K，则返回true。&lt;br&gt;&lt;code&gt;boolean containsValue(Object value)&lt;/code&gt;&lt;br&gt;如果映射中包含了作为值的V，则返回true。&lt;br&gt;&lt;code&gt;Set &amp;gt; entrySet()&lt;/code&gt;&lt;br&gt;返回此映射所包含的映射关系的 collection视图。&lt;br&gt;&lt;code&gt;boolean isEmpty()&lt;/code&gt;&lt;br&gt;如果此映射不包含键-值映射关系，也就是说映射是空的，则返回true。&lt;br&gt;&lt;code&gt;Set keySet()&lt;/code&gt;&lt;br&gt;返回此映射中所包含的键的set视图。&lt;br&gt;&lt;code&gt;remove(Object K)&lt;/code&gt;&lt;br&gt;删除关键字等于K的映射关系。&lt;br&gt;&lt;code&gt;Collection values()&lt;/code&gt;&lt;br&gt;返回此映射所包含的值的collection视图,也就是值的集合。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public static void main(String[] args){    
+     HashMap hs=new HashMap();       
+     hs.put(&amp;quot;name&amp;quot;, &amp;quot;张三&amp;quot;);       
+     hs.put(&amp;quot;sex&amp;quot;, &amp;quot;男&amp;quot;);       
+     hs.put(&amp;quot;age&amp;quot;, &amp;quot;30&amp;quot;);       
+    hs.put(&amp;quot;home&amp;quot;, &amp;quot;河北&amp;quot;);    
+    //测试是否包含关键字&amp;quot;name&amp;quot; 
+    System.out.println(hs.containsKey(&amp;quot;name&amp;quot;));//返回true 
+    System.out.println(hs.get(&amp;quot;name&amp;quot;));//返回  张三 
+    System.out.println(hs.entrySet());//返回  [home=河北, sex=男, age=30, name=张三]  System.out.println(hs.hashCode()); //返回7960688 
+    System.out.println(hs.keySet()); //返回 [home, sex, age, name] 
+
+    //1 测试entrySet().的用法
+    Iterator it=hs.entrySet().iterator();//迭代程序  
+    while(it.hasNext())  
+    {      
+        System.out.println(it.next());  
+    }                  
+
+    //2 Set keySet()返回关键字各值的集合    
+    it=hs.keySet().iterator();     
+    while(it.hasNext())     
+    {      
+        System.out.println(hs.get(it.next()));    
+    }                
+    //返回结果如下：  
+
+
+    //3 测试  values()的用法
+    it=hs.values().iterator();     
+    while(it.hasNext())     
+    {      
+        System.out.println(it.next());     
+    }                 
+    //返回结果如下：     
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&quot;2-3-4的幂&quot;&gt;&lt;a href=&quot;#2-3-4的幂&quot; class=&quot;headerlink&quot; title=&quot;2,3,4的幂&quot;&gt;&lt;/a&gt;2,3,4的幂&lt;/h2&gt;&lt;p&gt;&lt;strong&gt;T231，T326，T342&lt;/strong&gt;分别是有关2，3，4的幂的问题。用位操作，求3的幂不是用位操作。&lt;/p&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;Queue的使用&quot;&gt;&lt;a href=&quot;#Queue的使用&quot; class=&quot;headerlink&quot; title=&quot;Queue的使用&quot;&gt;&lt;/a&gt;Queue的使用&lt;/h2&gt;&lt;p&gt;Queue接口与List、Set同一级别，都是继承了Collection接口。LinkedList实现了Queue接 口。Queue接口窄化了对LinkedList的方法的访问权限（即在方法中的参数类型如果是Queue时，就完全只能访问Queue接口所定义的方法 了，而不能直接访问 LinkedList的非Queue的方法），以使得只有恰当的方法才可以使用。BlockingQueue 继承了Queue接口。&lt;/p&gt;
@@ -108,7 +144,7 @@ public int add1(int num) {
     <link href="http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-350/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-350/</id>
     <published>2016-06-22T03:12:00.000Z</published>
-    <updated>2016-06-23T07:37:43.161Z</updated>
+    <updated>2016-06-28T08:39:53.576Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given two arrays, write a function to compute their intersection.&lt;/p&gt;
@@ -127,7 +163,64 @@ public int add1(int num) {
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;import java.util.ArrayList;
+import java.util.Arrays;
+public class Solution {
+    public int[] intersect(int[] nums1, int[] nums2) {
+        if (nums1.length == 0)
+            return nums1;
+        if (nums2.length == 0)
+            return nums2;
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+
+        ArrayList&amp;lt;Integer&amp;gt; myList = new ArrayList&amp;lt;Integer&amp;gt;();
+        int i = 0, j = 0;
+        while (i &amp;lt; nums1.length &amp;amp;&amp;amp; j &amp;lt; nums2.length) {
+            if (nums1[i] &amp;lt; nums2[j]) {
+                i++;
+            } else if (nums1[i] &amp;gt; nums2[j]) {
+                j++;
+            } else {
+                myList.add(nums1[i]);
+                i++;
+                j++;
+            }
+        }
+        int[] result = new int[myList.size()];
+        int k = 0;
+        for (Integer num : myList) {
+            result[k++] = num;
+        }
+        return result;
+    }
+    // 此法不能用
+    public int[] intersect1(int[] nums1, int[] nums2) {
+        if (nums1.length == 0)
+            return nums1;
+        if (nums2.length == 0)
+            return nums2;
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        Hashtable&amp;lt;Integer, Integer&amp;gt; numbers = new Hashtable&amp;lt;Integer, Integer&amp;gt;();
+        ArrayList&amp;lt;Integer&amp;gt; myList = new ArrayList&amp;lt;Integer&amp;gt;();
+        for (int i = 0; i &amp;lt; nums1.length; i++) {
+            numbers.put(nums1[i], i);
+        }
+        for (int j = 0; j &amp;lt; nums2.length; j++) {
+            if (numbers.containsKey(nums2[j])) {
+                myList.add(nums2[j]);
+            }
+        }
+        int[] result = new int[myList.size()];
+        int i = 0;
+        for (Integer num : myList) {
+            result[i++] = num;
+        }
+        return result;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -153,7 +246,7 @@ public int add1(int num) {
     <link href="http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-349/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-349/</id>
     <published>2016-06-22T03:10:00.000Z</published>
-    <updated>2016-06-23T07:34:49.737Z</updated>
+    <updated>2016-06-28T08:20:58.599Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given two arrays, write a function to compute their intersection.&lt;/p&gt;
@@ -165,8 +258,63 @@ public int add1(int num) {
 &lt;/ul&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;结果中每个元素是唯一的，可以想到set&lt;br&gt;结果中顺序不要求相同&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;import java.util.Arrays;
+import java.util.HashSet;
+import java.util.Set;
+
+public class Solution {
+    public int[] intersection(int[] nums1, int[] nums2) {
+        Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;();
+        Set&amp;lt;Integer&amp;gt; interset = new HashSet&amp;lt;&amp;gt;();
+        for (int i = 0; i &amp;lt; nums1.length; i++) {
+            if (!set.contains(nums1[i])) {
+                set.add(nums1[i]);
+            }
+        }
+        for (int j = 0; j &amp;lt; nums2.length; j++) {
+            if (set.contains(nums2[j])) {
+                interset.add(nums2[j]);
+            }
+        }
+        int[] result = new int[interset.size()];
+        int i = 0;
+        for (Integer num : interset) {
+            result[i++] = num;
+        }
+        return result;
+    }
+
+    // 别人提交的方法，觉得好，就拿来用了
+    public int[] intersection1(int[] nums1, int[] nums2) {
+        Set&amp;lt;Integer&amp;gt; set = new HashSet&amp;lt;&amp;gt;();
+        Arrays.sort(nums1);
+        Arrays.sort(nums2);
+        int i = 0;
+        int j = 0;
+        while (i &amp;lt; nums1.length &amp;amp;&amp;amp; j &amp;lt; nums2.length) {
+            if (nums1[i] &amp;lt; nums2[j]) {
+                i++;
+            } else if (nums1[i] &amp;gt; nums2[j]) {
+                j++;
+            } else {
+                set.add(nums1[i]);
+                i++;
+                j++;
+            }
+        }
+        int[] result = new int[set.size()];
+        int k = 0;
+        for (Integer num : set) {
+            result[k++] = num;
+        }
+        return result;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -192,7 +340,7 @@ public int add1(int num) {
     <link href="http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-345/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-345/</id>
     <published>2016-06-22T03:08:00.000Z</published>
-    <updated>2016-06-23T07:32:35.585Z</updated>
+    <updated>2016-06-28T07:07:19.776Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Write a function that takes a string as input and reverse only the vowels of a string.&lt;/p&gt;
@@ -201,20 +349,47 @@ public int add1(int num) {
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;快乐数（happy_number）有以下的特性：在给定的进位制下，该数字所有数位(digits)的平方和，得到的新数再次求所有数位的平方和，如此重复进行，最终结果必为1。&lt;br&gt;不是快乐数的数称为不快乐数（unhappy_number），所有不快乐数的数位平方和计算，最後都会进入 4 → 16 → 37 → 58 → 89 → 145 → 42 → 20 → 4 的循环中。&lt;/p&gt;
+&lt;p&gt;反转一个字符串中的元音&lt;br&gt;双指针问题&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;p&gt;public class Solution {&lt;br&gt;   public boolean isHappy(int n) {&lt;br&gt;        Set&lt;integer&gt; set = new HashSet&amp;lt;&amp;gt;();//set中不能有重复的元素&lt;br&gt;        while (n &amp;lt; Integer.MAX_VALUE) {&lt;br&gt;            if (set.contains(n)) {&lt;br&gt;                return false;&lt;br&gt;            } else {&lt;br&gt;                set.add(n);&lt;br&gt;            }&lt;br&gt;            n = digitSqure(n);&lt;br&gt;            if (n == 1) {&lt;br&gt;                return true;&lt;br&gt;            }&lt;br&gt;        }&lt;br&gt;        return false;&lt;br&gt;    }&lt;/integer&gt;&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;private int digitSqure(int n) {
-    int sum = 0;
-    while (n != 0) {
-        sum += Math.pow(n % 10, 2);
-        n = n / 10;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+   public String reverseVowels(String s) {
+        char[] chs = s.toCharArray();
+        int i = 0, j = chs.length - 1;
+        while (i &amp;lt;= j) {
+            if (isVowel(chs[i]) &amp;amp;&amp;amp; isVowel(chs[j])) {
+                char temp = chs[i];
+                chs[i] = chs[j];
+                chs[j] = temp;
+                i++;
+                j--;
+            } else if (!isVowel(chs[i])) {
+                i++;
+            } else if (!isVowel(chs[j])) {
+                j--;
+            } else {
+                i++;
+                j--;
+            }
+        }
+        StringBuffer sb = new StringBuffer();
+        for (int j1 = 0; j1 &amp;lt; chs.length; j1++) {
+            sb.append(chs[j1]);
+        }
+        return sb.toString();
     }
-    return sum;
+
+    public static boolean isVowel(char ch) {
+        char[] chs = { &amp;apos;a&amp;apos;, &amp;apos;e&amp;apos;, &amp;apos;i&amp;apos;, &amp;apos;o&amp;apos;, &amp;apos;u&amp;apos;,&amp;apos;A&amp;apos;,&amp;apos;E&amp;apos;,&amp;apos;I&amp;apos;,&amp;apos;O&amp;apos;,&amp;apos;U&amp;apos; };
+        for (int i = 0; i &amp;lt; chs.length; i++) {
+            if (chs[i] == ch) {
+                return true;
+            }
+        }
+        return false;
+    }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;}&lt;/p&gt;
-</content>
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -369,7 +544,7 @@ public int add1(int num) {
     <link href="http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-303/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-303/</id>
     <published>2016-06-22T03:00:00.000Z</published>
-    <updated>2016-06-23T07:21:22.140Z</updated>
+    <updated>2016-06-28T06:37:00.949Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.&lt;/p&gt;
@@ -384,8 +559,46 @@ sumRange(0, 5) -&amp;gt; -3
 2.    There are many calls to sumRange function.
 &lt;/code&gt;&lt;/pre&gt;&lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;在本题中，sumRange可能会被调用多次，因此如果每次调用时才对下标区间的元素进行累加，会导致效率低下。&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class NumArray {
+    public int[] nums;
+    public NumArray(int[] nums) {
+        this.nums = nums;
+    }
+    public int sumRange(int i, int j) {
+        int result = 0;
+        for (int counter = i; counter &amp;lt;= j; counter++) {
+            result += nums[counter];
+        }
+        return result;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;所以该方法效率低下&lt;br&gt;在&lt;br&gt;    public class NumArray {&lt;br&gt;        public NumArray(int[] nums) {&lt;br&gt;        }&lt;br&gt;        public int sumRange(int i, int j) {&lt;br&gt;        }&lt;br&gt;    }&lt;br&gt;中，给出了NumArray的构造函数，所以可以在构造函数内就计算从第一个元素到当前元素所有元素的和，保存到数组sums的对应位置中，在函数sumRange中就可以很方便地算出题目中要求的结果了。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class NumArray {
+    private int[] dp;
+    public NumArray(int[] nums) {
+        dp = new int[nums.length];
+        int sum = 0;
+        for (int i = 0; i &amp;lt; nums.length; i++) {
+            sum += nums[i];
+            dp[i] = sum;
+        }
+    }
+
+    public int sumRange(int i, int j) {
+        return i == 0 ? dp[j] : dp[j] - dp[i - 1];
+    }
+}
+
+
+// Your NumArray object will be instantiated and called as such:
+// NumArray numArray = new NumArray(nums);
+// numArray.sumRange(0, 1);
+// numArray.sumRange(1, 2);
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -473,7 +686,7 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-290/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-290/</id>
     <published>2016-06-21T02:54:00.000Z</published>
-    <updated>2016-06-23T07:11:26.907Z</updated>
+    <updated>2016-06-28T06:37:08.766Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a &lt;code&gt;pattern&lt;/code&gt; and a string &lt;code&gt;str&lt;/code&gt;, find if &lt;code&gt;str&lt;/code&gt; follows the same pattern.&lt;/p&gt;
@@ -488,8 +701,57 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
 &lt;p&gt;&lt;strong&gt;Notes:&lt;/strong&gt;&lt;br&gt;You may assume &lt;code&gt;pattern&lt;/code&gt; contains only lowercase letters, and &lt;code&gt;str&lt;/code&gt; contains lowercase letters separated by a single space.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;摘自网上&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public boolean wordPattern(String pattern, String str) {
+       if (pattern.length() == 0 || str.length() == 0) {
+            return false;
+        }
+        String[] strings = str.split(&amp;quot; &amp;quot;);
+        if (pattern.length() != strings.length) {
+            return false;
+        }
+        HashMap&amp;lt;Object, Integer&amp;gt; map = new HashMap&amp;lt;&amp;gt;();
+        for (int i = 0; i &amp;lt; strings.length; i++) {
+            if (!Objects.equals(map.put(pattern.charAt(i), i), map.put(strings[i], i))) {
+                return false;
+            }
+        }
+        return true;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;[转] (&lt;a href=&quot;https://segmentfault.com/a/1190000003827151&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://segmentfault.com/a/1190000003827151&lt;/a&gt;)&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class Solution {
+    public boolean wordPattern(String pattern, String str) {
+        Map&amp;lt;Character, String&amp;gt; map = new HashMap&amp;lt;Character, String&amp;gt;();
+        Set&amp;lt;String&amp;gt; set = new HashSet&amp;lt;String&amp;gt;();
+        String[] pieces = str.split(&amp;quot; &amp;quot;);
+        if(pieces.length != pattern.length()) return false;
+        int i = 0;
+        for(String s : pieces){
+            char p = pattern.charAt(i);
+            System.out.println(p);
+            // 如果该字符产生过映射
+            if(map.containsKey(p)){
+                // 且映射的字符串和当前字符串不一样
+                if(!s.equals(map.get(p))) return false;
+            } else {
+            // 如果该字符没有产生过映射
+                // 如果当前字符串已经被映射过了
+                if(set.contains(s)) return false;
+                // 否则新加一组映射
+                map.put(p, s);
+                set.add(s);
+            }
+            i++;
+        }
+        return true;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -544,7 +806,7 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-278/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-278/</id>
     <published>2016-06-21T02:50:00.000Z</published>
-    <updated>2016-06-23T07:04:55.635Z</updated>
+    <updated>2016-06-28T04:57:20.774Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.&lt;/p&gt;
@@ -552,8 +814,26 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
 &lt;p&gt;You are given an API &lt;code&gt;bool isBadVersion(version)&lt;/code&gt;which will return whether &lt;code&gt;version&lt;/code&gt; is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;在不破坏原来非0数字的情况下，把0移到数组的最后&lt;br&gt;设两个指针，i从0-nums.length依次为数组赋值，j寻找非0元素&lt;br&gt;能保证顺序&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public void moveZeroes(int[] nums) {
+        int i = 0, j = 0;
+        while (j &amp;lt; nums.length) {
+            if (nums[j] == 0) {
+                j++;
+            } else {
+                nums[i++] = nums[j++];
+            }
+        }
+        while (i &amp;lt; nums.length) {
+            nums[i++] = 0;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -573,7 +853,7 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-263/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-263/</id>
     <published>2016-06-21T02:48:00.000Z</published>
-    <updated>2016-06-23T07:04:19.371Z</updated>
+    <updated>2016-06-28T04:42:30.374Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Write a program to check whether a given number is an ugly number.&lt;/p&gt;
@@ -581,8 +861,28 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
 &lt;p&gt;Note that &lt;code&gt;1&lt;/code&gt;is typically treated as an ugly number.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;1是丑数&lt;br&gt;如果一个正整数的质因子只包括2,3,5，那么就是丑数&lt;br&gt;如果一个数如果它能被2整除，我们把它连续除以2；如果能被3整除，就连续除以3；如果能被5整除，就除以连续5。如果最后我们得到的是1，那么这个数就是丑数，否则不是。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public boolean isUgly(int num) {
+        if (num &amp;lt;= 0) {
+            return false;
+        }
+        while (num % 2 == 0) {
+            num = num / 2;
+        }
+        while (num % 3 == 0) {
+            num = num / 3;
+        }
+        while (num % 5 == 0) {
+            num = num / 5;
+        }
+        return num == 1 ? true : false;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     

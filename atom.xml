@@ -1220,7 +1220,7 @@ public class Solution {
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-234/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-234/</id>
     <published>2016-06-21T02:36:00.000Z</published>
-    <updated>2016-06-25T10:46:10.542Z</updated>
+    <updated>2016-06-30T07:44:09.540Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given a singly linked list, determine if it is a palindrome.&lt;/p&gt;
@@ -1314,6 +1314,10 @@ public class Solution {
         }
         return prev;
     }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;p&gt;##寻找中间节点&lt;br&gt;    public class lp234extend_Search_Middle_Node {&lt;br&gt;        // 1、遍历单链表找出长度n,n/2,再遍历以便单链表&lt;br&gt;        // 快慢指针,从头开始，慢指针走一步，快指针走两步，快指针到结尾时，慢指针在中间。&lt;br&gt;        public ListNode SearchMid(ListNode head) {&lt;br&gt;            ListNode slow = head;&lt;br&gt;            ListNode fast = head;&lt;br&gt;            while (fast != null &amp;amp;&amp;amp; fast.next != null &amp;amp;&amp;amp; fast.next.next != null) {&lt;br&gt;                fast = fast.next.next;&lt;br&gt;                slow = slow.next;&lt;br&gt;            }&lt;br&gt;            return slow;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    }
 }
 &lt;/code&gt;&lt;/pre&gt;</content>
     

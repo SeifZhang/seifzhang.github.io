@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-05T02:30:59.000Z" itemprop="datePublished">2016-06-05</time>
-    Updated:<time datetime="2016-06-16T13:17:25.972Z" itemprop="dateModified">2016-06-16</time>
+    Updated:<time datetime="2016-06-30T08:18:18.097Z" itemprop="dateModified">2016-06-30</time>
     
   </p>
 </header>
@@ -159,6 +159,42 @@ minStack.getMin();   --&gt; Returns -2.
  * int param_3 = obj.top(); 
  * int param_4 = obj.getMin();
  */
+</code></pre><hr>
+<p>##用O(1)的时间复杂度求栈中最小元素<br>    import java.util.Stack;<br>    public class lp155extend_MinElement_StackIn_O1 {<br>        // 使用两个栈，一个栈来存储数据，另一个栈来存储栈的最小元素<br>        // 如果当前入栈元素比原来栈中的最小值还小，则把这个值压入保存最小元素的栈中；<br>        // 在出栈时，如果当前出栈的元素恰好为当前栈中的最小值，保存最小值的栈顶元素也出栈，使得当前最小值变为入栈之前的最小值。<br>        /<em>* initialize your data structure here. </em>/<br>        Stack<integer> elestack;<br>        Stack<integer> minstack;</integer></integer></p>
+<pre><code>    lp155extend_MinElement_StackIn_O1() {
+        elestack = new Stack&lt;&gt;();
+        minstack = new Stack&lt;&gt;();
+    }
+
+    public void push(int x) {
+        elestack.push(x);
+        if (minstack.isEmpty()) {
+            minstack.push(x);
+        } else {
+            if (x &lt; minstack.peek()) {
+                minstack.push(x);
+            }
+        }
+    }
+
+    public int pop() {
+        int topData = elestack.peek();
+        elestack.pop();
+        if (topData == this.min()) {
+            minstack.peek();
+        }
+        return topData;
+    }
+
+    private int min() {
+        if (minstack.isEmpty()) {
+            return Integer.MAX_VALUE;
+        } else {
+            return minstack.peek();
+        }
+
+    }
+}
 </code></pre>  
 	</div>
 		<footer class="article-footer clearfix">

@@ -93,7 +93,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-21T02:36:00.000Z" itemprop="datePublished">2016-06-21</time>
-    Updated:<time datetime="2016-06-25T10:46:10.542Z" itemprop="dateModified">2016-06-25</time>
+    Updated:<time datetime="2016-06-30T07:44:09.540Z" itemprop="dateModified">2016-06-30</time>
     
   </p>
 </header>
@@ -197,6 +197,10 @@ public class Solution {
         }
         return prev;
     }
+}
+</code></pre><hr>
+<p>##寻找中间节点<br>    public class lp234extend_Search_Middle_Node {<br>        // 1、遍历单链表找出长度n,n/2,再遍历以便单链表<br>        // 快慢指针,从头开始，慢指针走一步，快指针走两步，快指针到结尾时，慢指针在中间。<br>        public ListNode SearchMid(ListNode head) {<br>            ListNode slow = head;<br>            ListNode fast = head;<br>            while (fast != null &amp;&amp; fast.next != null &amp;&amp; fast.next.next != null) {<br>                fast = fast.next.next;<br>                slow = slow.next;<br>            }<br>            return slow;</p>
+<pre><code>    }
 }
 </code></pre>  
 	</div>

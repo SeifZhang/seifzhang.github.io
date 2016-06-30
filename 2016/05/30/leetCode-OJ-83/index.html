@@ -90,7 +90,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-05-30T01:42:59.000Z" itemprop="datePublished">2016-05-30</time>
-    Updated:<time datetime="2016-06-24T01:28:11.378Z" itemprop="dateModified">2016-06-24</time>
+    Updated:<time datetime="2016-06-30T06:28:46.982Z" itemprop="dateModified">2016-06-30</time>
     
   </p>
 </header>
@@ -119,7 +119,7 @@ var _hmt = _hmt || [];
  */
 public class Solution {
     public ListNode deleteDuplicates(ListNode head) {
-    if (head==null) {
+         if (head==null) {
             return  null;
         }
       ListNode p = head;
@@ -133,7 +133,41 @@ public class Solution {
                 p.next = q.next;
                 q=p;//这句加不加都一样啊！
             }
+        }
+        return head;
+    }
+}
+</code></pre><hr>
+<p>##扩展：从单链表中删除重复<br>    public class lp083extend_Remove_Duplicates_from_LinkedList {<br>        public static ListNode deleteDuplicates(ListNode head) {<br>            if (head == null) {<br>                return null;<br>            }<br>            Hashtable<integer, integer=""> table = new Hashtable&lt;&gt;();</integer,></p>
+<pre><code>        ListNode cur = head;
+        ListNode pre = null;
+        while (cur != null) {
+            if (table.containsKey(cur.val)) {
+                pre.next = cur.next;
+            } else {
+                table.put(cur.val, 1);
+                pre = cur;
+            }
+            cur = cur.next;
+        }
+        return head;
+    }
 
+    public static ListNode deleteDuplicates1(ListNode head) {
+        if (head == null) {
+            return null;
+        }
+        ListNode p = head;
+        while (p != null) {
+            ListNode q = p;
+            while (q.next != null) {
+                if (p.val == q.next.val) {
+                    q.next = q.next.next;
+                } else {
+                    q = q.next;
+                }
+            }
+            p = p.next;
         }
         return head;
     }

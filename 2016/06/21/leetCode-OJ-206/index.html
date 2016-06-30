@@ -93,7 +93,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-06-21T02:20:00.000Z" itemprop="datePublished">2016-06-21</time>
-    Updated:<time datetime="2016-06-23T09:17:02.330Z" itemprop="dateModified">2016-06-23</time>
+    Updated:<time datetime="2016-06-30T07:34:50.374Z" itemprop="dateModified">2016-06-30</time>
     
   </p>
 </header>
@@ -140,7 +140,9 @@ public class Solution {
         return preHead.next;
     }
 }
-</code></pre>  
+</code></pre><hr>
+<p>##逆序打印单链表<br>    public class lp206extend_ReversePrint_Linked_List {<br>        public void reversePrintList(ListNode head) {<br>            // 1、从头到尾遍历单链表，将其放入栈中，然后出栈，需要额外空间<br>            // 2、递归，每访问一个节点，先递归输出他后面的节点，在输出节点自身。<br>            if (head != null) {<br>                reversePrintList(head.next);<br>            }<br>            System.out.println(head.val);<br>        }<br>    }</p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 

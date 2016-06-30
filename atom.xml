@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-06-28T07:49:50.833Z</updated>
+  <updated>2016-06-30T00:30:15.811Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://seifzhang.jerrychia.com/2016/06/23/1methods/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/23/1methods/</id>
     <published>2016-06-23T07:56:51.238Z</published>
-    <updated>2016-06-28T07:49:50.833Z</updated>
+    <updated>2016-06-30T00:30:15.811Z</updated>
     
     <content type="html">&lt;h2 id=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;a href=&quot;#字符数组转换成字符串的方法&quot; class=&quot;headerlink&quot; title=&quot;字符数组转换成字符串的方法&quot;&gt;&lt;/a&gt;字符数组转换成字符串的方法&lt;/h2&gt;&lt;pre&gt;&lt;code&gt;char[] chs = { &amp;apos;a&amp;apos;, &amp;apos;b&amp;apos;, &amp;apos;c&amp;apos;, &amp;apos;d&amp;apos;, &amp;apos;e&amp;apos; };
 String s1 = new String(chs);
@@ -465,7 +465,7 @@ public class Solution {
     <link href="http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-342/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-342/</id>
     <published>2016-06-22T03:04:00.000Z</published>
-    <updated>2016-06-23T13:37:46.941Z</updated>
+    <updated>2016-06-30T00:30:04.138Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given an integer (signed 32 bits), write a function to check whether it is a power of 4.&lt;/p&gt;
@@ -477,7 +477,21 @@ public class Solution {
 &lt;p&gt;不能用求2的幂的方法来求，因为第一个是1的情况也有可能是2的幂，而不是4的幂。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class lp342_Power_of_Four {
+    public boolean isPowerOfFour(int num) {
+        String string = Integer.toBinaryString(num);
+        if (string.length() % 2 == 0) {
+            return false;
+        } else {
+            if (string.replace(&amp;quot;0&amp;quot;, &amp;quot;&amp;quot;).length() == 1) {
+                return true;
+            } else
+                return false;
+        }
+
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     
@@ -544,7 +558,7 @@ public class Solution {
     <link href="http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-303/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-303/</id>
     <published>2016-06-22T03:00:00.000Z</published>
-    <updated>2016-06-28T06:37:00.949Z</updated>
+    <updated>2016-06-30T00:28:41.430Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive.&lt;/p&gt;
@@ -574,7 +588,14 @@ sumRange(0, 5) -&amp;gt; -3
         return result;
     }
 }
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;所以该方法效率低下&lt;br&gt;在&lt;br&gt;    public class NumArray {&lt;br&gt;        public NumArray(int[] nums) {&lt;br&gt;        }&lt;br&gt;        public int sumRange(int i, int j) {&lt;br&gt;        }&lt;br&gt;    }&lt;br&gt;中，给出了NumArray的构造函数，所以可以在构造函数内就计算从第一个元素到当前元素所有元素的和，保存到数组sums的对应位置中，在函数sumRange中就可以很方便地算出题目中要求的结果了。&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;所以该方法效率低下&lt;br&gt;在&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;public class NumArray {
+    public NumArray(int[] nums) {   
+    }
+    public int sumRange(int i, int j) {   
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;中，给出了NumArray的构造函数，所以可以在构造函数内就计算从第一个元素到当前元素所有元素的和，保存到数组sums的对应位置中，在函数sumRange中就可以很方便地算出题目中要求的结果了。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
 &lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class NumArray {
@@ -771,7 +792,7 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
     <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-283/"/>
     <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-283/</id>
     <published>2016-06-21T02:52:00.000Z</published>
-    <updated>2016-06-23T07:07:54.587Z</updated>
+    <updated>2016-06-30T00:27:06.834Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
 &lt;p&gt;Given an array &lt;code&gt;nums&lt;/code&gt;, write a function to move all &lt;code&gt;0&lt;/code&gt;‘s to the end of it while maintaining the relative order of the non-zero elements.&lt;/p&gt;
@@ -783,8 +804,26 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
 &lt;/ol&gt;
 &lt;/blockquote&gt;
 &lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;</content>
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;把非零数字按原顺序前移，后面补0&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class lp283_Move_Zeros {
+    public void moveZeroes(int[] nums) {
+        int i = 0, j = 0;
+        while (j &amp;lt; nums.length) {
+            if (nums[j] == 0) {
+                j++;
+            } else {
+                nums[i++] = nums[j++];
+            }
+        }
+        while (i &amp;lt; nums.length) {
+            nums[i++] = 0;
+        }
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
     
     <summary type="html">
     

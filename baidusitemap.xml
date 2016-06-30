@@ -4,6 +4,130 @@
 
     
   <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/23/1methods/</loc>
+    <lastmod>2016-06-30T00:30:15.811Z</lastmod>
+    <data>
+        <display>
+        <title>方法集合</title>
+        <pubTime>2016-06-23T07:56:51.238Z</pubTime>
+        
+        <tag>文章</tag>
+         
+         
+           
+             
+              <breadCrumb title="Seif&#39;s Summery" url="http://seifzhang.jerrychia.com/categories/Seif-s-Summery/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2015/01/10/1hexo-markdown-note/</loc>
+    <lastmod>2016-06-30T00:30:14.580Z</lastmod>
+    <data>
+        <display>
+        <title>Markdown语法笔记</title>
+        <pubTime>2015-01-10T11:54:59.000Z</pubTime>
+        
+        <tag>Hexo</tag>
+         
+         
+           
+             
+              <breadCrumb title="Hexo" url="http://seifzhang.jerrychia.com/categories/Hexo/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-342/</loc>
+    <lastmod>2016-06-30T00:30:04.138Z</lastmod>
+    <data>
+        <display>
+        <title>Coding342_Power_of_Four</title>
+        <pubTime>2016-06-22T03:04:00.000Z</pubTime>
+        
+        <tag>Bit Manipulation</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-303/</loc>
+    <lastmod>2016-06-30T00:28:41.430Z</lastmod>
+    <data>
+        <display>
+        <title>Coding303_Range_Sum_Query - Immutable</title>
+        <pubTime>2016-06-22T03:00:00.000Z</pubTime>
+        
+        <tag>Dynamic Programming</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-283/</loc>
+    <lastmod>2016-06-30T00:27:06.834Z</lastmod>
+    <data>
+        <display>
+        <title>Coding283_Move_Zeroes</title>
+        <pubTime>2016-06-21T02:52:00.000Z</pubTime>
+        
+        <tag>Array</tag>
+         
+        <tag>Two Pointers</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-202/</loc>
+    <lastmod>2016-06-30T00:25:32.411Z</lastmod>
+    <data>
+        <display>
+        <title>Coding202_Happy_Number</title>
+        <pubTime>2016-06-21T02:10:00.000Z</pubTime>
+        
+        <tag>Hash Table</tag>
+         
+        <tag>Math</tag>
+         
+         
+           
+             
+              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-350/</loc>
     <lastmod>2016-06-28T08:39:53.576Z</lastmod>
     <data>
@@ -56,26 +180,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/23/1methods/</loc>
-    <lastmod>2016-06-28T07:49:50.833Z</lastmod>
-    <data>
-        <display>
-        <title>方法集合</title>
-        <pubTime>2016-06-23T07:56:51.238Z</pubTime>
-        
-        <tag>文章</tag>
-         
-         
-           
-             
-              <breadCrumb title="Seif&#39;s Summery" url="http://seifzhang.jerrychia.com/categories/Seif-s-Summery/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-345/</loc>
     <lastmod>2016-06-28T07:07:19.776Z</lastmod>
     <data>
@@ -106,26 +210,6 @@
         <pubTime>2016-06-21T02:54:00.000Z</pubTime>
         
         <tag>Hash Table</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-303/</loc>
-    <lastmod>2016-06-28T06:37:00.949Z</lastmod>
-    <data>
-        <display>
-        <title>Coding303_Range_Sum_Query - Immutable</title>
-        <pubTime>2016-06-22T03:00:00.000Z</pubTime>
-        
-        <tag>Dynamic Programming</tag>
          
          
            
@@ -332,26 +416,6 @@
         <pubTime>2016-06-22T03:02:00.000Z</pubTime>
         
         <tag>Math</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/22/leetCode-OJ-342/</loc>
-    <lastmod>2016-06-23T13:37:46.941Z</lastmod>
-    <data>
-        <display>
-        <title>Coding342_Power_of_Four</title>
-        <pubTime>2016-06-22T03:04:00.000Z</pubTime>
-        
-        <tag>Bit Manipulation</tag>
          
          
            
@@ -622,26 +686,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2015/01/10/1hexo-markdown-note/</loc>
-    <lastmod>2016-06-23T08:07:32.554Z</lastmod>
-    <data>
-        <display>
-        <title>Markdown语法笔记</title>
-        <pubTime>2015-01-10T11:54:59.000Z</pubTime>
-        
-        <tag>Hexo</tag>
-         
-         
-           
-             
-              <breadCrumb title="Hexo" url="http://seifzhang.jerrychia.com/categories/Hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/20/1change_filename/</loc>
     <lastmod>2016-06-23T08:07:15.434Z</lastmod>
     <data>
@@ -764,28 +808,6 @@
 
     
   <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-283/</loc>
-    <lastmod>2016-06-23T07:07:54.587Z</lastmod>
-    <data>
-        <display>
-        <title>Coding283_Move_Zeroes</title>
-        <pubTime>2016-06-21T02:52:00.000Z</pubTime>
-        
-        <tag>Array</tag>
-         
-        <tag>Two Pointers</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-242/</loc>
     <lastmod>2016-06-23T06:48:40.418Z</lastmod>
     <data>
@@ -854,28 +876,6 @@
         <display>
         <title>Coding204_Count_Primes</title>
         <pubTime>2016-06-21T02:14:00.000Z</pubTime>
-        
-        <tag>Hash Table</tag>
-         
-        <tag>Math</tag>
-         
-         
-           
-             
-              <breadCrumb title="LeetCode" url="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-202/</loc>
-    <lastmod>2016-06-21T05:48:54.255Z</lastmod>
-    <data>
-        <display>
-        <title>Coding202_Happy_Number</title>
-        <pubTime>2016-06-21T02:10:00.000Z</pubTime>
         
         <tag>Hash Table</tag>
          

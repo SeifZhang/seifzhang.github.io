@@ -49,7 +49,7 @@ var _hmt = _hmt || [];
 				<h1 class="site-name"><a href="/" title="SeifZhang&#39;s Blog">SeifZhang&#39;s Blog</a></h1>
 				<h2 class="blog-motto">A girl，just a simple girl!</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -88,7 +88,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-07-12T01:06:59.000Z" itemprop="datePublished">2016-07-12</time>
-    更新日期:<time datetime="2016-07-12T13:50:40.452Z" itemprop="dateModified">2016-07-12</time>
+    Updated:<time datetime="2016-07-13T07:26:38.491Z" itemprop="dateModified">2016-07-13</time>
     
   </p>
 </header>
@@ -96,15 +96,50 @@ var _hmt = _hmt || [];
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
+			<strong class="toc-title">Contents</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
 		</div>
 		
 		<h2 id="Algorithm-Description"><a href="#Algorithm-Description" class="headerlink" title="Algorithm Description"></a>Algorithm Description</h2><p>Given a string S, find the longest palindromic substring in S. You may assume that the maximum length of S is 1000, and there exists one unique longest palindromic substring.</p>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><p>&gt;</p>
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
+<p>中心扩展法：<a href="http://blog.csdn.net/soszou/article/details/37312317" target="_blank" rel="external">完全参考</a><br>因为回文字符串是以中心轴对称的，所以如果我们从下标 i 出发，用2个指针向 i 的两边扩展判断是否相等，那么只需要对0到<br>n-1的下标都做此操作，就可以求出最长的回文子串。但需要注意的是，回文字符串有奇偶对称之分，即”abcba”与”abba”2种类型，<br>因此需要在代码编写时都做判断。<br>     设函数int Palindromic ( string &amp;s, int i ,int j) 是求由下标 i 和 j 向两边扩展的回文串的长度，那么对0至n-1的下标，调用2次此函数：<br>     int lenOdd =  Palindromic( str, i, i ) 和 int lenEven = Palindromic (str , i , j )，即可求得以i 下标为奇回文和偶回文的子串长度。<br>     接下来以lenOdd和lenEven中的最大值与当前最大值max比较即可。<br>     这个方法有一个好处是时间复杂度为O(n2)，且不需要使用额外的空间。</p>
+</blockquote>
 <hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>public class Solution {
+     public static String longestPalindrome(String s) {
+        if (s.isEmpty()) {
+            return null;
+        }
+        if (s.length() == 1) {
+            return s;
+        }
+        String longest = s.substring(0, 1);
+        for (int i = 0; i &lt; s.length(); i++) {
+            // 得到中心点i的最长回文
+            String tmp = getPalindrome(s, i, i);
+            if (tmp.length() &gt; longest.length()) {
+                longest = tmp;
+            }
+            // 得到中心点i,i+1的最长回文
+            tmp = getPalindrome(s, i, i + 1);
+            if (tmp.length() &gt; longest.length()) {
+                longest = tmp;
+            }
+        }
+        return longest;
+    }
+
+    private static String getPalindrome(String s, int begin, int end) {
+        while (begin &gt;= 0 &amp;&amp; end &lt;= s.length() - 1 &amp;&amp; s.charAt(begin) == s.charAt(end)) {
+            begin--;
+            end++;
+        }
+        String subStr = s.substring(begin + 1, end);
+        return subStr;
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -132,6 +167,14 @@ var _hmt = _hmt || [];
 	
 <nav class="article-nav clearfix">
  
+ <div class="prev" >
+ <a href="/2016/07/12/leetCode-OJ-12/" title="Coding12_Integer_to_Roman">
+  <strong>PREVIOUS:</strong><br/>
+  <span>
+  Coding12_Integer_to_Roman</span>
+</a>
+</div>
+
 
 <div class="next">
 <a href="/2016/07/12/leetCode-OJ-3/"  title="Coding3_Longest_Substring_Without_Repeating_Characters">
@@ -164,20 +207,20 @@ var _hmt = _hmt || [];
 	
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"right","bdTop":"201.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
+  <strong class="toc-title">Contents</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">分类</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 			<li><a href="/categories/Diary/" title="Diary">Diary<sup>2</sup></a></li>
@@ -194,10 +237,10 @@ var _hmt = _hmt || [];
 
   
 <div class="tagslist">
-	<p class="asidetitle">标签</p>
+	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Array/" title="Array">Array<sup>18</sup></a></li>
+			<li><a href="/tags/Array/" title="Array">Array<sup>17</sup></a></li>
 		
 			<li><a href="/tags/Binary-Search/" title="Binary Search">Binary Search<sup>3</sup></a></li>
 		
@@ -215,23 +258,23 @@ var _hmt = _hmt || [];
 		
 			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>4</sup></a></li>
 		
-			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>18</sup></a></li>
+			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>15</sup></a></li>
 		
 			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
 		
 			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>11</sup></a></li>
 		
-			<li><a href="/tags/Math/" title="Math">Math<sup>17</sup></a></li>
+			<li><a href="/tags/Math/" title="Math">Math<sup>18</sup></a></li>
 		
 			<li><a href="/tags/Sort/" title="Sort">Sort<sup>3</sup></a></li>
 		
 			<li><a href="/tags/Stack/" title="Stack">Stack<sup>4</sup></a></li>
 		
-			<li><a href="/tags/String/" title="String">String<sup>16</sup></a></li>
+			<li><a href="/tags/String/" title="String">String<sup>17</sup></a></li>
 		
 			<li><a href="/tags/Tree/" title="Tree">Tree<sup>11</sup></a></li>
 		
-			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>13</sup></a></li>
+			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>15</sup></a></li>
 		
 			<li><a href="/tags/博客，文章/" title="博客，文章">博客，文章<sup>3</sup></a></li>
 		
@@ -243,8 +286,8 @@ var _hmt = _hmt || [];
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">2016 年 07 月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">62</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">27</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">2016 年 07 月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">62</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
 
@@ -254,23 +297,23 @@ var _hmt = _hmt || [];
   <ul class="entry">
     
       <li>
+        <a href="/2016/07/12/leetCode-OJ-16/">Coding16_3Sum_Closest</a>
+      </li>
+    
+      <li>
+        <a href="/2016/07/12/leetCode-OJ-15/">Coding15_3Sum</a>
+      </li>
+    
+      <li>
+        <a href="/2016/07/12/leetCode-OJ-12/">Coding12_Integer_to_Roman</a>
+      </li>
+    
+      <li>
         <a href="/2016/07/12/leetCode-OJ-5/">Coding5_Longest_Palindromic_Substring</a>
       </li>
     
       <li>
         <a href="/2016/07/12/leetCode-OJ-3/">Coding3_Longest_Substring_Without_Repeating_Characters</a>
-      </li>
-    
-      <li>
-        <a href="/2016/07/12/leetCode-OJ-2/">Coding2_Add_Two_Numbers</a>
-      </li>
-    
-      <li>
-        <a href="/2016/06/23/1methods/">方法集合</a>
-      </li>
-    
-      <li>
-        <a href="/2016/06/22/leetCode-OJ-371/">Coding371_Sum_of_Two_Integers</a>
       </li>
     
   </ul>
@@ -285,7 +328,7 @@ var _hmt = _hmt || [];
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
 </aside>

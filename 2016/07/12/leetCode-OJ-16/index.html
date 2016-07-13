@@ -4,13 +4,12 @@
 <head>
   <meta charset="UTF-8">
   
-    <title>Coding1_Two_Sum | SeifZhang&#39;s Blog</title>
+    <title>Coding16_3Sum_Closest | SeifZhang&#39;s Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3, minimum-scale=1">
     
     <meta name="author" content="SeifZhang">
     
-    <meta name="description" content="Algorithm DescriptionGiven an array of integers, return indices of the two numbers such that they add up to a specific target.
-You may assume that eac">
+    <meta name="description" content="Algorithm DescriptionGiven an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum o">
     
     
     
@@ -50,7 +49,7 @@ var _hmt = _hmt || [];
 				<h1 class="site-name"><a href="/" title="SeifZhang&#39;s Blog">SeifZhang&#39;s Blog</a></h1>
 				<h2 class="blog-motto">A girl，just a simple girl!</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -81,15 +80,15 @@ var _hmt = _hmt || [];
 		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2016/05/30/leetCode-OJ-1 - 副本 (6)/" title="Coding1_Two_Sum" itemprop="url">Coding1_Two_Sum</a>
+      <a href="/2016/07/12/leetCode-OJ-16/" title="Coding16_3Sum_Closest" itemprop="url">Coding16_3Sum_Closest</a>
   </h1>
   <p class="article-author">By
     
       <a href="http://seifzhang.jerrychia.com" title="SeifZhang">SeifZhang</a>
     </p>
   <p class="article-time">
-    <time datetime="2016-05-30T01:02:59.000Z" itemprop="datePublished">2016-05-30</time>
-    更新日期:<time datetime="2016-06-05T13:40:19.126Z" itemprop="dateModified">2016-06-05</time>
+    <time datetime="2016-07-12T01:12:59.000Z" itemprop="datePublished">2016-07-12</time>
+    Updated:<time datetime="2016-07-13T10:59:48.004Z" itemprop="dateModified">2016-07-13</time>
     
   </p>
 </header>
@@ -97,40 +96,63 @@ var _hmt = _hmt || [];
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
+			<strong class="toc-title">Contents</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
 		</div>
 		
-		<h2 id="Algorithm-Description"><a href="#Algorithm-Description" class="headerlink" title="Algorithm Description"></a>Algorithm Description</h2><p>Given an array of integers, return indices of the two numbers such that they add up to a specific target.</p>
-<p>You may assume that each input would have exactly one solution.<br><strong>Example:</strong></p>
-<blockquote>
-<p>Given nums = [2, 7, 11, 15], target = 9,</p>
-<p>Because nums[0] + nums[1] = 2 + 7 = 9,<br>return [0, 1].</p>
-</blockquote>
-<hr>
+		<h2 id="Algorithm-Description"><a href="#Algorithm-Description" class="headerlink" title="Algorithm Description"></a>Algorithm Description</h2><p>Given an array S of n integers, find three integers in S such that the sum is closest to a given number, target. Return the sum of the three integers. You may assume that each input would have exactly one solution.</p>
+<pre><code>For example, given array S = {-1 2 1 -4}, and target = 1.
+
+The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
+</code></pre><hr>
 <h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
-<p>两数相加得一个特定数，返回两数的索引</p>
+<p>与三个数求和不同的是，不再是求三个数的和是不是为target，而是看三个数的和与target的差是否为最小，只需记录当前最优解并不断更新其值就可。</p>
 </blockquote>
 <hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>public class Solution {
-    public int[] twoSum(int[] nums, int target) {
-          for (int i = 0; i &lt; nums.length; i++) {
-            for (int j = i + 1; j &lt; nums.length; j++) {
-                if ((nums[i] + nums[j]) == target) {
-                    return new int[] { i, j };
-                }
-            }
-        }
-    return null;
-    }
-}
-</code></pre>  
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>public class Solution {  
+    public int threeSumClosest(int[] num, int target) {  
+        if (num == null || num.length &lt; 3) return 0;  
+
+        Arrays.sort(num);  
+
+        int ret = 0;  
+        int closestDist = Integer.MAX_VALUE;  
+        int len =  num.length;  
+        for (int i = 0; i &lt; len-2; i++) {  
+            if (i &gt; 0 &amp;&amp; num[i] == num[i-1]) continue;  
+
+            int l = i+1, r = len-1;  
+            while (l &lt; r) {  
+                int sum = num[i] + num[l] + num[r];  
+                if (sum &lt; target) {  
+                    if (target-sum &lt; closestDist) {  
+                        closestDist = target - sum;  
+                        ret = sum;  
+                    }  
+                    l++;  
+                } else if (sum &gt; target) {  
+                    if (sum-target &lt; closestDist) {  
+                        closestDist = sum - target;  
+                        ret = sum;  
+                    }  
+                    r--;  
+                } else { //when sum == target, return sum.  
+                    return sum;  
+                }  
+            }  
+        }  
+
+        return ret;  
+    }  
+}  
+</code></pre><p><a href="http://blog.csdn.net/ljiabin/article/details/40622607" target="_blank" rel="external">转自http://blog.csdn.net/ljiabin/article/details/40622607</a></p>
+  
 	</div>
 		<footer class="article-footer clearfix">
 
   <div class="article-tags">
   
-  <span></span> <a href="/tags/Array/">Array</a><a href="/tags/Hash-Table/">Hash Table</a>
+  <span></span> <a href="/tags/Array/">Array</a><a href="/tags/Two-Pointers/">Two Pointers</a>
   </div>
 
 
@@ -143,7 +165,7 @@ var _hmt = _hmt || [];
 
 <div class="article-share" id="share">
 
-  <div data-url="http://seifzhang.jerrychia.com/2016/05/30/leetCode-OJ-1 - 副本 (6)/" data-title="Coding1_Two_Sum | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
+  <div data-url="http://seifzhang.jerrychia.com/2016/07/12/leetCode-OJ-16/" data-title="Coding16_3Sum_Closest | SeifZhang&#39;s Blog" data-tsina="null" class="share clearfix">
   </div>
 
 </div>
@@ -152,19 +174,11 @@ var _hmt = _hmt || [];
 	
 <nav class="article-nav clearfix">
  
- <div class="prev" >
- <a href="/2016/05/30/leetCode-OJ-1/" title="Coding1_Two_Sum">
-  <strong>PREVIOUS:</strong><br/>
-  <span>
-  Coding1_Two_Sum</span>
-</a>
-</div>
-
 
 <div class="next">
-<a href="/2016/05/11/1hello-world/"  title="你好，世界！">
+<a href="/2016/07/12/leetCode-OJ-15/"  title="Coding15_3Sum">
  <strong>NEXT:</strong><br/> 
- <span>你好，世界！
+ <span>Coding15_3Sum
 </span>
 </a>
 </div>
@@ -173,7 +187,7 @@ var _hmt = _hmt || [];
 
 	
 <section class="comment">
-	<div class="ds-thread" data-thread-key="2016/05/30/leetCode-OJ-1 - 副本 (6)/" data-title="Coding1_Two_Sum" data-url="http://seifzhang.jerrychia.com/2016/05/30/leetCode-OJ-1 - 副本 (6)/"></div>
+	<div class="ds-thread" data-thread-key="2016/07/12/leetCode-OJ-16/" data-title="Coding16_3Sum_Closest" data-url="http://seifzhang.jerrychia.com/2016/07/12/leetCode-OJ-16/"></div>
 	<!-- Duoshuo Comment START -->  
 	<script type="text/javascript">
 	var duoshuoQuery = {short_name:"jerrychia"};
@@ -192,20 +206,20 @@ var _hmt = _hmt || [];
 	
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"right","bdTop":"201.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
+  <strong class="toc-title">Contents</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">分类</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 			<li><a href="/categories/Diary/" title="Diary">Diary<sup>2</sup></a></li>
@@ -222,10 +236,10 @@ var _hmt = _hmt || [];
 
   
 <div class="tagslist">
-	<p class="asidetitle">标签</p>
+	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Array/" title="Array">Array<sup>18</sup></a></li>
+			<li><a href="/tags/Array/" title="Array">Array<sup>17</sup></a></li>
 		
 			<li><a href="/tags/Binary-Search/" title="Binary Search">Binary Search<sup>3</sup></a></li>
 		
@@ -243,23 +257,23 @@ var _hmt = _hmt || [];
 		
 			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>4</sup></a></li>
 		
-			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>18</sup></a></li>
+			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>15</sup></a></li>
 		
 			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
 		
 			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>11</sup></a></li>
 		
-			<li><a href="/tags/Math/" title="Math">Math<sup>17</sup></a></li>
+			<li><a href="/tags/Math/" title="Math">Math<sup>18</sup></a></li>
 		
 			<li><a href="/tags/Sort/" title="Sort">Sort<sup>3</sup></a></li>
 		
 			<li><a href="/tags/Stack/" title="Stack">Stack<sup>4</sup></a></li>
 		
-			<li><a href="/tags/String/" title="String">String<sup>16</sup></a></li>
+			<li><a href="/tags/String/" title="String">String<sup>17</sup></a></li>
 		
 			<li><a href="/tags/Tree/" title="Tree">Tree<sup>11</sup></a></li>
 		
-			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>13</sup></a></li>
+			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>15</sup></a></li>
 		
 			<li><a href="/tags/博客，文章/" title="博客，文章">博客，文章<sup>3</sup></a></li>
 		
@@ -271,8 +285,8 @@ var _hmt = _hmt || [];
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">2016 年 07 月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">62</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">27</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">2016 年 07 月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">62</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
 
@@ -282,23 +296,23 @@ var _hmt = _hmt || [];
   <ul class="entry">
     
       <li>
+        <a href="/2016/07/12/leetCode-OJ-16/">Coding16_3Sum_Closest</a>
+      </li>
+    
+      <li>
+        <a href="/2016/07/12/leetCode-OJ-15/">Coding15_3Sum</a>
+      </li>
+    
+      <li>
+        <a href="/2016/07/12/leetCode-OJ-12/">Coding12_Integer_to_Roman</a>
+      </li>
+    
+      <li>
         <a href="/2016/07/12/leetCode-OJ-5/">Coding5_Longest_Palindromic_Substring</a>
       </li>
     
       <li>
         <a href="/2016/07/12/leetCode-OJ-3/">Coding3_Longest_Substring_Without_Repeating_Characters</a>
-      </li>
-    
-      <li>
-        <a href="/2016/07/12/leetCode-OJ-2/">Coding2_Add_Two_Numbers</a>
-      </li>
-    
-      <li>
-        <a href="/2016/06/23/1methods/">方法集合</a>
-      </li>
-    
-      <li>
-        <a href="/2016/06/22/leetCode-OJ-371/">Coding371_Sum_of_Two_Integers</a>
       </li>
     
   </ul>
@@ -313,7 +327,7 @@ var _hmt = _hmt || [];
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
 </aside>

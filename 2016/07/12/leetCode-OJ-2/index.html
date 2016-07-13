@@ -49,7 +49,7 @@ var _hmt = _hmt || [];
 				<h1 class="site-name"><a href="/" title="SeifZhang&#39;s Blog">SeifZhang&#39;s Blog</a></h1>
 				<h2 class="blog-motto">A girl，just a simple girl!</h2>
 			</div>
-			<div class="navbar"><a class="navbutton navmobile" href="#" title="菜单">
+			<div class="navbar"><a class="navbutton navmobile" href="#" title="Menu">
 			</a></div>
 			<nav class="animated">
 				<ul>
@@ -88,7 +88,7 @@ var _hmt = _hmt || [];
     </p>
   <p class="article-time">
     <time datetime="2016-07-12T01:02:59.000Z" itemprop="datePublished">2016-07-12</time>
-    更新日期:<time datetime="2016-07-12T13:46:49.555Z" itemprop="dateModified">2016-07-12</time>
+    Updated:<time datetime="2016-07-13T03:35:48.245Z" itemprop="dateModified">2016-07-13</time>
     
   </p>
 </header>
@@ -96,16 +96,92 @@ var _hmt = _hmt || [];
 		
 		
 		<div id="toc" class="toc-article">
-			<strong class="toc-title">文章目录</strong>
+			<strong class="toc-title">Contents</strong>
 		<ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
 		</div>
 		
 		<h2 id="Algorithm-Description"><a href="#Algorithm-Description" class="headerlink" title="Algorithm Description"></a>Algorithm Description</h2><p>You are given two linked lists representing two non-negative numbers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.</p>
 <p><strong>Input:</strong> (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4)<br><strong>Output:</strong> 7 -&gt; 0 -&gt; 8</p>
 <hr>
-<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><p>&gt;</p>
+<h2 id="My-Algorithm"><a href="#My-Algorithm" class="headerlink" title="My Algorithm"></a>My Algorithm</h2><h3 id="idea"><a href="#idea" class="headerlink" title="idea:"></a>idea:</h3><blockquote>
+<p>方法1：将单链表l1存成long类型342，将单链表l2存成long类型465，然后相加得807，再依次将7,0,8存入单链表中。<br>方法2：用两个指针分别遍历两个链表，并用一个变量表示有无进位，若一个链表遍历结束后，将另一个链表直接连接到链表之后即可，若有进位则需要添加一位。</p>
+</blockquote>
 <hr>
-<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3>  
+<h3 id="code"><a href="#code" class="headerlink" title="code:"></a>code:</h3><pre><code>public class Solution {
+    //方法1
+    public ListNode addTwoNumbers1(ListNode l1, ListNode l2) {
+        long a = 0, b = 0, temp = 1;
+        while (l1 != null) {
+            a = temp * l1.val + a;
+            l1 = l1.next;
+            temp = temp * 10;
+        }
+        System.out.println(a);
+        temp = 1;
+        while (l2 != null) {
+            b = temp * l2.val + b;
+            l2 = l2.next;
+            temp = temp * 10;
+        }
+        System.out.println(b);
+        long sum = a + b;
+        System.out.println(sum);
+        ListNode l3 = new ListNode((int) (sum % 10));
+        sum = sum / 10;
+        while (sum &gt; 0) {
+            insert((int) (sum % 10), l3);
+            sum = sum / 10;
+        }
+        return l3;
+    }
+
+    private void insert(int i, ListNode l3) {
+        ListNode tail = l3.next;
+        if (tail != null) {
+            while (tail.next != null) {
+                tail = tail.next;
+            }
+        } else {
+            tail = l3;
+        }
+        ListNode x = new ListNode(i);
+        tail.next = x;
+        tail = tail.next;
+    }
+    //方法2
+    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+        int carry = 0;
+        ListNode l3 = new ListNode(0);
+        ListNode p = l3;
+        if (l1 == null) {
+            return l2;
+        }
+        if (l2 == null) {
+            return l1;
+        }
+        while (l1 != null || l2 != null) {
+            int var1 = 0;
+            if (l1 != null) {
+                var1 = l1.val;
+                l1 = l1.next;
+            }
+            int var2 = 0;
+            if (l2 != null) {
+                var2 = l2.val;
+                l2 = l2.next;
+            }
+            int tmp = var1 + var2 + carry;
+            p.next = new ListNode(tmp % 10);
+            carry = tmp / 10;
+            p = p.next;
+        }
+        if (carry == 1) {
+            p.next = new ListNode(1);
+        }
+        return l3.next;
+    }
+}
+</code></pre>  
 	</div>
 		<footer class="article-footer clearfix">
 
@@ -173,20 +249,20 @@ var _hmt = _hmt || [];
 	
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"2","bdPos":"right","bdTop":"201.5"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 </div>  
-      <div class="openaside"><a class="navbutton" href="#" title="显示侧边栏"></a></div>
+      <div class="openaside"><a class="navbutton" href="#" title="Show Sidebar"></a></div>
 
   <div id="toc" class="toc-aside">
-  <strong class="toc-title">文章目录</strong>
+  <strong class="toc-title">Contents</strong>
   <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Algorithm-Description"><span class="toc-number">1.</span> <span class="toc-text">Algorithm Description</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-Algorithm"><span class="toc-number">2.</span> <span class="toc-text">My Algorithm</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#idea"><span class="toc-number">2.1.</span> <span class="toc-text">idea:</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#code"><span class="toc-number">2.2.</span> <span class="toc-text">code:</span></a></li></ol></li></ol>
   </div>
 
 <div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隐藏侧边栏"></a></div>
+<div class="closeaside"><a class="closebutton" href="#" title="Hide Sidebar"></a></div>
 <aside class="clearfix">
 
   
 <div class="categorieslist">
-	<p class="asidetitle">分类</p>
+	<p class="asidetitle">Categories</p>
 		<ul>
 		
 			<li><a href="/categories/Diary/" title="Diary">Diary<sup>2</sup></a></li>
@@ -203,10 +279,10 @@ var _hmt = _hmt || [];
 
   
 <div class="tagslist">
-	<p class="asidetitle">标签</p>
+	<p class="asidetitle">Tags</p>
 		<ul class="clearfix">
 		
-			<li><a href="/tags/Array/" title="Array">Array<sup>18</sup></a></li>
+			<li><a href="/tags/Array/" title="Array">Array<sup>17</sup></a></li>
 		
 			<li><a href="/tags/Binary-Search/" title="Binary Search">Binary Search<sup>3</sup></a></li>
 		
@@ -224,23 +300,23 @@ var _hmt = _hmt || [];
 		
 			<li><a href="/tags/Dynamic-Programming/" title="Dynamic Programming">Dynamic Programming<sup>4</sup></a></li>
 		
-			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>18</sup></a></li>
+			<li><a href="/tags/Hash-Table/" title="Hash Table">Hash Table<sup>15</sup></a></li>
 		
 			<li><a href="/tags/Hexo/" title="Hexo">Hexo<sup>1</sup></a></li>
 		
 			<li><a href="/tags/LinkedList/" title="LinkedList">LinkedList<sup>11</sup></a></li>
 		
-			<li><a href="/tags/Math/" title="Math">Math<sup>17</sup></a></li>
+			<li><a href="/tags/Math/" title="Math">Math<sup>18</sup></a></li>
 		
 			<li><a href="/tags/Sort/" title="Sort">Sort<sup>3</sup></a></li>
 		
 			<li><a href="/tags/Stack/" title="Stack">Stack<sup>4</sup></a></li>
 		
-			<li><a href="/tags/String/" title="String">String<sup>16</sup></a></li>
+			<li><a href="/tags/String/" title="String">String<sup>17</sup></a></li>
 		
 			<li><a href="/tags/Tree/" title="Tree">Tree<sup>11</sup></a></li>
 		
-			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>13</sup></a></li>
+			<li><a href="/tags/Two-Pointers/" title="Two Pointers">Two Pointers<sup>15</sup></a></li>
 		
 			<li><a href="/tags/博客，文章/" title="博客，文章">博客，文章<sup>3</sup></a></li>
 		
@@ -252,8 +328,8 @@ var _hmt = _hmt || [];
 
   
   <div class="archiveslist">
-    <p class="asidetitle"><a href="/archives">归档</a></p>
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">2016 年 07 月</a><span class="archive-list-count">3</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">62</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">27</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
+    <p class="asidetitle"><a href="/archives">Archives</a></p>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/07/">2016 年 07 月</a><span class="archive-list-count">6</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/06/">2016 年 06 月</a><span class="archive-list-count">62</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2016/05/">2016 年 05 月</a><span class="archive-list-count">24</span></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/01/">2015 年 01 月</a><span class="archive-list-count">1</span></li></ul>
   </div>
 
 
@@ -263,23 +339,23 @@ var _hmt = _hmt || [];
   <ul class="entry">
     
       <li>
+        <a href="/2016/07/12/leetCode-OJ-16/">Coding16_3Sum_Closest</a>
+      </li>
+    
+      <li>
+        <a href="/2016/07/12/leetCode-OJ-15/">Coding15_3Sum</a>
+      </li>
+    
+      <li>
+        <a href="/2016/07/12/leetCode-OJ-12/">Coding12_Integer_to_Roman</a>
+      </li>
+    
+      <li>
         <a href="/2016/07/12/leetCode-OJ-5/">Coding5_Longest_Palindromic_Substring</a>
       </li>
     
       <li>
         <a href="/2016/07/12/leetCode-OJ-3/">Coding3_Longest_Substring_Without_Repeating_Characters</a>
-      </li>
-    
-      <li>
-        <a href="/2016/07/12/leetCode-OJ-2/">Coding2_Add_Two_Numbers</a>
-      </li>
-    
-      <li>
-        <a href="/2016/06/23/1methods/">方法集合</a>
-      </li>
-    
-      <li>
-        <a href="/2016/06/22/leetCode-OJ-371/">Coding371_Sum_of_Two_Integers</a>
       </li>
     
   </ul>
@@ -294,7 +370,7 @@ var _hmt = _hmt || [];
 </div>
 
   <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 订阅</a>
+	<a href="/atom.xml" target="_blank" title="rss">RSS</a>
 </div>
 
 </aside>

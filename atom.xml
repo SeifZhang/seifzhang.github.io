@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://seifzhang.jerrychia.com/"/>
-  <updated>2016-07-13T10:59:48.004Z</updated>
+  <updated>2016-08-11T05:59:16.139Z</updated>
   <id>http://seifzhang.jerrychia.com/</id>
   
   <author>
@@ -14,6 +14,59 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Coding18_4Sum</title>
+    <link href="http://seifzhang.jerrychia.com/2016/07/12/leetCode-OJ-18/"/>
+    <id>http://seifzhang.jerrychia.com/2016/07/12/leetCode-OJ-18/</id>
+    <published>2016-07-12T01:16:59.000Z</published>
+    <updated>2016-08-11T05:59:16.139Z</updated>
+    
+    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array S of n integers, are there elements a, b, c, and d in S such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The solution set must not contain duplicate quadruplets.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;For example, given array S = [1, 0, -1, 0, -2, 2], and target = 0.
+
+A solution set is:
+[
+      [-1,  0, 0, 1],
+      [-2, -1, 1, 2],
+      [-2,  0, 0, 2]
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
+&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
+&lt;p&gt;两数相加得一个特定数，返回两数的索引&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;hr&gt;
+&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
+    public int[] twoSum(int[] nums, int target) {
+          for (int i = 0; i &amp;lt; nums.length; i++) {
+            for (int j = i + 1; j &amp;lt; nums.length; j++) {
+                if ((nums[i] + nums[j]) == target) {
+                    return new int[] { i, j };
+                }
+            }
+        }
+    return null;
+    }
+}
+&lt;/code&gt;&lt;/pre&gt;</content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
+    
+    </summary>
+    
+      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
+    
+    
+      <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
+    
+      <category term="Hash Table" scheme="http://seifzhang.jerrychia.com/tags/Hash-Table/"/>
+    
+      <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
+    
+  </entry>
   
   <entry>
     <title>Coding16_3Sum_Closest</title>
@@ -90,11 +143,17 @@ The sum that is closest to the target is 2. (-1 + 2 + 1 = 2).
     <link href="http://seifzhang.jerrychia.com/2016/07/12/leetCode-OJ-15/"/>
     <id>http://seifzhang.jerrychia.com/2016/07/12/leetCode-OJ-15/</id>
     <published>2016-07-12T01:10:59.000Z</published>
-    <updated>2016-07-13T10:59:50.260Z</updated>
+    <updated>2016-07-14T13:04:35.683Z</updated>
     
     <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;p&gt;Given an array S of n integers, are there elements a, b, c in S such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The solution set must not contain duplicate triplets.&lt;br&gt;&amp;gt;&lt;br&gt;For example, given array S = [-1, 0, 1, 2, -1, -4],&lt;br&gt;&amp;gt;&lt;br&gt;A solution set is:&lt;br&gt;&amp;gt;&lt;br&gt;    [&lt;br&gt;      [-1, 0, 1],&lt;br&gt;      [-1, -1, 2]&lt;br&gt;    ]&lt;/p&gt;
-&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Note:&lt;/strong&gt; The solution set must not contain duplicate triplets.&lt;/p&gt;
+&lt;p&gt;For example, given array S = [-1, 0, 1, 2, -1, -4],&lt;/p&gt;
+&lt;p&gt;A solution set is:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[
+  [-1, 0, 1],
+  [-1, -1, 2]
+]
+&lt;/code&gt;&lt;/pre&gt;&lt;hr&gt;
 &lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
 &lt;p&gt;考虑的是利用排序&lt;br&gt;先固定一个数，找另外两个数的和为此数的相反数。&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -1304,53 +1363,6 @@ Friend&amp;apos;s guess: &amp;quot;0111&amp;quot;
       <category term="Array" scheme="http://seifzhang.jerrychia.com/tags/Array/"/>
     
       <category term="Two Pointers" scheme="http://seifzhang.jerrychia.com/tags/Two-Pointers/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Coding278_First_Bad_Version</title>
-    <link href="http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-278/"/>
-    <id>http://seifzhang.jerrychia.com/2016/06/21/leetCode-OJ-278/</id>
-    <published>2016-06-21T02:50:00.000Z</published>
-    <updated>2016-06-28T04:57:20.774Z</updated>
-    
-    <content type="html">&lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/h2&gt;&lt;blockquote&gt;
-&lt;p&gt;You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad.&lt;/p&gt;
-&lt;p&gt;Suppose you have &lt;code&gt;n&lt;/code&gt; versions &lt;code&gt;[1, 2, ..., n]&lt;/code&gt; and you want to find out the first bad one, which causes all the following ones to be bad.&lt;/p&gt;
-&lt;p&gt;You are given an API &lt;code&gt;bool isBadVersion(version)&lt;/code&gt;which will return whether &lt;code&gt;version&lt;/code&gt; is bad. Implement a function to find the first bad version. You should minimize the number of calls to the API.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;My-Algorithm&quot;&gt;&lt;a href=&quot;#My-Algorithm&quot; class=&quot;headerlink&quot; title=&quot;My Algorithm&quot;&gt;&lt;/a&gt;My Algorithm&lt;/h2&gt;&lt;h3 id=&quot;idea&quot;&gt;&lt;a href=&quot;#idea&quot; class=&quot;headerlink&quot; title=&quot;idea:&quot;&gt;&lt;/a&gt;idea:&lt;/h3&gt;&lt;blockquote&gt;
-&lt;p&gt;在不破坏原来非0数字的情况下，把0移到数组的最后&lt;br&gt;设两个指针，i从0-nums.length依次为数组赋值，j寻找非0元素&lt;br&gt;能保证顺序&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;hr&gt;
-&lt;h3 id=&quot;code&quot;&gt;&lt;a href=&quot;#code&quot; class=&quot;headerlink&quot; title=&quot;code:&quot;&gt;&lt;/a&gt;code:&lt;/h3&gt;&lt;pre&gt;&lt;code&gt;public class Solution {
-    public void moveZeroes(int[] nums) {
-        int i = 0, j = 0;
-        while (j &amp;lt; nums.length) {
-            if (nums[j] == 0) {
-                j++;
-            } else {
-                nums[i++] = nums[j++];
-            }
-        }
-        while (i &amp;lt; nums.length) {
-            nums[i++] = 0;
-        }
-    }
-}
-&lt;/code&gt;&lt;/pre&gt;</content>
-    
-    <summary type="html">
-    
-      &lt;h2 id=&quot;Algorithm-Description&quot;&gt;&lt;a href=&quot;#Algorithm-Description&quot; class=&quot;headerlink&quot; title=&quot;Algorithm Description&quot;&gt;&lt;/a&gt;Algorithm Description&lt;/
-    
-    </summary>
-    
-      <category term="LeetCode" scheme="http://seifzhang.jerrychia.com/categories/LeetCode/"/>
-    
-    
-      <category term="Binary Search" scheme="http://seifzhang.jerrychia.com/tags/Binary-Search/"/>
     
   </entry>
   
